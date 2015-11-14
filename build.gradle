@@ -1,0 +1,79 @@
+buildscript {
+ repositories {
+  jcenter()
+ }
+ dependencies {
+  classpath 'com.bmuschko:gradle-nexus-plugin:2.3.1'
+  classpath 'net.researchgate:gradle-release:2.2.2'
+ }
+}
+
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'eclipse'
+apply plugin: 'signing'
+apply plugin: 'com.bmuschko.nexus'
+apply plugin: 'net.researchgate.release'
+
+group = 'se.bjurr.gitchangelog'
+
+dependencies {
+ compile gradleApi()
+}
+
+sourceCompatibility = 1.7
+
+repositories {
+ mavenCentral()
+ mavenLocal()
+ jcenter()
+}
+
+dependencies {
+ compile 'se.bjurr.gitchangelog:git-changelog-lib:1.0'
+}
+
+eclipse {
+ classpath {
+  downloadSources = true
+  downloadJavadoc = true
+ }
+}
+
+modifyPom {
+ project {
+  name 'Git Changelog Gradle Plugin'
+  description 'Gradle plugin for Git Changelog'
+  url 'https://github.com/tomasbjerre/git-changelog-gradle-plugin'
+  inceptionYear '2015'
+   scm {
+   url 'https://github.com/tomasbjerre/git-changelog-gradle-plugin'
+   connection 'scm:https://tomasbjerre@github.com/tomasbjerre/git-changelog-gradle-plugin.git'
+   developerConnection 'scm:git://github.com/tomasbjerre/git-changelog-gradle-plugin.git'
+  }
+
+  licenses {
+   license {
+    name 'The Apache Software License, Version 2.0'
+    url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    distribution 'repo'
+   }
+  }
+
+  developers {
+   developer {
+    id 'tomasbjerre'
+    name 'Tomas Bjerre'
+    email 'tomas.bjerre85@gmail.com'
+   }
+  }
+ }
+}
+
+extraArchive {
+ sources = true
+ tests = true
+ javadoc = true
+}
+
+afterReleaseBuild.dependsOn uploadArchives
