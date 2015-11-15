@@ -1,5 +1,4 @@
 apply plugin: 'java'
-apply plugin: 'eclipse'
 
 buildscript {
  repositories {
@@ -14,7 +13,14 @@ buildscript {
 
 apply plugin: 'git-changelog-gradle-plugin'
 
-task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) { }
+task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+ gitChangelogPlugin.toRef = "refs/heads/master";
+ //gitChangelogPlugin.toCommit;
+ //gitChangelogPlugin.fromRef;
+ gitChangelogPlugin.templateContent = new File('changelog.mustache').getText('UTF-8');
+ gitChangelogPlugin.filePath = "CHANGELOG.md";
+ gitChangelogPlugin.settingsFile = "changelog.json";
+}
 
 sourceSets {
  main.java.srcDirs = ['src/main/java']
