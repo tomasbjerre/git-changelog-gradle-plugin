@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Git-changelog-gradle-plugin : Gradle plugin for git-changelog">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Git-changelog-gradle-plugin</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/tomasbjerre/git-changelog-gradle-plugin">View on GitHub</a>
+
+          <h1 id="project_title">Git-changelog-gradle-plugin</h1>
+          <h2 id="project_tagline">Gradle plugin for git-changelog</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/tomasbjerre/git-changelog-gradle-plugin/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/tomasbjerre/git-changelog-gradle-plugin/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="git-changelog-gradle-plugin-" class="anchor" href="#git-changelog-gradle-plugin-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git Changelog Gradle Plugin <a href="https://travis-ci.org/tomasbjerre/git-changelog-gradle-plugin"><img src="https://travis-ci.org/tomasbjerre/git-changelog-gradle-plugin.svg?branch=master" alt="Build Status"></a>
+</h1>
+
+<p>This is a Gradle plugin for <a href="https://github.com/tomasbjerre/git-changelog-lib">Git Changelog</a>.</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Here is and example that will produce a CHANGELOG.md. There is also a complete running example <a href="https://github.com/tomasbjerre/git-changelog-gradle-plugin/tree/master/git-changelog-gradle-plugin-example">here</a>.</p>
+
+<pre><code>buildscript {
+ repositories {
+  mavenCentral()
+ }
+
+ dependencies {
+  classpath "se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.0"
+ }
+}
+
+apply plugin: 'git-changelog-gradle-plugin'
+
+task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+ gitChangelogPlugin.toRef = "refs/heads/master";
+ //gitChangelogPlugin.toCommit;
+ //gitChangelogPlugin.fromRef;
+ gitChangelogPlugin.templateContent = new File('changelog.mustache').getText('UTF-8');
+ gitChangelogPlugin.filePath = "CHANGELOG.md";
+ gitChangelogPlugin.settingsFile = "changelog.json";
+}
+</code></pre>
+
+<p>This setup has a settings file, changelog.json, like this:</p>
+
+<pre><code>{
+ "fromRepo": ".",
+ "fromCommit": "0000000000000000000000000000000000000000",
+ "toRef": "refs/heads/master",
+
+ "ignoreCommitsIfMessageMatches": "^\\[maven-release-plugin\\].*|^\\[Gradle Release Plugin\\].*|^Merge.*",
+ "readableTagName": "/([^/]+?)$",
+ "dateFormat": "YYYY-MM-dd HH:mm:ss",
+ "untaggedName": "Next release",
+ "noIssueName": "Other changes",
+ "timeZone": "UTC",
+ "removeIssueFromMessage": "true",
+
+ "jiraIssuePattern": "\\b[a-zA-Z]([a-zA-Z]+)-([0-9]+)\\b",
+
+ "githubIssuePattern": "#[0-9]*",
+
+ "customIssues": [
+  { "name": "Bugs", "pattern": "#bug" },
+  { "name": "Features", "pattern": "#feature" }
+ ]
+}
+</code></pre>
+
+<p>It has a template file like this:</p>
+
+<pre><code># Git Changelog changelog
+
+Changelog of Git Changelog.
+
+{{#tags}}
+## {{name}}
+ {{#issues}}
+### {{name}}
+
+   {{#commits}}
+{{{message}}}
+
+   {{/commits}}
+ {{/issues}}
+{{/tags}}
+</code></pre>
+
+<p>And then to generate CHANGELOG.md, just run <code>gradle gitChangelog</code>.</p>
+
+<h2>
+<a id="developer-instructions" class="anchor" href="#developer-instructions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Developer instructions</h2>
+
+<p>To build the code you need to run <code>build.sh</code> in root of repo. You may also have a look at <code>.travis.yml</code>.</p>
+
+<p>To do a release you need to do <code>./gradlew release</code> and release the artifact from <a href="https://oss.sonatype.org/#stagingRepositories">staging</a>. More information <a href="http://central.sonatype.org/pages/releasing-the-deployment.html">here</a>.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Git-changelog-gradle-plugin maintained by <a href="https://github.com/tomasbjerre">tomasbjerre</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
