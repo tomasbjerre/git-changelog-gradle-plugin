@@ -7,11 +7,11 @@ buildscript {
  }
 
  dependencies {
-  classpath "se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.0-SNAPSHOT"
+  classpath "se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.2-SNAPSHOT"
  }
 }
 
-apply plugin: 'git-changelog-gradle-plugin'
+apply plugin: 'se.bjurr.gitchangelog.git-changelog-gradle-plugin'
 
 task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
  gitChangelogPlugin.toRef = "refs/heads/master";

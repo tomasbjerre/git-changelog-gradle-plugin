@@ -7,16 +7,17 @@ This is a Gradle plugin for [Git Changelog](https://github.com/tomasbjerre/git-c
 Here is and example that will produce a CHANGELOG.md. There is also a complete running example [here](https://github.com/tomasbjerre/git-changelog-gradle-plugin/tree/master/git-changelog-gradle-plugin-example).
 ```
 buildscript {
- repositories {
-  mavenCentral()
- }
-
- dependencies {
-  classpath "se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.0"
- }
+  repositories {
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+  dependencies {
+    classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.1"
+  }
 }
 
-apply plugin: 'git-changelog-gradle-plugin'
+apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin
 
 task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
  gitChangelogPlugin.toRef = "refs/heads/master";
