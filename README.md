@@ -81,4 +81,4 @@ And then to generate CHANGELOG.md, just run `gradle gitChangelog`.
 
 To build the code you need to run `build.sh` in root of repo. You may also have a look at `.travis.yml`.
 
-To do a release you need to do `./gradlew release` and release the artifact from [staging](https://oss.sonatype.org/#stagingRepositories). More information [here](http://central.sonatype.org/pages/releasing-the-deployment.html).
+To do a release you need to do `./gradlew release -Dgradle.publish.key=... -Dgradle.publish.secret=...` and release the artifact from [staging](https://oss.sonatype.org/#stagingRepositories). More information [here](http://central.sonatype.org/pages/releasing-the-deployment.html).
