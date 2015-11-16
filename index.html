@@ -43,16 +43,17 @@
 <p>Here is and example that will produce a CHANGELOG.md. There is also a complete running example <a href="https://github.com/tomasbjerre/git-changelog-gradle-plugin/tree/master/git-changelog-gradle-plugin-example">here</a>.</p>
 
 <pre><code>buildscript {
- repositories {
-  mavenCentral()
- }
-
- dependencies {
-  classpath "se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.0"
- }
+  repositories {
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+  dependencies {
+    classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.1"
+  }
 }
 
-apply plugin: 'git-changelog-gradle-plugin'
+apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin
 
 task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
  gitChangelogPlugin.toRef = "refs/heads/master";
@@ -116,7 +117,7 @@ Changelog of Git Changelog.
 
 <p>To build the code you need to run <code>build.sh</code> in root of repo. You may also have a look at <code>.travis.yml</code>.</p>
 
-<p>To do a release you need to do <code>./gradlew release</code> and release the artifact from <a href="https://oss.sonatype.org/#stagingRepositories">staging</a>. More information <a href="http://central.sonatype.org/pages/releasing-the-deployment.html">here</a>.</p>
+<p>To do a release you need to do <code>./gradlew release -Dgradle.publish.key=... -Dgradle.publish.secret=...</code> and release the artifact from <a href="https://oss.sonatype.org/#stagingRepositories">staging</a>. More information <a href="http://central.sonatype.org/pages/releasing-the-deployment.html">here</a>.</p>
       </section>
     </div>
 
