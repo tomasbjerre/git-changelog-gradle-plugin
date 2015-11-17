@@ -9,6 +9,10 @@ public class GitChangelogPluginExtension {
  private String filePath;
  private String settingsFile;
  private String templateContent;
+ private String mediaWikiUrl;
+ private String mediaWikiTitle;
+ private String mediaWikiUsername;
+ private String mediaWikiPassword;
 
  public void setTemplateContent(String templateContent) {
   this.templateContent = templateContent;
@@ -64,5 +68,37 @@ public class GitChangelogPluginExtension {
 
  public void setToRef(String toRef) {
   this.toRef = toRef;
+ }
+
+ public void setMediaWikiPassword(String mediaWikiPassword) {
+  this.mediaWikiPassword = mediaWikiPassword;
+ }
+
+ public void setMediaWikiTitle(String mediaWikiTitle) {
+  this.mediaWikiTitle = mediaWikiTitle;
+ }
+
+ public void setMediaWikiUrl(String mediaWikiUrl) {
+  this.mediaWikiUrl = mediaWikiUrl;
+ }
+
+ public void setMediaWikiUsername(String mediaWikiUsername) {
+  this.mediaWikiUsername = mediaWikiUsername;
+ }
+
+ public String getMediaWikiPassword() {
+  return mediaWikiPassword;
+ }
+
+ public String getMediaWikiTitle() {
+  return mediaWikiTitle;
+ }
+
+ public String getMediaWikiUrl() {
+  return mediaWikiUrl;
+ }
+
+ public String getMediaWikiUsername() {
+  return mediaWikiUsername;
  }
 }

@@ -14,12 +14,17 @@ buildscript {
 apply plugin: 'se.bjurr.gitchangelog.git-changelog-gradle-plugin'
 
 task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+ //gitChangelogPlugin.fromRef;
+ //gitChangelogPlugin.fromCommit;
  gitChangelogPlugin.toRef = "refs/heads/master";
  //gitChangelogPlugin.toCommit;
- //gitChangelogPlugin.fromRef;
  gitChangelogPlugin.templateContent = new File('changelog.mustache').getText('UTF-8');
  gitChangelogPlugin.filePath = "CHANGELOG.md";
  gitChangelogPlugin.settingsFile = "changelog.json";
+ //gitChangelogPlugin.mediaWikiUrl = "http://localhost/mediawiki/";
+ //gitChangelogPlugin.mediaWikiTitle = "Tomas Title";
+ //gitChangelogPlugin.mediaWikiUsername = "tomas";
+ //gitChangelogPlugin.mediaWikiPassword = "tomaskod";
 }
 
 

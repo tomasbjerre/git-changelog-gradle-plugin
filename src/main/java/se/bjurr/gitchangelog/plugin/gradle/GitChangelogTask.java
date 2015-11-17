@@ -23,36 +23,46 @@ public class GitChangelogTask extends DefaultTask {
   try {
    GitChangelogPluginExtension extension = getProject().getExtensions().findByType(GitChangelogPluginExtension.class);
 
-   String fromCommit = extension.getFromCommit();
    URL settingsFile = new File(extension.getSettingsFile()).toURI().toURL();
-   String filePath = extension.getFilePath();
-   String fromRef = extension.getFromRef();
-   String toCommit = extension.getToCommit();
-   String toRef = extension.getToRef();
-   String templateContent = extension.getTemplateContent();
 
    GitChangelogApi builder = gitChangelogApiBuilder() //
      .withSettings(settingsFile) //
-     .withTemplateContent(templateContent) //
-     .withToRef(toRef);
+     .withTemplateContent(extension.getTemplateContent()) //
+     .withToRef(extension.getToRef());
 
-   if (!isNullOrEmpty(fromCommit)) {
+   if (!isNullOrEmpty(extension.getFromCommit())) {
     builder //
-      .withFromCommit(fromCommit);
+      .withFromCommit(extension.getFromCommit());
    }
-   if (!isNullOrEmpty(fromRef)) {
+   if (!isNullOrEmpty(extension.getFromRef())) {
     builder //
-      .withFromRef(fromRef);
-   }
-   if (!isNullOrEmpty(toCommit)) {
-    builder //
-      .withToCommit(toCommit);
+      .withFromRef(extension.getFromRef());
    }
 
-   builder //
-     .toFile(filePath);
+   if (!isNullOrEmpty(extension.getToCommit())) {
+    builder //
+      .withToCommit(extension.getToCommit());
+   }
+   if (!isNullOrEmpty(extension.getToRef())) {
+    builder //
+      .withToRef(extension.getToRef());
+   }
 
-   log.info("Git Changelog written to " + filePath);
+   if (!isNullOrEmpty(extension.getFilePath())) {
+    builder //
+      .toFile(extension.getFilePath());
+    log.info("Git Changelog written to " + extension.getFilePath());
+   }
+
+   if (!isNullOrEmpty(extension.getMediaWikiUrl())) {
+    builder//
+      .toMediaWiki(//
+        extension.getMediaWikiUsername(),//
+        extension.getMediaWikiPassword(), //
+        extension.getMediaWikiUrl(),//
+        extension.getMediaWikiTitle());
+    log.info("Git Changelog written to " + extension.getMediaWikiUrl() + "/index.php/" + extension.getMediaWikiTitle());
+   }
 
   } catch (Exception e) {
    throw new TaskExecutionException(this, e);
