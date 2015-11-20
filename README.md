@@ -13,7 +13,7 @@ buildscript {
     }
   }
   dependencies {
-    classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.3"
+    classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.4"
   }
 }
 
@@ -52,9 +52,8 @@ This setup has a settings file, changelog.json, like this:
  
  "jiraIssuePattern": "\\b[a-zA-Z]([a-zA-Z]+)-([0-9]+)\\b",
 
- "githubIssuePattern": "#[0-9]*",
- 
  "customIssues": [
+  {"name": "Github", "pattern": "#([0-9]+)", "link": "https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/${PATTERN_GROUP_1}" },
   { "name": "Bugs", "pattern": "#bug" },
   { "name": "Features", "pattern": "#feature" }
  ]
