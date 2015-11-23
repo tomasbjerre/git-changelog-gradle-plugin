@@ -2,6 +2,21 @@
 
 Changelog of Git Changelog Gradle plugin.
 
+## Next release
+### GitHub [#1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/1) Use latest lib
+
+[1c65c4b193cbaff](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/1c65c4b193cbaff) Tomas Bjerre *2015-11-23 18:07:48*
+
+Using lib 1.12
+
+
+### Other changes
+
+[02682e41e00cef3](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/02682e41e00cef3) Tomas Bjerre *2015-11-21 14:32:43*
+
+doc
+
+
 ## 1.5
 ### Other changes
 
@@ -45,7 +60,7 @@ Using 1.3-SNAPSHOT in example
 MediaWiki support, using lib 1.2
 
 
-### Jira [GRADLE-3281](https://jiraserver/jira/browse/GRADLE-3281)
+### Jira [GRADLE-3281](https://jiraserver/jira/browse/GRADLE-3281) 
 
 [69146dc3ba2bfd7](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/69146dc3ba2bfd7) Tomas Bjerre *2015-11-16 17:33:57*
 
