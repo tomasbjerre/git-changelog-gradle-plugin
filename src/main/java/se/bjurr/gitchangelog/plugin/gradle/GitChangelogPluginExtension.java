@@ -1,18 +1,28 @@
 package se.bjurr.gitchangelog.plugin.gradle;
 
 public class GitChangelogPluginExtension {
-
- private String fromCommit;
  private String toRef;
  private String toCommit;
+
  private String fromRef;
- private String filePath;
+ private String fromCommit;
+
  private String settingsFile;
  private String templateContent;
+ private String filePath;
+
  private String mediaWikiUrl;
  private String mediaWikiTitle;
  private String mediaWikiUsername;
  private String mediaWikiPassword;
+
+ private String readableTagName;
+ private String dateFormat;
+ private String timeZone;
+ private boolean removeIssueFromMessage;
+ private String ignoreCommitsIfMessageMatches;
+ private String untaggedName;
+ private String noIssueName;
 
  public void setTemplateContent(String templateContent) {
   this.templateContent = templateContent;
@@ -100,5 +110,61 @@ public class GitChangelogPluginExtension {
 
  public String getMediaWikiUsername() {
   return mediaWikiUsername;
+ }
+
+ public void setDateFormat(String dateFormat) {
+  this.dateFormat = dateFormat;
+ }
+
+ public void setIgnoreCommitsIfMessageMatches(String ignoreCommitsIfMessageMatches) {
+  this.ignoreCommitsIfMessageMatches = ignoreCommitsIfMessageMatches;
+ }
+
+ public void setNoIssueName(String noIssueName) {
+  this.noIssueName = noIssueName;
+ }
+
+ public void setReadableTagName(String readableTagName) {
+  this.readableTagName = readableTagName;
+ }
+
+ public void setTimeZone(String timeZone) {
+  this.timeZone = timeZone;
+ }
+
+ public void setUntaggedName(String untaggedName) {
+  this.untaggedName = untaggedName;
+ }
+
+ public String getDateFormat() {
+  return dateFormat;
+ }
+
+ public boolean getRemoveIssueFromMessage() {
+  return removeIssueFromMessage;
+ }
+
+ public void setRemoveIssueFromMessage(boolean removeIssueFromMessage) {
+  this.removeIssueFromMessage = removeIssueFromMessage;
+ }
+
+ public String getIgnoreCommitsIfMessageMatches() {
+  return ignoreCommitsIfMessageMatches;
+ }
+
+ public String getNoIssueName() {
+  return noIssueName;
+ }
+
+ public String getReadableTagName() {
+  return readableTagName;
+ }
+
+ public String getTimeZone() {
+  return timeZone;
+ }
+
+ public String getUntaggedName() {
+  return untaggedName;
  }
 }

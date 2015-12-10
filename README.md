@@ -4,7 +4,7 @@ This is a Gradle plugin for [Git Changelog](https://github.com/tomasbjerre/git-c
 
 
 ## Usage ##
-Here is and example that will produce a CHANGELOG.md. There is also a complete running example [here](https://github.com/tomasbjerre/git-changelog-gradle-plugin/tree/master/git-changelog-gradle-plugin-example).
+Here is and example that will produce a CHANGELOG.md. There is also a complete running example [here](https://github.com/tomasbjerre/git-changelog-gradle-plugin/tree/master/git-changelog-gradle-plugin-example) checkout the [build.gradle](https://github.com/tomasbjerre/git-changelog-gradle-plugin/blob/master/git-changelog-gradle-plugin-example/build.gradle) file for more examples.
 ```
 buildscript {
   repositories {
@@ -34,7 +34,7 @@ task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask
 }
 ```
 
-This setup has a settings file, changelog.json, like this:
+This setup has a settings file, changelog.json, [documented here](https://github.com/tomasbjerre/git-changelog/blob/master/src/main/java/se/bjurr/gitchangelog/internal/settings/Settings.java). May look something like this:
 
 ```
 {

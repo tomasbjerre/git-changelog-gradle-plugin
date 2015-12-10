@@ -5,7 +5,7 @@ Changelog of Git Changelog Gradle plugin.
 ## Next release
 ### Other changes
 
-[bc051fd45646e09](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/bc051fd45646e09) Tomas Bjerre *2016-01-30 17:38:27*
+[90d21f0c6dde312](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/90d21f0c6dde312) Tomas Bjerre *2016-01-30 17:39:07*
 
 Documentation and lib 1.22
 
@@ -15,7 +15,7 @@ Documentation and lib 1.22
 
 [b58012a56766e79](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/b58012a56766e79) Tomas Bjerre *2015-12-06 07:40:52*
 
-Using lib 1.17
+Using lib 1.17 #1
 
 
 ### Other changes
@@ -30,7 +30,7 @@ doc
 
 [6daf3e46b3c8e4b](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/6daf3e46b3c8e4b) Tomas Bjerre *2015-12-04 22:17:54*
 
-Using lib 1.15
+Using lib 1.15 #1
 
 
 ## 1.8
@@ -50,7 +50,7 @@ doc
 
 [378d5ebbd4a0d29](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/378d5ebbd4a0d29) Tomas Bjerre *2015-11-23 22:09:40*
 
-using lib 1.13
+using lib 1.13 #1
 
 
 ### Other changes
@@ -65,7 +65,7 @@ doc
 
 [31b0e8f2ca18e95](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/31b0e8f2ca18e95) Tomas Bjerre *2015-11-23 18:11:30*
 
-Using lib 1.12
+Using lib 1.12 #1
 
 
 ### Other changes
@@ -88,7 +88,7 @@ lib 1.10
 
 [44eea52c090958b](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/44eea52c090958b) Tomas Bjerre *2015-11-20 22:10:47*
 
-lib 1.9
+lib 1.9 #feature
 
 
 ### Other changes
@@ -115,7 +115,7 @@ Using 1.3-SNAPSHOT in example
 
 [ecc10fdaf81330f](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/ecc10fdaf81330f) Tomas Bjerre *2015-11-17 19:59:29*
 
-MediaWiki support, using lib 1.2
+MediaWiki support, using lib 1.2 #feature
 
 
 ### Jira [GRADLE-3281](https://jiraserver/jira/browse/GRADLE-3281) 
@@ -124,7 +124,7 @@ MediaWiki support, using lib 1.2
 
 Changing release instructions.
 
- * There is currently a bug in Gradle release plugin plugin that requires the keys to be passed as parameters instead of gradle.properties.
+ * There is currently a bug in Gradle release plugin plugin that requires the keys to be passed as parameters instead of gradle.properties. GRADLE-3281
 
 
 ### Other changes

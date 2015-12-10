@@ -4,6 +4,7 @@ import static com.google.common.base.Strings.isNullOrEmpty;
 import static se.bjurr.gitchangelog.api.GitChangelogApi.gitChangelogApiBuilder;
 
 import java.io.File;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.gradle.api.DefaultTask;
@@ -23,49 +24,74 @@ public class GitChangelogTask extends DefaultTask {
   try {
    GitChangelogPluginExtension extension = getProject().getExtensions().findByType(GitChangelogPluginExtension.class);
 
-   URL settingsFile = new File(extension.getSettingsFile()).toURI().toURL();
-
-   GitChangelogApi builder = gitChangelogApiBuilder() //
-     .withSettings(settingsFile) //
-     .withTemplateContent(extension.getTemplateContent()) //
-     .withToRef(extension.getToRef());
-
-   if (!isNullOrEmpty(extension.getFromCommit())) {
-    builder //
-      .withFromCommit(extension.getFromCommit());
-   }
-   if (!isNullOrEmpty(extension.getFromRef())) {
-    builder //
-      .withFromRef(extension.getFromRef());
+   GitChangelogApi builder;
+   builder = gitChangelogApiBuilder();
+   if (isSupplied(extension.getSettingsFile())) {
+    URL settingsFile = new File(extension.getSettingsFile()).toURI().toURL();
+    builder.withSettings(settingsFile);
    }
 
-   if (!isNullOrEmpty(extension.getToCommit())) {
-    builder //
-      .withToCommit(extension.getToCommit());
-   }
-   if (!isNullOrEmpty(extension.getToRef())) {
-    builder //
-      .withToRef(extension.getToRef());
+   if (isSupplied(extension.getToRef())) {
+    builder.withToRef(extension.getToRef());
    }
 
-   if (!isNullOrEmpty(extension.getFilePath())) {
-    builder //
-      .toFile(extension.getFilePath());
-    log.info("Git Changelog written to " + extension.getFilePath());
+   if (isSupplied(extension.getTemplateContent())) {
+    builder.withTemplateContent(extension.getTemplateContent());
+   }
+   if (isSupplied(extension.getFromCommit())) {
+    builder.withFromCommit(extension.getFromCommit());
+   }
+   if (isSupplied(extension.getFromRef())) {
+    builder.withFromRef(extension.getFromRef());
+   }
+   if (isSupplied(extension.getToCommit())) {
+    builder.withToCommit(extension.getToCommit());
    }
 
-   if (!isNullOrEmpty(extension.getMediaWikiUrl())) {
+   if (isSupplied(extension.getReadableTagName())) {
+    builder.withReadableTagName(extension.getReadableTagName());
+   }
+   if (isSupplied(extension.getDateFormat())) {
+    builder.withDateFormat(extension.getDateFormat());
+   }
+   if (isSupplied(extension.getTimeZone())) {
+    builder.withTimeZone(extension.getTimeZone());
+   }
+   builder.withRemoveIssueFromMessageArgument(extension.getRemoveIssueFromMessage());
+   if (isSupplied(extension.getIgnoreCommitsIfMessageMatches())) {
+    builder.withIgnoreCommitsWithMesssage(extension.getIgnoreCommitsIfMessageMatches());
+   }
+   if (isSupplied(extension.getUntaggedName())) {
+    builder.withUntaggedName(extension.getUntaggedName());
+   }
+   if (isSupplied(extension.getNoIssueName())) {
+    builder.withNoIssueName(extension.getNoIssueName());
+   }
+
+   if (isSupplied(extension.getFilePath())) {
+    builder.toFile(extension.getFilePath());
+    log.info("#");
+    log.info("# Wrote: " + extension.getFilePath());
+    log.info("#");
+   }
+
+   if (isSupplied(extension.getMediaWikiUrl())) {
     builder//
       .toMediaWiki(//
         extension.getMediaWikiUsername(),//
         extension.getMediaWikiPassword(), //
         extension.getMediaWikiUrl(),//
         extension.getMediaWikiTitle());
-    log.info("Git Changelog written to " + extension.getMediaWikiUrl() + "/index.php/" + extension.getMediaWikiTitle());
+    log.info("#");
+    log.info("# Created: " + extension.getMediaWikiUrl() + "/index.php/" + extension.getMediaWikiTitle());
+    log.info("#");
    }
-
-  } catch (Exception e) {
-   throw new TaskExecutionException(this, e);
+  } catch (MalformedURLException e) {
+   log.error("GitChangelog", e);
   }
+ }
+
+ private boolean isSupplied(String param) {
+  return !isNullOrEmpty(param);
  }
 }
