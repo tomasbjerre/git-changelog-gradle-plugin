@@ -32,13 +32,13 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>
-<a id="git-changelog-gradle-plugin-" class="anchor" href="#git-changelog-gradle-plugin-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git Changelog Gradle Plugin <a href="https://travis-ci.org/tomasbjerre/git-changelog-gradle-plugin"><img src="https://travis-ci.org/tomasbjerre/git-changelog-gradle-plugin.svg?branch=master" alt="Build Status"></a>
+<a id="git-changelog-gradle-plugin-" class="anchor" href="#git-changelog-gradle-plugin-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git Changelog Gradle Plugin <a href="https://travis-ci.org/tomasbjerre/git-changelog-gradle-plugin"><img src="https://travis-ci.org/tomasbjerre/git-changelog-gradle-plugin.svg?branch=master" alt="Build Status"></a>
 </h1>
 
 <p>This is a Gradle plugin for <a href="https://github.com/tomasbjerre/git-changelog-lib">Git Changelog</a>.</p>
 
 <h2>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
 
 <p>Here is and example that will produce a CHANGELOG.md. There is also a complete running example <a href="https://github.com/tomasbjerre/git-changelog-gradle-plugin/tree/master/git-changelog-gradle-plugin-example">here</a>.</p>
 
@@ -70,7 +70,7 @@ task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask
 }
 </code></pre>
 
-<p>This setup has a settings file, changelog.json, like this:</p>
+<p>This setup has a settings file, changelog.json, <a href="https://github.com/tomasbjerre/git-changelog/blob/master/src/main/java/se/bjurr/gitchangelog/internal/settings/Settings.java">documented here</a>. May look something like this:</p>
 
 <pre><code>{
  "fromRepo": ".",
@@ -117,7 +117,7 @@ Changelog of Git Changelog.
 <p>And then to generate CHANGELOG.md, just run <code>gradle gitChangelog</code>.</p>
 
 <h2>
-<a id="developer-instructions" class="anchor" href="#developer-instructions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Developer instructions</h2>
+<a id="developer-instructions" class="anchor" href="#developer-instructions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Developer instructions</h2>
 
 <p>To build the code you need to run <code>build.sh</code> in root of repo. You may also have a look at <code>.travis.yml</code>.</p>
 
