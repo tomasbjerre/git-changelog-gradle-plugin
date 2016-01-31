@@ -9,6 +9,14 @@ Changelog of Git Changelog Maven plugin.
 
 
 
+## 1.14
+### No issue
+   Maven Central version badge in README.md
+
+   Updating README.md after release
+
+
+
 ## 1.13
 ### Incident [INC1234](http://inc/INC1234) 
    Implementing custom issues
