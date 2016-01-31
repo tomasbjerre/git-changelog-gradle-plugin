@@ -107,7 +107,7 @@ task generateGitChangelogCommits(type: se.bjurr.gitchangelog.plugin.gradle.GitCh
 // Mixed features
 //
 task generateGitChangelogMixed(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- readableTagName = "(.*)";
+ readableTagName = ".*/([^/]*)";
  dateFormat = "HH:mm:ss";
  timeZone = "UTC";
  removeIssueFromMessage = false;

@@ -5,9 +5,19 @@ Changelog of Git Changelog Gradle plugin.
 ## Next release
 ### Other changes
 
-[32c11f7d6086e44](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/32c11f7d6086e44) Tomas Bjerre *2016-01-31 11:20:10*
+[a138c10787f8f38](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/a138c10787f8f38) Tomas Bjerre *2016-01-31 12:18:06*
 
-lib 1.23
+Updating README.md after release
+
+
+## 1.12
+### GitHub [#3](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/3) Each task should have its own namespace
+
+[782cace31d3814f](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/782cace31d3814f) Tomas Bjerre *2016-01-31 12:14:15*
+
+Storing settings on each task #3
+
+ * Also using lib 1.23
 
 
 ## 1.11

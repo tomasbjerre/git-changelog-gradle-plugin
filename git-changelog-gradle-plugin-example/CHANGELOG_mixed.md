@@ -5,11 +5,19 @@ Changelog of Git Changelog Maven plugin.
 
 ## These commits are not included in any tag
 ### These commits have not issue in their commit comment
-   lib 1.23 *11:20:10*
+   Updating README.md after release *12:18:06*
 
 
 
-## refs/tags/1.11
+## 1.12
+### These commits have not issue in their commit comment
+   Storing settings on each task #3
+
+ * Also using lib 1.23 *12:14:15*
+
+
+
+## 1.11
 ### These commits have not issue in their commit comment
    lib 1.13 *11:15:10*
 
@@ -17,7 +25,7 @@ Changelog of Git Changelog Maven plugin.
 
 
 
-## refs/tags/1.10
+## 1.10
 ### These commits have not issue in their commit comment
    Using lib 1.17 #1 *07:40:52*
 
@@ -25,13 +33,13 @@ Changelog of Git Changelog Maven plugin.
 
 
 
-## refs/tags/1.9
+## 1.9
 ### These commits have not issue in their commit comment
    Using lib 1.15 #1 *22:17:54*
 
 
 
-## refs/tags/1.8
+## 1.8
 ### These commits have not issue in their commit comment
    using lib 1.14 *21:45:40*
 
@@ -39,7 +47,7 @@ Changelog of Git Changelog Maven plugin.
 
 
 
-## refs/tags/1.7
+## 1.7
 ### These commits have not issue in their commit comment
    using lib 1.13 #1 *22:09:40*
 
@@ -47,7 +55,7 @@ Changelog of Git Changelog Maven plugin.
 
 
 
-## refs/tags/1.6
+## 1.6
 ### These commits have not issue in their commit comment
    Using lib 1.12 #1 *18:11:30*
 
@@ -55,13 +63,13 @@ Changelog of Git Changelog Maven plugin.
 
 
 
-## refs/tags/1.5
+## 1.5
 ### These commits have not issue in their commit comment
    lib 1.10 *14:31:35*
 
 
 
-## refs/tags/1.4
+## 1.4
 ### These commits have not issue in their commit comment
    lib 1.9 #feature *22:10:47*
 
@@ -69,7 +77,7 @@ Changelog of Git Changelog Maven plugin.
 
 
 
-## refs/tags/1.3
+## 1.3
 ### These commits have not issue in their commit comment
    lib 1.3 *19:43:32*
 
@@ -77,7 +85,7 @@ Changelog of Git Changelog Maven plugin.
 
 
 
-## refs/tags/1.2
+## 1.2
 ### These commits have not issue in their commit comment
    MediaWiki support, using lib 1.2 #feature *19:59:29*
 
@@ -85,7 +93,7 @@ Changelog of Git Changelog Maven plugin.
 
 
 
-## refs/tags/1.1
+## 1.1
 ### These commits have not issue in their commit comment
    Adding plugin plugin *17:29:30*
 
@@ -93,7 +101,7 @@ Changelog of Git Changelog Maven plugin.
 
 
 
-## refs/tags/1.0
+## 1.0
 ### These commits have not issue in their commit comment
    More work for 1.0 *13:01:25*
 
