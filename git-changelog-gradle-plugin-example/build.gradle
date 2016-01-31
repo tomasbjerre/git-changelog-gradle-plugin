@@ -7,7 +7,7 @@ buildscript {
  }
 
  dependencies {
-  classpath "se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.11-SNAPSHOT"
+  classpath "se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.12-SNAPSHOT"
  }
 }
 
@@ -17,27 +17,27 @@ apply plugin: 'se.bjurr.gitchangelog.git-changelog-gradle-plugin'
 // Minimal config
 //
 task generateGitChangelogMinimal(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- gitChangelogPlugin.filePath = "CHANGELOG_minimal.md";
+ filePath = "CHANGELOG_minimal.md";
 }
 
 //
 // MediaWiki page
 //
 //task generateGitChangelogMediaWiki(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-// gitChangelogPlugin.settingsFile = "changelog.json";
-// gitChangelogPlugin.mediaWikiUrl = "http://localhost/mediawiki/";
-// gitChangelogPlugin.mediaWikiTitle = "Tomas Title";
-// gitChangelogPlugin.mediaWikiUsername = "tomas";
-// gitChangelogPlugin.mediaWikiPassword = "tomaskod";
+// settingsFile = "changelog.json";
+// mediaWikiUrl = "http://localhost/mediawiki/";
+// mediaWikiTitle = "Tomas Title";
+// mediaWikiUsername = "tomas";
+// mediaWikiPassword = "tomaskod";
 //}
 
 //
 // Template configured inline
 //
 task generateGitChangelogInlineTemplate(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- gitChangelogPlugin.settingsFile = "changelog.json";
- gitChangelogPlugin.filePath = "CHANGELOG_inline.md";
- gitChangelogPlugin.templateContent = """
+ settingsFile = "changelog.json";
+ filePath = "CHANGELOG_inline.md";
+ templateContent = """
 # Git Changelog Maven plugin changelog
 
 Changelog of Git Changelog Maven plugin.
@@ -68,28 +68,28 @@ Changelog of Git Changelog Maven plugin.
 // Template from file
 //
 task generateGitChangelogTemplateFromFile(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- gitChangelogPlugin.settingsFile = "changelog.json";
- gitChangelogPlugin.filePath = "CHANGELOG.md";
- gitChangelogPlugin.templateContent = new File('changelog.mustache').getText('UTF-8');
+ settingsFile = "changelog.json";
+ filePath = "CHANGELOG.md";
+ templateContent = new File('changelog.mustache').getText('UTF-8');
 }
 
 //
 // Set reference to create changelog for version 1.1
 //
 task generateGitChangelog11(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- gitChangelogPlugin.settingsFile = "changelog.json";
- gitChangelogPlugin.filePath = "CHANGELOG_1_1.md";
- gitChangelogPlugin.toRef = "git-changelog-maven-plugin-1.1";
+ settingsFile = "changelog.json";
+ filePath = "CHANGELOG_1_1.md";
+ toRef = "1.1";
 }
 
 //
 // Set references to create releasenotes for version 1.1
 //
 task generateGitReleasenotes11(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- gitChangelogPlugin.settingsFile = "changelog.json";
- gitChangelogPlugin.filePath = "CHANGELOG_1_0_1_1.md";
- gitChangelogPlugin.fromRef = "1.0";
- gitChangelogPlugin.toRef = "1.1";
+ settingsFile = "changelog.json";
+ filePath = "CHANGELOG_1_0_1_1.md";
+ fromRef = "1.0";
+ toRef = "1.1";
 }
 
 //
@@ -97,25 +97,25 @@ task generateGitReleasenotes11(type: se.bjurr.gitchangelog.plugin.gradle.GitChan
 // for the from and to commit to inject hashes from command line.
 //
 task generateGitChangelogCommits(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- gitChangelogPlugin.settingsFile = "changelog.json";
- gitChangelogPlugin.filePath = "CHANGELOG_commits.md";
- gitChangelogPlugin.fromCommit = "76a4dfe893665af43bf0aa0e3af49dab8406da89";
- gitChangelogPlugin.toCommit = "0003d77bf175973d2d9bf13be41dd7abe2892214";
+ settingsFile = "changelog.json";
+ filePath = "CHANGELOG_commits.md";
+ fromCommit = "d5657ba4353bff4c8924981d4da4aacfcbd9bd54";
+ toCommit = "3568f412a65a16d1848d8d5316a7cb30261cf271";
 }
 
 //
 // Mixed features
 //
 task generateGitChangelogMixed(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- gitChangelogPlugin.readableTagName = "(.*)";
- gitChangelogPlugin.dateFormat = "HH:mm:ss";
- gitChangelogPlugin.timeZone = "UTC";
- gitChangelogPlugin.removeIssueFromMessage = false;
- gitChangelogPlugin.ignoreCommitsIfMessageMatches = ".*Gradle.*";
- gitChangelogPlugin.untaggedName = "These commits are not included in any tag";
- gitChangelogPlugin.noIssueName = "These commits have not issue in their commit comment";
- gitChangelogPlugin.filePath = "CHANGELOG_mixed.md";
- gitChangelogPlugin.templateContent = """
+ readableTagName = "(.*)";
+ dateFormat = "HH:mm:ss";
+ timeZone = "UTC";
+ removeIssueFromMessage = false;
+ ignoreCommitsIfMessageMatches = ".*Gradle.*";
+ untaggedName = "These commits are not included in any tag";
+ noIssueName = "These commits have not issue in their commit comment";
+ filePath = "CHANGELOG_mixed.md";
+ templateContent = """
 # Git Changelog Maven plugin changelog
 
 Changelog of Git Changelog Maven plugin.
