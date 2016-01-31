@@ -4,11 +4,11 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Git-changelog-gradle-plugin : Gradle plugin for git-changelog">
+    <meta name="description" content="Git changelog gradle plugin : Gradle plugin that generates a changelog or releasenotes from git repository">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Git-changelog-gradle-plugin</title>
+    <title>Git changelog gradle plugin</title>
   </head>
 
   <body>
@@ -18,8 +18,8 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/tomasbjerre/git-changelog-gradle-plugin">View on GitHub</a>
 
-          <h1 id="project_title">Git-changelog-gradle-plugin</h1>
-          <h2 id="project_tagline">Gradle plugin for git-changelog</h2>
+          <h1 id="project_title">Git changelog gradle plugin</h1>
+          <h2 id="project_tagline">Gradle plugin that generates a changelog or releasenotes from git repository</h2>
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/tomasbjerre/git-changelog-gradle-plugin/zipball/master">Download this project as a .zip file</a>
@@ -49,7 +49,7 @@
     }
   }
   dependencies {
-    classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.12"
+    classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.13"
   }
 }
 
@@ -58,11 +58,11 @@ apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin
 task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
  //gitChangelogPlugin.fromRef;
  //gitChangelogPlugin.fromCommit;
- gitChangelogPlugin.toRef = "refs/heads/master";
+ //gitChangelogPlugin.toRef = "refs/heads/master";
  //gitChangelogPlugin.toCommit;
- gitChangelogPlugin.templateContent = new File('changelog.mustache').getText('UTF-8');
+ //gitChangelogPlugin.templateContent = new File('changelog.mustache').getText('UTF-8');
  gitChangelogPlugin.filePath = "CHANGELOG.md";
- gitChangelogPlugin.settingsFile = "changelog.json";
+ //gitChangelogPlugin.settingsFile = "changelog.json";
  //gitChangelogPlugin.mediaWikiUrl = "http://localhost/mediawiki/";
  //gitChangelogPlugin.mediaWikiTitle = "Tomas Title";
  //gitChangelogPlugin.mediaWikiUsername = "tomas";
@@ -70,7 +70,7 @@ task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask
 }
 </code></pre>
 
-<p>This setup has a settings file, changelog.json, <a href="https://github.com/tomasbjerre/git-changelog/blob/master/src/main/java/se/bjurr/gitchangelog/internal/settings/Settings.java">documented here</a>. May look something like this:</p>
+<p>A settings file may be used, <a href="https://github.com/tomasbjerre/git-changelog/blob/master/src/main/java/se/bjurr/gitchangelog/internal/settings/Settings.java">documented here</a>. It may look something like this:</p>
 
 <pre><code>{
  "fromRepo": ".",
@@ -104,7 +104,12 @@ Changelog of Git Changelog.
 {{#tags}}
 ## {{name}}
  {{#issues}}
+  {{#hasLink}}
+### {{name}} [{{issue}}]({{link}}) {{title}}
+  {{/hasLink}}
+  {{^hasLink}}
 ### {{name}}
+  {{/hasLink}}
 
    {{#commits}}
 {{{message}}}
@@ -128,7 +133,7 @@ Changelog of Git Changelog.
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Git-changelog-gradle-plugin maintained by <a href="https://github.com/tomasbjerre">tomasbjerre</a></p>
+        <p class="copyright">Git changelog gradle plugin maintained by <a href="https://github.com/tomasbjerre">tomasbjerre</a></p>
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
