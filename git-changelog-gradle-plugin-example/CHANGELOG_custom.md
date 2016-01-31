@@ -4,6 +4,12 @@
 Changelog of Git Changelog Maven plugin.
 
 ## Unreleased
+### No issue
+   Updating README.md after release
+
+
+
+## 1.13
 ### Incident [INC1234](http://inc/INC1234) 
    Implementing custom issues
  * Adding example with
