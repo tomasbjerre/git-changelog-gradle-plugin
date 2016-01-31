@@ -22,11 +22,11 @@ apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin
 task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
  //gitChangelogPlugin.fromRef;
  //gitChangelogPlugin.fromCommit;
- gitChangelogPlugin.toRef = "refs/heads/master";
+ //gitChangelogPlugin.toRef = "refs/heads/master";
  //gitChangelogPlugin.toCommit;
- gitChangelogPlugin.templateContent = new File('changelog.mustache').getText('UTF-8');
+ //gitChangelogPlugin.templateContent = new File('changelog.mustache').getText('UTF-8');
  gitChangelogPlugin.filePath = "CHANGELOG.md";
- gitChangelogPlugin.settingsFile = "changelog.json";
+ //gitChangelogPlugin.settingsFile = "changelog.json";
  //gitChangelogPlugin.mediaWikiUrl = "http://localhost/mediawiki/";
  //gitChangelogPlugin.mediaWikiTitle = "Tomas Title";
  //gitChangelogPlugin.mediaWikiUsername = "tomas";
@@ -34,7 +34,7 @@ task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask
 }
 ```
 
-This setup has a settings file, changelog.json, [documented here](https://github.com/tomasbjerre/git-changelog/blob/master/src/main/java/se/bjurr/gitchangelog/internal/settings/Settings.java). May look something like this:
+A settings file may be used, [documented here](https://github.com/tomasbjerre/git-changelog/blob/master/src/main/java/se/bjurr/gitchangelog/internal/settings/Settings.java). It may look something like this:
 
 ```
 {
@@ -70,7 +70,12 @@ Changelog of Git Changelog.
 {{#tags}}
 ## {{name}}
  {{#issues}}
+  {{#hasLink}}
+### {{name}} [{{issue}}]({{link}}) {{title}}
+  {{/hasLink}}
+  {{^hasLink}}
 ### {{name}}
+  {{/hasLink}}
 
    {{#commits}}
 {{{message}}}

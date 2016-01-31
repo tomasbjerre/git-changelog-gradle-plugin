@@ -5,6 +5,17 @@ Changelog of Git Changelog Gradle plugin.
 ## Next release
 ### Other changes
 
+[2f38cf354937007](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/2f38cf354937007) Tomas Bjerre *2016-01-31 18:22:49*
+
+Implementing custom issues
+ * Adding example with
+  * QC matching QC1234
+  * Incident matching INC1234
+
+[0fceb845d118e7f](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/0fceb845d118e7f) Tomas Bjerre *2016-01-31 12:21:24*
+
+Using readable tag name to extract version in mixed
+
 [a138c10787f8f38](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/a138c10787f8f38) Tomas Bjerre *2016-01-31 12:18:06*
 
 Updating README.md after release

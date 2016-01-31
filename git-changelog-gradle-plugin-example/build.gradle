@@ -135,6 +135,40 @@ Changelog of Git Changelog Maven plugin.
  """;
 }
 
+//
+// Custom issues
+//
+task generateGitChangelogCustomIssues(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+ filePath = "CHANGELOG_custom.md";
+ customIssues = [
+  [ "Incident", "INC[0-9]*", "http://inc/\${PATTERN_GROUP}" ],
+  [ "QC", "QC([0-9]+)", "http://cq/\${PATTERN_GROUP_1}" ]
+ ]
+ templateContent = """
+# Git Changelog Maven plugin changelog
+
+Changelog of Git Changelog Maven plugin.
+
+{{#tags}}
+## {{name}}
+ {{#issues}}
+  {{#hasLink}}
+### {{name}} [{{issue}}]({{link}}) {{title}}
+  {{/hasLink}}
+  {{^hasLink}}
+### {{name}}
+  {{/hasLink}}
+  {{#commits}}
+   {{{message}}}
+
+  {{/commits}}
+
+ {{/issues}}
+
+{{/tags}}
+ """;
+}
+
 
 task generateChangelogs << {
 }

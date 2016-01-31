@@ -5,6 +5,13 @@ Changelog of Git Changelog Maven plugin.
 
 ## These commits are not included in any tag
 ### These commits have not issue in their commit comment
+   Implementing custom issues
+ * Adding example with
+  * QC matching QC1234
+  * Incident matching INC1234 *18:22:49*
+
+   Using readable tag name to extract version in mixed *12:21:24*
+
    Updating README.md after release *12:18:06*
 
 

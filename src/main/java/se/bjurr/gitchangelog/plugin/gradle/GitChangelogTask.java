@@ -1,10 +1,12 @@
 package se.bjurr.gitchangelog.plugin.gradle;
 
 import static com.google.common.base.Strings.isNullOrEmpty;
+import static com.google.common.collect.Lists.newArrayList;
 import static se.bjurr.gitchangelog.api.GitChangelogApi.gitChangelogApiBuilder;
 
 import java.io.File;
 import java.net.MalformedURLException;
+import java.util.List;
 
 import org.gradle.api.DefaultTask;
 import org.gradle.api.tasks.TaskAction;
@@ -39,6 +41,16 @@ public class GitChangelogTask extends DefaultTask {
  private String ignoreCommitsIfMessageMatches;
  private String untaggedName;
  private String noIssueName;
+
+ private List<List<String>> customIssues = newArrayList();
+
+ public void setCustomIssues(List<List<String>> customIssues) {
+  this.customIssues = customIssues;
+ }
+
+ public List<List<String>> getCustomIssues() {
+  return customIssues;
+ }
 
  public void setTemplateContent(String templateContent) {
   this.templateContent = templateContent;
@@ -230,6 +242,9 @@ public class GitChangelogTask extends DefaultTask {
    }
    if (isSupplied(noIssueName)) {
     builder.withNoIssueName(noIssueName);
+   }
+   for (List<String> customIssue : customIssues) {
+    builder.withCustomIssue(customIssue.get(0), customIssue.get(1), customIssue.get(2));
    }
 
    if (isSupplied(filePath)) {
