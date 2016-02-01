@@ -244,7 +244,13 @@ public class GitChangelogTask extends DefaultTask {
     builder.withNoIssueName(noIssueName);
    }
    for (List<String> customIssue : customIssues) {
-    builder.withCustomIssue(customIssue.get(0), customIssue.get(1), customIssue.get(2));
+    String name = customIssue.get(0);
+    String pattern = customIssue.get(1);
+    String link = null;
+    if (customIssue.size() > 2) {
+     link = customIssue.get(2);
+    }
+    builder.withCustomIssue(name, pattern, link);
    }
 
    if (isSupplied(filePath)) {

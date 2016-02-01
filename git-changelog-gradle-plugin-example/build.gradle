@@ -184,7 +184,8 @@ task generateGitChangelogCustomIssues(type: se.bjurr.gitchangelog.plugin.gradle.
  filePath = "CHANGELOG_custom.md";
  customIssues = [
   [ "Incident", "INC[0-9]*", "http://inc/\${PATTERN_GROUP}" ],
-  [ "QC", "QC([0-9]+)", "http://cq/\${PATTERN_GROUP_1}" ]
+  [ "QC", "QC([0-9]+)", "http://cq/\${PATTERN_GROUP_1}" ],
+  [ "Issue", "I([0-9]+)" ]
  ]
  templateContent = """
 # Git Changelog Maven plugin changelog
