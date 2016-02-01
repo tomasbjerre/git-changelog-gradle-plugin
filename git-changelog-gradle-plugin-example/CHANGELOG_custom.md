@@ -4,6 +4,12 @@
 Changelog of Git Changelog Maven plugin.
 
 ## Unreleased
+### No issue
+   Updating CHANGELOG.md after release
+
+
+
+## 1.15
 ### Issue
    Allowing custom issues not to include link
 

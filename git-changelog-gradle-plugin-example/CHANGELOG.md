@@ -5,7 +5,15 @@ Changelog of Git Changelog Gradle plugin.
 ## Unreleased
 ### No issue
 
-[933300e720bb87f](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/933300e720bb87f) Tomas Bjerre *2016-02-01 18:03:26*
+[7cd750655408d86](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/7cd750655408d86) Tomas Bjerre *2016-02-01 18:06:32*
+
+Updating CHANGELOG.md after release
+
+
+## 1.15
+### No issue
+
+[cffcc84f13f8305](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/cffcc84f13f8305) Tomas Bjerre *2016-02-01 18:04:49*
 
 Allowing custom issues not to include link
 
