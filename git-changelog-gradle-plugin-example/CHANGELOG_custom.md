@@ -5,6 +5,8 @@ Changelog of Git Changelog Maven plugin.
 
 ## Unreleased
 ### No issue
+   Added variables: messageTitle, messageBody, messageItems #5
+
    Updating CHANGELOG.md after release
 
 

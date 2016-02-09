@@ -5,7 +5,9 @@ Changelog of Git Changelog Maven plugin.
 
 ## These commits are not included in any tag
 ### These commits have not issue in their commit comment
-   Updating CHANGELOG.md after release *18:06:32*
+   Added variables: messageTitle, messageBody, messageItems #5 *19:31:57*
+
+   Updating CHANGELOG.md after release *18:07:00*
 
 
 
