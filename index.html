@@ -35,12 +35,16 @@
 <a id="git-changelog-gradle-plugin--" class="anchor" href="#git-changelog-gradle-plugin--" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git Changelog Gradle Plugin <a href="https://travis-ci.org/tomasbjerre/git-changelog-gradle-plugin"><img src="https://travis-ci.org/tomasbjerre/git-changelog-gradle-plugin.svg?branch=master" alt="Build Status"></a> <a href="https://maven-badges.herokuapp.com/maven-central/se.bjurr.gitchangelog/git-changelog-gradle-plugin"><img src="https://maven-badges.herokuapp.com/maven-central/se.bjurr.gitchangelog/git-changelog-gradle-plugin/badge.svg" alt="Maven Central"></a>
 </h1>
 
-<p>This is a Gradle plugin for <a href="https://github.com/tomasbjerre/git-changelog-lib">Git Changelog</a>.</p>
+<p>This is a Gradle plugin for <a href="https://github.com/tomasbjerre/git-changelog-lib">Git Changelog Lib</a>.</p>
 
 <h2>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
 
-<p>Here is and example that will produce a CHANGELOG.md. There is also a complete running example <a href="https://github.com/tomasbjerre/git-changelog-gradle-plugin/tree/master/git-changelog-gradle-plugin-example">here</a> checkout the <a href="https://github.com/tomasbjerre/git-changelog-gradle-plugin/blob/master/git-changelog-gradle-plugin-example/build.gradle">build.gradle</a> file for more examples.</p>
+<p>There is a complete running example <a href="https://github.com/tomasbjerre/git-changelog-gradle-plugin/tree/master/git-changelog-gradle-plugin-example">here</a>.</p>
+
+<p>There are some more examples in the <a href="https://github.com/tomasbjerre/git-changelog-gradle-plugin/blob/master/git-changelog-gradle-plugin-example/build.gradle">build.gradle</a>.</p>
+
+<p>Here is and example that will produce a CHANGELOG.md.</p>
 
 <pre><code>buildscript {
   repositories {
@@ -49,77 +53,21 @@
     }
   }
   dependencies {
-    classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.16"
+    classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.17"
   }
 }
 
 apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin
 
 task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- //gitChangelogPlugin.fromRef;
- //gitChangelogPlugin.fromCommit;
- //gitChangelogPlugin.toRef = "refs/heads/master";
- //gitChangelogPlugin.toCommit;
- //gitChangelogPlugin.templateContent = new File('changelog.mustache').getText('UTF-8');
- gitChangelogPlugin.filePath = "CHANGELOG.md";
- //gitChangelogPlugin.settingsFile = "changelog.json";
- //gitChangelogPlugin.mediaWikiUrl = "http://localhost/mediawiki/";
- //gitChangelogPlugin.mediaWikiTitle = "Tomas Title";
- //gitChangelogPlugin.mediaWikiUsername = "tomas";
- //gitChangelogPlugin.mediaWikiPassword = "tomaskod";
+ filePath = "CHANGELOG.md";
+ templateContent = new File('changelog.mustache').getText('UTF-8');
 }
-</code></pre>
-
-<p>A settings file may be used, <a href="https://github.com/tomasbjerre/git-changelog/blob/master/src/main/java/se/bjurr/gitchangelog/internal/settings/Settings.java">documented here</a>. It may look something like this:</p>
-
-<pre><code>{
- "fromRepo": ".",
- "fromCommit": "0000000000000000000000000000000000000000",
- "toRef": "refs/heads/master",
-
- "ignoreCommitsIfMessageMatches": "^\\[maven-release-plugin\\].*|^\\[Gradle Release Plugin\\].*|^Merge.*",
- "readableTagName": "/([^/]+?)$",
- "dateFormat": "YYYY-MM-dd HH:mm:ss",
- "untaggedName": "Next release",
- "noIssueName": "Other changes",
- "timeZone": "UTC",
- "removeIssueFromMessage": "true",
-
- "jiraIssuePattern": "\\b[a-zA-Z]([a-zA-Z]+)-([0-9]+)\\b",
-
- "customIssues": [
-  {"name": "Github", "pattern": "#([0-9]+)", "link": "https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/${PATTERN_GROUP_1}" },
-  { "name": "Bugs", "pattern": "#bug" },
-  { "name": "Features", "pattern": "#feature" }
- ]
-}
-</code></pre>
-
-<p>It has a template file like this:</p>
-
-<pre><code># Git Changelog changelog
-
-Changelog of Git Changelog.
-
-{{#tags}}
-## {{name}}
- {{#issues}}
-  {{#hasLink}}
-### {{name}} [{{issue}}]({{link}}) {{title}}
-  {{/hasLink}}
-  {{^hasLink}}
-### {{name}}
-  {{/hasLink}}
-
-   {{#commits}}
-{{{message}}}
-
-   {{/commits}}
- {{/issues}}
-{{/tags}}
 </code></pre>
 
 <p>And then to generate CHANGELOG.md, just run <code>gradle gitChangelog</code>.</p>
+
+<p>More documentation can be found in the <a href="https://github.com/tomasbjerre/git-changelog-lib">Git Changelog Lib</a>.</p>
 
 <h2>
 <a id="developer-instructions" class="anchor" href="#developer-instructions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Developer instructions</h2>
