@@ -5,7 +5,17 @@ Changelog of Git Changelog Maven plugin.
 
 ## These commits are not included in any tag
 ### These commits have not issue in their commit comment
-   Added variables: messageTitle, messageBody, messageItems #5 *19:31:57*
+   Git changelog lib 1.25
+
+ * Also updating README.md and changelog tempalte. *18:17:58*
+
+   Updating CHANGELOG.md after release *19:35:00*
+
+
+
+## 1.16
+### These commits have not issue in their commit comment
+   Added variables: messageTitle, messageBody, messageItems #5 *19:33:06*
 
    Updating CHANGELOG.md after release *18:07:00*
 

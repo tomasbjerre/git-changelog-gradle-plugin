@@ -5,6 +5,16 @@ Changelog of Git Changelog Maven plugin.
 
 ## Unreleased
 ### No issue
+   Git changelog lib 1.25
+
+ * Also updating README.md and changelog tempalte.
+
+   Updating CHANGELOG.md after release
+
+
+
+## 1.16
+### No issue
    Added variables: messageTitle, messageBody, messageItems #5
 
    Updating CHANGELOG.md after release

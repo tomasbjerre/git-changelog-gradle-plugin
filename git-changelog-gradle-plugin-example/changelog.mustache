@@ -1,21 +1,30 @@
-# Git Changelog Gradle plugin changelog
+# Git Changelog changelog
 
-Changelog of Git Changelog Gradle plugin.
+Changelog of Git Changelog.
 
 {{#tags}}
 ## {{name}}
  {{#issues}}
-  {{#hasLink}}
+  {{#hasIssue}}
+   {{#hasLink}}
 ### {{name}} [{{issue}}]({{link}}) {{title}}
-  {{/hasLink}}
-  {{^hasLink}}
+   {{/hasLink}}
+   {{^hasLink}}
+### {{name}} {{issue}} {{title}}
+   {{/hasLink}}
+  {{/hasIssue}}
+  {{^hasIssue}}
 ### {{name}}
-  {{/hasLink}}
+  {{/hasIssue}}
 
   {{#commits}}
-[{{hash}}](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/{{hash}}) {{authorName}} *{{commitTime}}*
+**{{{messageTitle}}}**
 
-{{{message}}}
+{{#messageBodyItems}}
+ * {{.}} 
+{{/messageBodyItems}}
+
+[{{hash}}](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/{{hash}}) {{authorName}} *{{commitTime}}*
 
   {{/commits}}
 
