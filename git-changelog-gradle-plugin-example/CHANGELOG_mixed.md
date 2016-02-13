@@ -5,9 +5,25 @@ Changelog of Git Changelog Maven plugin.
 
 ## These commits are not included in any tag
 ### These commits have not issue in their commit comment
+   Updating CHANGELOG.md *09:12:19*
+
+
+
+## 1.18
+### These commits have not issue in their commit comment
+   Significant performance improvements
+
+ * Using lib 1.27. *09:03:51*
+
+   Updating README.md *18:21:28*
+
+
+
+## 1.17
+### These commits have not issue in their commit comment
    Git changelog lib 1.25
 
- * Also updating README.md and changelog tempalte. *18:17:58*
+ * Also updating README.md and changelog tempalte. *18:19:01*
 
    Updating CHANGELOG.md after release *19:35:00*
 

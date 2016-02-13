@@ -5,6 +5,22 @@ Changelog of Git Changelog Maven plugin.
 
 ## Unreleased
 ### No issue
+   Updating CHANGELOG.md
+
+
+
+## 1.18
+### No issue
+   Significant performance improvements
+
+ * Using lib 1.27.
+
+   Updating README.md
+
+
+
+## 1.17
+### No issue
    Git changelog lib 1.25
 
  * Also updating README.md and changelog tempalte.
