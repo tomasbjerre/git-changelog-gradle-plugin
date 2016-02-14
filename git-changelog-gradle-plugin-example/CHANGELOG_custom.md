@@ -9,6 +9,12 @@ Changelog of Git Changelog Maven plugin.
 
 
 
+## 1.19
+### No issue
+   Lib 1.29
+
+
+
 ## 1.18
 ### No issue
    Significant performance improvements

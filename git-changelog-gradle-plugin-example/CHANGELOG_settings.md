@@ -8,7 +8,16 @@ Changelog of Git Changelog.
 **Updating CHANGELOG.md**
 
 
-[c54d35b9dac11a0](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/c54d35b9dac11a0) Tomas Bjerre *2016-02-13 09:12:19*
+[87e2452873b7aab](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/87e2452873b7aab) Tomas Bjerre *2016-02-14 18:04:56*
+
+
+## 1.19
+### Other changes
+
+**Lib 1.29**
+
+
+[32a88b23cc4c42f](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/32a88b23cc4c42f) Tomas Bjerre *2016-02-14 18:02:39*
 
 
 ## 1.18
