@@ -3,12 +3,12 @@
 
 Changelog of Git Changelog Maven plugin.
 
-## Unreleased
+## 1.20
 ### No issue
 
-[87e2452873b7aab](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/87e2452873b7aab) Tomas Bjerre *2016-02-14 18:04:56*
+[bc538a1e94d21ac](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/bc538a1e94d21ac) Tomas Bjerre *2016-02-15 18:12:32*
 
-Updating CHANGELOG.md
+Lib 1.30, supporting multiple tags on same commit
 
 
 ## 1.19

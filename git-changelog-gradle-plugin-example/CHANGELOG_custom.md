@@ -3,9 +3,9 @@
 
 Changelog of Git Changelog Maven plugin.
 
-## Unreleased
+## 1.20
 ### No issue
-   Updating CHANGELOG.md
+   Lib 1.30, supporting multiple tags on same commit
 
 
 
