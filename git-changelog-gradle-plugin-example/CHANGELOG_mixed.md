@@ -3,8 +3,10 @@
 
 Changelog of Git Changelog Maven plugin.
 
-## These commits are not included in any tag
+## 1.21
 ### These commits have not issue in their commit comment
+   Supplying commit in each issue mentioned in message *08:44:05*
+
    Lib 1.30, supporting multiple tags on same commit *18:15:17*
 
 

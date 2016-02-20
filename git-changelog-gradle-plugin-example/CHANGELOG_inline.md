@@ -3,8 +3,12 @@
 
 Changelog of Git Changelog Maven plugin.
 
-## Unreleased
+## 1.21
 ### No issue
+
+[bdbce32f910fdc4](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/bdbce32f910fdc4) Tomas Bjerre *2016-02-20 08:44:05*
+
+Supplying commit in each issue mentioned in message
 
 [2882668ea6ff82a](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/2882668ea6ff82a) Tomas Bjerre *2016-02-15 18:15:17*
 

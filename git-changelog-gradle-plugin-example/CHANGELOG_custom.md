@@ -3,8 +3,10 @@
 
 Changelog of Git Changelog Maven plugin.
 
-## Unreleased
+## 1.21
 ### No issue
+   Supplying commit in each issue mentioned in message
+
    Lib 1.30, supporting multiple tags on same commit
 
 

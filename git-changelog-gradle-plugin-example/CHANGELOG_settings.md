@@ -2,8 +2,13 @@
 
 Changelog of Git Changelog.
 
-## Next release
+## 1.21
 ### Other changes
+
+**Supplying commit in each issue mentioned in message**
+
+
+[bdbce32f910fdc4](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/bdbce32f910fdc4) Tomas Bjerre *2016-02-20 08:44:05*
 
 **Lib 1.30, supporting multiple tags on same commit**
 

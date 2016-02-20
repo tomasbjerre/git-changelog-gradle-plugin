@@ -17,11 +17,11 @@ buildscript {
     }
   }
   dependencies {
-    classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.20"
+    classpath "gradle.plugin.se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.21"
   }
 }
 
-apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin
+apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"
 
 task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
  filePath = "CHANGELOG.md";
