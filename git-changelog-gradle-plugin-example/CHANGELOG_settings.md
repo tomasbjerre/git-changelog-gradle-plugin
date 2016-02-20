@@ -2,6 +2,15 @@
 
 Changelog of Git Changelog.
 
+## Next release
+### Other changes
+
+**Lib 1.30, supporting multiple tags on same commit**
+
+
+[2882668ea6ff82a](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/2882668ea6ff82a) Tomas Bjerre *2016-02-15 18:15:17*
+
+
 ## 1.20
 ### Other changes
 
