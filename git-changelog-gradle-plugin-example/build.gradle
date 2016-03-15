@@ -7,7 +7,7 @@ buildscript {
  }
 
  dependencies {
-  classpath "se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.21-SNAPSHOT"
+  classpath "se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.22-SNAPSHOT"
  }
 }
 
@@ -74,6 +74,17 @@ Changelog of Git Changelog Maven plugin.
 // Template from file
 //
 task generateGitChangelogTemplateFromFile(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+ filePath = "CHANGELOG_file.md";
+ templateContent = new File('changelog.mustache').getText('UTF-8');
+}
+
+//
+// Template from file and GitHub token
+//
+task generateGitChangelogTemplateFromFileAndToken(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+ gitHubApi = "https://api.github.com/repos/tomasbjerre/git-changelog-gradle-plugin";
+ gitHubToken = System.properties['GITHUB_OAUTH2TOKEN'];
+ gitHubIssuePattern = "#([0-9]*)";
  filePath = "CHANGELOG.md";
  templateContent = new File('changelog.mustache').getText('UTF-8');
 }

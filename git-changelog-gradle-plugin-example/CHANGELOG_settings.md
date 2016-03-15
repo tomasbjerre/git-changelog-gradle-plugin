@@ -1,6 +1,23 @@
-# Git Changelog changelog
+# Git Changelog Gradle plugin
 
-Changelog of Git Changelog.
+Changelog of Git Changelog Gradle plugin.
+
+## Next release
+### GitHub [#4](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/4) GitHub OAuth2 Token support
+
+**Support GitHub OAuth2 token #4**
+
+
+[6453fd38b9fd49d](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/6453fd38b9fd49d) Tomas Bjerre *2016-03-15 20:51:41*
+
+
+### Other changes
+
+**Updating CHANGELOG.md**
+
+
+[3655040d316782d](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/3655040d316782d) Tomas Bjerre *2016-02-28 10:47:04*
+
 
 ## 1.21
 ### Other changes

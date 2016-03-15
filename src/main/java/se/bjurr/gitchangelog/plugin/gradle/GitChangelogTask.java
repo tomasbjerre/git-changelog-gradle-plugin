@@ -5,7 +5,6 @@ import static com.google.common.collect.Lists.newArrayList;
 import static se.bjurr.gitchangelog.api.GitChangelogApi.gitChangelogApiBuilder;
 
 import java.io.File;
-import java.net.MalformedURLException;
 import java.util.List;
 
 import org.gradle.api.DefaultTask;
@@ -43,6 +42,9 @@ public class GitChangelogTask extends DefaultTask {
  private String noIssueName;
 
  private List<List<String>> customIssues = newArrayList();
+ private String gitHubApi;
+ private String gitHubToken;
+ private String gitHubIssuePattern;
 
  public void setCustomIssues(List<List<String>> customIssues) {
   this.customIssues = customIssues;
@@ -196,6 +198,30 @@ public class GitChangelogTask extends DefaultTask {
   return untaggedName;
  }
 
+ public void setGitHubApi(String gitHubApi) {
+  this.gitHubApi = gitHubApi;
+ }
+
+ public void setGitHubIssuePattern(String gitHubIssuePattern) {
+  this.gitHubIssuePattern = gitHubIssuePattern;
+ }
+
+ public void setGitHubToken(String gitHubToken) {
+  this.gitHubToken = gitHubToken;
+ }
+
+ public String getGitHubApi() {
+  return gitHubApi;
+ }
+
+ public String getGitHubIssuePattern() {
+  return gitHubIssuePattern;
+ }
+
+ public String getGitHubToken() {
+  return gitHubToken;
+ }
+
  @TaskAction
  public void gitChangelogPluginTasks() throws TaskExecutionException {
   try {
@@ -252,6 +278,15 @@ public class GitChangelogTask extends DefaultTask {
     }
     builder.withCustomIssue(name, pattern, link);
    }
+   if (isSupplied(gitHubApi)) {
+    builder.withGitHubApi(gitHubApi);
+   }
+   if (isSupplied(gitHubToken)) {
+    builder.withGitHubToken(gitHubToken);
+   }
+   if (isSupplied(gitHubIssuePattern)) {
+    builder.withGitHubIssuePattern(gitHubIssuePattern);
+   }
 
    if (isSupplied(filePath)) {
     builder.toFile(filePath);
@@ -271,7 +306,7 @@ public class GitChangelogTask extends DefaultTask {
     log.info("# Created: " + mediaWikiUrl + "/index.php/" + mediaWikiTitle);
     log.info("#");
    }
-  } catch (MalformedURLException e) {
+  } catch (Exception e) {
    log.error("GitChangelog", e);
   }
  }

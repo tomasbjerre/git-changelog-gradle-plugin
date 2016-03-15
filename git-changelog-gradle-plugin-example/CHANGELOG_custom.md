@@ -3,6 +3,14 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## Unreleased
+### No issue
+   Support GitHub OAuth2 token #4
+
+   Updating CHANGELOG.md
+
+
+
 ## 1.21
 ### No issue
    Supplying commit in each issue mentioned in message

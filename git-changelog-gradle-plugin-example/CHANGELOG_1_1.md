@@ -1,6 +1,6 @@
-# Git Changelog changelog
+# Git Changelog Gradle plugin
 
-Changelog of Git Changelog.
+Changelog of Git Changelog Gradle plugin.
 
 ## 1.1
 ### No issue
