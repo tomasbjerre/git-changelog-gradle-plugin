@@ -5,7 +5,17 @@ Changelog of Git Changelog Maven plugin.
 
 ## These commits are not included in any tag
 ### These commits have not issue in their commit comment
-   Support GitHub OAuth2 token #4 *20:51:41*
+   Jira integration to get titles *16:18:25*
+
+   Update example *21:09:38*
+
+
+
+## 1.22
+### These commits have not issue in their commit comment
+   Updating release and publish plugins *21:07:59*
+
+   Support GitHub OAuth2 token #4 *20:56:29*
 
    Updating CHANGELOG.md *10:47:04*
 

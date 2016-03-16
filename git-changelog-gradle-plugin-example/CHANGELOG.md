@@ -3,15 +3,34 @@
 Changelog of Git Changelog Gradle plugin.
 
 ## Unreleased
+### No issue
+
+**Jira integration to get titles**
+
+
+[e038f7f76a21f43](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/e038f7f76a21f43) Tomas Bjerre *2016-03-16 16:18:25*
+
+**Update example**
+
+
+[1731b0fd836186e](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/1731b0fd836186e) Tomas Bjerre *2016-03-15 21:09:38*
+
+
+## 1.22
 ### GitHub [#4](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/4) GitHub OAuth2 Token support
 
 **Support GitHub OAuth2 token #4**
 
 
-[6453fd38b9fd49d](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/6453fd38b9fd49d) Tomas Bjerre *2016-03-15 20:51:41*
+[e7396385437d9f8](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/e7396385437d9f8) Tomas Bjerre *2016-03-15 20:56:29*
 
 
 ### No issue
+
+**Updating release and publish plugins**
+
+
+[6feacb255e8cf21](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/6feacb255e8cf21) Tomas Bjerre *2016-03-15 21:07:59*
 
 **Updating CHANGELOG.md**
 

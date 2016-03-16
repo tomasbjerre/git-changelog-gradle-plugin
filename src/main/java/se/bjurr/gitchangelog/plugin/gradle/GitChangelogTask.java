@@ -45,6 +45,42 @@ public class GitChangelogTask extends DefaultTask {
  private String gitHubApi;
  private String gitHubToken;
  private String gitHubIssuePattern;
+ private String jiraUsername;
+ private String jiraPassword;
+ private String jiraIssuePattern;
+ private String jiraServer;
+
+ public void setJiraIssuePattern(String jiraIssuePattern) {
+  this.jiraIssuePattern = jiraIssuePattern;
+ }
+
+ public void setJiraPassword(String jiraPassword) {
+  this.jiraPassword = jiraPassword;
+ }
+
+ public void setJiraServer(String jiraServer) {
+  this.jiraServer = jiraServer;
+ }
+
+ public void setJiraUsername(String jiraUsername) {
+  this.jiraUsername = jiraUsername;
+ }
+
+ public String getJiraIssuePattern() {
+  return jiraIssuePattern;
+ }
+
+ public String getJiraPassword() {
+  return jiraPassword;
+ }
+
+ public String getJiraServer() {
+  return jiraServer;
+ }
+
+ public String getJiraUsername() {
+  return jiraUsername;
+ }
 
  public void setCustomIssues(List<List<String>> customIssues) {
   this.customIssues = customIssues;
@@ -286,6 +322,19 @@ public class GitChangelogTask extends DefaultTask {
    }
    if (isSupplied(gitHubIssuePattern)) {
     builder.withGitHubIssuePattern(gitHubIssuePattern);
+   }
+
+   if (isSupplied(jiraUsername)) {
+    builder.withJiraUsername(jiraUsername);
+   }
+   if (isSupplied(jiraPassword)) {
+    builder.withJiraPassword(jiraPassword);
+   }
+   if (isSupplied(jiraIssuePattern)) {
+    builder.withJiraIssuePattern(jiraIssuePattern);
+   }
+   if (isSupplied(jiraServer)) {
+    builder.withJiraServer(jiraServer);
    }
 
    if (isSupplied(filePath)) {

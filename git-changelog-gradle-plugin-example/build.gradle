@@ -90,6 +90,18 @@ task generateGitChangelogTemplateFromFileAndToken(type: se.bjurr.gitchangelog.pl
 }
 
 //
+// Template from file and Jira login
+//
+task generateGitChangelogTemplateFromFileAndJira(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+ jiraUsername = System.properties['JIRA_USERNAME'];
+ jiraPassword = System.properties['JIRA_PASSWORD'];
+ jiraIssuePattern = "\\b[a-zA-Z]([a-zA-Z]+)-([0-9]+)\\b";
+ jiraServer = "https://yourJiraServer.com/jira";
+ filePath = "CHANGELOG_jira.md";
+ templateContent = new File('changelog.mustache').getText('UTF-8');
+}
+
+//
 // Set reference to create changelog for version 1.1
 //
 task generateGitChangelog11(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {

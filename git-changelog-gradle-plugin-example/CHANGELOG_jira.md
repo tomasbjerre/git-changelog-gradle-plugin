@@ -17,20 +17,17 @@ Changelog of Git Changelog Gradle plugin.
 
 
 ## 1.22
-### GitHub [#4](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/4) GitHub OAuth2 Token support
-
-**Support GitHub OAuth2 token #4**
-
-
-[e7396385437d9f8](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/e7396385437d9f8) Tomas Bjerre *2016-03-15 20:56:29*
-
-
 ### No issue
 
 **Updating release and publish plugins**
 
 
 [6feacb255e8cf21](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/6feacb255e8cf21) Tomas Bjerre *2016-03-15 21:07:59*
+
+**Support GitHub OAuth2 token #4**
+
+
+[e7396385437d9f8](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/e7396385437d9f8) Tomas Bjerre *2016-03-15 20:56:29*
 
 **Updating CHANGELOG.md**
 
@@ -101,15 +98,12 @@ Changelog of Git Changelog Gradle plugin.
 
 
 ## 1.16
-### GitHub #5 
+### No issue
 
 **Added variables: messageTitle, messageBody, messageItems #5**
 
 
 [911a92eefbfc04c](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/911a92eefbfc04c) Tomas Bjerre *2016-02-09 19:33:06*
-
-
-### No issue
 
 **Updating CHANGELOG.md after release**
 
@@ -169,7 +163,7 @@ Changelog of Git Changelog Gradle plugin.
 
 
 ## 1.12
-### GitHub [#3](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/3) Each task should have its own namespace
+### No issue
 
 **Storing settings on each task #3**
 
@@ -193,15 +187,12 @@ Changelog of Git Changelog Gradle plugin.
 
 
 ## 1.10
-### GitHub [#1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/1) Use latest lib
+### No issue
 
 **Using lib 1.17 #1**
 
 
 [b58012a56766e79](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/b58012a56766e79) Tomas Bjerre *2015-12-06 07:40:52*
-
-
-### No issue
 
 **doc**
 
@@ -210,7 +201,7 @@ Changelog of Git Changelog Gradle plugin.
 
 
 ## 1.9
-### GitHub [#1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/1) Use latest lib
+### No issue
 
 **Using lib 1.15 #1**
 
@@ -233,15 +224,12 @@ Changelog of Git Changelog Gradle plugin.
 
 
 ## 1.7
-### GitHub [#1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/1) Use latest lib
+### No issue
 
 **using lib 1.13 #1**
 
 
 [378d5ebbd4a0d29](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/378d5ebbd4a0d29) Tomas Bjerre *2015-11-23 22:09:40*
-
-
-### No issue
 
 **doc**
 
@@ -250,15 +238,12 @@ Changelog of Git Changelog Gradle plugin.
 
 
 ## 1.6
-### GitHub [#1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/1) Use latest lib
+### No issue
 
 **Using lib 1.12 #1**
 
 
 [31b0e8f2ca18e95](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/31b0e8f2ca18e95) Tomas Bjerre *2015-11-23 18:11:30*
-
-
-### No issue
 
 **doc**
 
@@ -276,15 +261,12 @@ Changelog of Git Changelog Gradle plugin.
 
 
 ## 1.4
-### GitHub # 
+### No issue
 
 **lib 1.9 #feature**
 
 
 [44eea52c090958b](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/44eea52c090958b) Tomas Bjerre *2015-11-20 22:10:47*
-
-
-### No issue
 
 **Updating version in example**
 
@@ -307,15 +289,7 @@ Changelog of Git Changelog Gradle plugin.
 
 
 ## 1.2
-### GitHub # 
-
-**MediaWiki support, using lib 1.2 #feature**
-
-
-[ecc10fdaf81330f](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/ecc10fdaf81330f) Tomas Bjerre *2015-11-17 19:59:29*
-
-
-### Jira GRADLE-3281 
+### Jira [GRADLE-3281](https://yourJiraServer.com/jira/browse/GRADLE-3281) 
 
 **Changing release instructions.**
 
@@ -325,6 +299,11 @@ Changelog of Git Changelog Gradle plugin.
 
 
 ### No issue
+
+**MediaWiki support, using lib 1.2 #feature**
+
+
+[ecc10fdaf81330f](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/ecc10fdaf81330f) Tomas Bjerre *2015-11-17 19:59:29*
 
 **Updating example plugin to use 1.2 snapshot**
 

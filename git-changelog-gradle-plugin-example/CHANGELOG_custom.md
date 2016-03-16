@@ -5,6 +5,16 @@ Changelog of Git Changelog Maven plugin.
 
 ## Unreleased
 ### No issue
+   Jira integration to get titles
+
+   Update example
+
+
+
+## 1.22
+### No issue
+   Updating release and publish plugins
+
    Support GitHub OAuth2 token #4
 
    Updating CHANGELOG.md
