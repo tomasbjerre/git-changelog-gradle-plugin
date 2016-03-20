@@ -5,7 +5,13 @@ Changelog of Git Changelog Maven plugin.
 
 ## These commits are not included in any tag
 ### These commits have not issue in their commit comment
-   Lib 1.38 *09:00:40*
+   Updating example *09:04:08*
+
+
+
+## 1.24
+### These commits have not issue in their commit comment
+   Lib 1.38 *09:01:00*
 
    Updating README *16:21:01*
 

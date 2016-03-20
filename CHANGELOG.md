@@ -5,10 +5,19 @@ Changelog of Git Changelog Gradle plugin.
 ## Unreleased
 ### No issue
 
+**Updating example**
+
+
+[81d8b868a1f43b6](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/81d8b868a1f43b6) Tomas Bjerre *2016-03-20 09:04:08*
+
+
+## 1.24
+### No issue
+
 **Lib 1.38**
 
 
-[6bb12e1c8374d20](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/6bb12e1c8374d20) Tomas Bjerre *2016-03-20 09:00:40*
+[c924b21e276fc6c](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/c924b21e276fc6c) Tomas Bjerre *2016-03-20 09:01:00*
 
 **Updating README**
 
