@@ -201,13 +201,44 @@ Changelog of Git Changelog Maven plugin.
 }
 
 //
+// Mixed features
+//
+task generateGitChangelogIgnoreCommitsWithoutIssue(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+ // If a commit cannot be mapped to a configured issue, it will not 
+ // be included if set to true. If set to true, noIssueName has no effect.
+ ignoreCommitsWithoutIssue = true;
+ customIssues = [
+  [ "Incident", "INC[0-9]*", "http://inc/\${PATTERN_GROUP}", "\${PATTERN_GROUP}" ]
+ ]
+ filePath = "CHANGELOG_ignoreCommitsWithoutIssue.md";
+ templateContent = """
+# Git Changelog
+
+Changelog of Git Changelog.
+
+{{#tags}}
+## {{name}}
+ {{#issues}}
+### {{name}}
+  {{#commits}}
+   {{{message}}} *{{commitTime}}*
+
+  {{/commits}}
+
+ {{/issues}}
+
+{{/tags}}
+ """;
+}
+
+//
 // Custom issues
 //
 task generateGitChangelogCustomIssues(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
  filePath = "CHANGELOG_custom.md";
  customIssues = [
-  [ "Incident", "INC[0-9]*", "http://inc/\${PATTERN_GROUP}" ],
-  [ "QC", "QC([0-9]+)", "http://cq/\${PATTERN_GROUP_1}" ],
+  [ "Incident", "INC[0-9]*", "http://inc/\${PATTERN_GROUP}", "\${PATTERN_GROUP}" ],
+  [ "QC", "QC([0-9]+)", "", "\${PATTERN_GROUP}" ],
   [ "Issue", "I([0-9]+)" ]
  ]
  templateContent = """

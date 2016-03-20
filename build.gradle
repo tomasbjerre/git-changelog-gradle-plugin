@@ -35,7 +35,7 @@ repositories {
 }
 
 dependencies {
- compile 'se.bjurr.gitchangelog:git-changelog-lib:1.36'
+ compile 'se.bjurr.gitchangelog:git-changelog-lib:1.38'
 }
 
 eclipse {

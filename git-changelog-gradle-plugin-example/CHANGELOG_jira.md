@@ -5,10 +5,24 @@ Changelog of Git Changelog Gradle plugin.
 ## Unreleased
 ### No issue
 
+**Lib 1.38**
+
+
+[6bb12e1c8374d20](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/6bb12e1c8374d20) Tomas Bjerre *2016-03-20 09:00:40*
+
+**Updating README**
+
+
+[b26ceab0de77b82](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/b26ceab0de77b82) Tomas Bjerre *2016-03-16 16:21:01*
+
+
+## 1.23
+### No issue
+
 **Jira integration to get titles**
 
 
-[e038f7f76a21f43](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/e038f7f76a21f43) Tomas Bjerre *2016-03-16 16:18:25*
+[ba49a437a58491c](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/ba49a437a58491c) Tomas Bjerre *2016-03-16 16:19:08*
 
 **Update example**
 
@@ -289,7 +303,7 @@ Changelog of Git Changelog Gradle plugin.
 
 
 ## 1.2
-### Jira [GRADLE-3281](https://yourJiraServer.com/jira/browse/GRADLE-3281) 
+### Jira GRADLE-3281 
 
 **Changing release instructions.**
 

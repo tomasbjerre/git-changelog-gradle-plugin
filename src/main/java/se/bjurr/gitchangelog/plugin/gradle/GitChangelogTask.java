@@ -40,6 +40,7 @@ public class GitChangelogTask extends DefaultTask {
  private String ignoreCommitsIfMessageMatches;
  private String untaggedName;
  private String noIssueName;
+ private boolean ignoreCommitsWithoutIssue;
 
  private List<List<String>> customIssues = newArrayList();
  private String gitHubApi;
@@ -222,6 +223,14 @@ public class GitChangelogTask extends DefaultTask {
   return noIssueName;
  }
 
+ public void setIgnoreCommitsWithoutIssue(boolean ignoreCommitsWithoutIssue) {
+  this.ignoreCommitsWithoutIssue = ignoreCommitsWithoutIssue;
+ }
+
+ public boolean isIgnoreCommitsWithoutIssue() {
+  return ignoreCommitsWithoutIssue;
+ }
+
  public String getReadableTagName() {
   return readableTagName;
  }
@@ -305,14 +314,19 @@ public class GitChangelogTask extends DefaultTask {
    if (isSupplied(noIssueName)) {
     builder.withNoIssueName(noIssueName);
    }
+   builder.withIgnoreCommitsWithoutIssue(ignoreCommitsWithoutIssue);
    for (List<String> customIssue : customIssues) {
     String name = customIssue.get(0);
     String pattern = customIssue.get(1);
     String link = null;
+    String title = null;
     if (customIssue.size() > 2) {
      link = customIssue.get(2);
     }
-    builder.withCustomIssue(name, pattern, link);
+    if (customIssue.size() > 3) {
+     title = customIssue.get(3);
+    }
+    builder.withCustomIssue(name, pattern, link, title);
    }
    if (isSupplied(gitHubApi)) {
     builder.withGitHubApi(gitHubApi);

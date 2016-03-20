@@ -5,6 +5,14 @@ Changelog of Git Changelog Maven plugin.
 
 ## Unreleased
 ### No issue
+   Lib 1.38
+
+   Updating README
+
+
+
+## 1.23
+### No issue
    Jira integration to get titles
 
    Update example
@@ -90,7 +98,7 @@ Changelog of Git Changelog Maven plugin.
 
 
 ## 1.13
-### Incident [INC1234](http://inc/INC1234) 
+### Incident [INC1234](http://inc/INC1234) INC1234
    Implementing custom issues
  * Adding example with
   * QC matching QC1234
@@ -103,7 +111,7 @@ Changelog of Git Changelog Maven plugin.
    Updating README.md after release
 
 
-### QC [QC1234](http://cq/1234) 
+### QC
    Implementing custom issues
  * Adding example with
   * QC matching QC1234

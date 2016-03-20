@@ -6,7 +6,19 @@ Changelog of Git Changelog Maven plugin.
 ## Unreleased
 ### No issue
 
-[e038f7f76a21f43](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/e038f7f76a21f43) Tomas Bjerre *2016-03-16 16:18:25*
+[6bb12e1c8374d20](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/6bb12e1c8374d20) Tomas Bjerre *2016-03-20 09:00:40*
+
+Lib 1.38
+
+[b26ceab0de77b82](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/b26ceab0de77b82) Tomas Bjerre *2016-03-16 16:21:01*
+
+Updating README
+
+
+## 1.23
+### No issue
+
+[ba49a437a58491c](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/ba49a437a58491c) Tomas Bjerre *2016-03-16 16:19:08*
 
 Jira integration to get titles
 
