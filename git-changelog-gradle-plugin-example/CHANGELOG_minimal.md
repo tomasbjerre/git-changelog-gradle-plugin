@@ -8,7 +8,7 @@ Changelog of Git Changelog Gradle plugin.
 **Updating example**
 
 
-[7024897f5925a0b](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/7024897f5925a0b) Tomas Bjerre *2016-03-20 09:55:19*
+[5188838111d44c8](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/5188838111d44c8) Tomas Bjerre *2016-03-20 09:55:38*
 
 
 ## 1.25

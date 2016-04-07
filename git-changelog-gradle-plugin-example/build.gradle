@@ -177,6 +177,7 @@ task generateGitChangelogMixed(type: se.bjurr.gitchangelog.plugin.gradle.GitChan
  timeZone = "UTC";
  removeIssueFromMessage = false;
  ignoreCommitsIfMessageMatches = ".*Gradle.*";
+ ignoreTagsIfNameMatches = ".*[0-9]{2}\$";
  untaggedName = "These commits are not included in any tag";
  noIssueName = "These commits have not issue in their commit comment";
  filePath = "CHANGELOG_mixed.md";

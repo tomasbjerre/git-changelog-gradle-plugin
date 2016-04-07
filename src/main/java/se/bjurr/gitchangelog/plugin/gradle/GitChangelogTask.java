@@ -41,6 +41,7 @@ public class GitChangelogTask extends DefaultTask {
  private String untaggedName;
  private String noIssueName;
  private boolean ignoreCommitsWithoutIssue;
+ private String ignoreTagsIfNameMatches;
 
  private List<List<String>> customIssues = newArrayList();
  private String gitHubApi;
@@ -50,6 +51,14 @@ public class GitChangelogTask extends DefaultTask {
  private String jiraPassword;
  private String jiraIssuePattern;
  private String jiraServer;
+
+ public void setIgnoreTagsIfNameMatches(String ignoreTagsIfNameMatches) {
+  this.ignoreTagsIfNameMatches = ignoreTagsIfNameMatches;
+ }
+
+ public String getIgnoreTagsIfNameMatches() {
+  return ignoreTagsIfNameMatches;
+ }
 
  public void setJiraIssuePattern(String jiraIssuePattern) {
   this.jiraIssuePattern = jiraIssuePattern;
@@ -295,6 +304,9 @@ public class GitChangelogTask extends DefaultTask {
     builder.withToCommit(toCommit);
    }
 
+   if (isSupplied(ignoreTagsIfNameMatches)) {
+    builder.withIgnoreTagsIfNameMatches(ignoreTagsIfNameMatches);
+   }
    if (isSupplied(readableTagName)) {
     builder.withReadableTagName(readableTagName);
    }

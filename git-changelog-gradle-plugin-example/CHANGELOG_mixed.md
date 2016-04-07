@@ -5,112 +5,60 @@ Changelog of Git Changelog Maven plugin.
 
 ## These commits are not included in any tag
 ### These commits have not issue in their commit comment
-   Updating example *09:55:19*
+   Updating example *09:55:38*
 
-
-
-## 1.25
-### These commits have not issue in their commit comment
    Lib 1.39 *09:53:14*
 
    Updating example *09:04:27*
 
-
-
-## 1.24
-### These commits have not issue in their commit comment
    Lib 1.38 *09:01:00*
 
    Updating README *16:21:01*
 
-
-
-## 1.23
-### These commits have not issue in their commit comment
    Jira integration to get titles *16:19:08*
 
    Update example *21:09:38*
 
-
-
-## 1.22
-### These commits have not issue in their commit comment
    Updating release and publish plugins *21:07:59*
 
    Support GitHub OAuth2 token #4 *20:56:29*
 
    Updating CHANGELOG.md *10:47:04*
 
-
-
-## 1.21
-### These commits have not issue in their commit comment
    Supplying commit in each issue mentioned in message *08:44:05*
 
    Lib 1.30, supporting multiple tags on same commit *18:15:17*
 
-
-
-## 1.20
-### These commits have not issue in their commit comment
    Lib 1.30, supporting multiple tags on same commit *18:12:32*
 
-
-
-## 1.19
-### These commits have not issue in their commit comment
    Lib 1.29 *18:02:39*
 
-
-
-## 1.18
-### These commits have not issue in their commit comment
    Significant performance improvements
 
  * Using lib 1.27. *09:03:51*
 
    Updating README.md *18:21:28*
 
-
-
-## 1.17
-### These commits have not issue in their commit comment
    Git changelog lib 1.25
 
  * Also updating README.md and changelog tempalte. *18:19:01*
 
    Updating CHANGELOG.md after release *19:35:00*
 
-
-
-## 1.16
-### These commits have not issue in their commit comment
    Added variables: messageTitle, messageBody, messageItems #5 *19:33:06*
 
    Updating CHANGELOG.md after release *18:07:00*
 
-
-
-## 1.15
-### These commits have not issue in their commit comment
    Allowing custom issues not to include link
 
  * Adding example with issues like I123 *18:04:49*
 
    Updating README.md after release *21:23:20*
 
-
-
-## 1.14
-### These commits have not issue in their commit comment
    Maven Central version badge in README.md *21:14:53*
 
    Updating README.md after release *19:16:50*
 
-
-
-## 1.13
-### These commits have not issue in their commit comment
    Implementing custom issues
  * Adding example with
   * QC matching QC1234
@@ -120,26 +68,14 @@ Changelog of Git Changelog Maven plugin.
 
    Updating README.md after release *12:18:06*
 
-
-
-## 1.12
-### These commits have not issue in their commit comment
    Storing settings on each task #3
 
  * Also using lib 1.23 *12:14:15*
 
-
-
-## 1.11
-### These commits have not issue in their commit comment
    lib 1.13 *11:15:10*
 
    Documentation and lib 1.22 *09:30:35*
 
-
-
-## 1.10
-### These commits have not issue in their commit comment
    Using lib 1.17 #1 *07:40:52*
 
    doc *22:58:53*
