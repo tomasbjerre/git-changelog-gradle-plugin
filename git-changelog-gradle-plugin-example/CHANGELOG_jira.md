@@ -8,6 +8,20 @@ Changelog of Git Changelog Gradle plugin.
 **Updating example**
 
 
+[dbfc64080f56afd](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/dbfc64080f56afd) Tomas Bjerre *2016-04-07 19:08:48*
+
+
+## 1.26
+### No issue
+
+**Lib 1.40 can ignore tags by regexp**
+
+
+[87c1dac2c4a9455](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/87c1dac2c4a9455) Tomas Bjerre *2016-04-07 19:06:38*
+
+**Updating example**
+
+
 [5188838111d44c8](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/5188838111d44c8) Tomas Bjerre *2016-03-20 09:55:38*
 
 

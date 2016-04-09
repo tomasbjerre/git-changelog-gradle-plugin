@@ -9,6 +9,14 @@ Changelog of Git Changelog Maven plugin.
 
 
 
+## 1.26
+### No issue
+   Lib 1.40 can ignore tags by regexp
+
+   Updating example
+
+
+
 ## 1.25
 ### No issue
    Lib 1.39

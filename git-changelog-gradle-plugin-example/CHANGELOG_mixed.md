@@ -5,6 +5,10 @@ Changelog of Git Changelog Maven plugin.
 
 ## These commits are not included in any tag
 ### These commits have not issue in their commit comment
+   Updating example *19:08:48*
+
+   Lib 1.40 can ignore tags by regexp *19:06:38*
+
    Updating example *09:55:38*
 
    Lib 1.39 *09:53:14*

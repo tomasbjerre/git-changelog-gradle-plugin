@@ -6,6 +6,18 @@ Changelog of Git Changelog Maven plugin.
 ## Unreleased
 ### No issue
 
+[dbfc64080f56afd](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/dbfc64080f56afd) Tomas Bjerre *2016-04-07 19:08:48*
+
+Updating example
+
+
+## 1.26
+### No issue
+
+[87c1dac2c4a9455](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/87c1dac2c4a9455) Tomas Bjerre *2016-04-07 19:06:38*
+
+Lib 1.40 can ignore tags by regexp
+
 [5188838111d44c8](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/5188838111d44c8) Tomas Bjerre *2016-03-20 09:55:38*
 
 Updating example
