@@ -5,6 +5,38 @@ Changelog of Git Changelog Maven plugin.
 
 ## Unreleased
 ### No issue
+   doc
+
+
+
+## 1.30
+### Jira
+   JENKINS-34155 Support short SHA
+
+
+### No issue
+   doc
+
+
+
+## 1.29
+### No issue
+   Lib 1.43, Parsing commits, oldest first
+
+
+
+## 1.28
+### No issue
+   Lib 1.42, Parsing commits, oldest first
+
+   Updating doc
+
+
+
+## 1.27
+### No issue
+   Lib 1.41, Commits added to correct tags
+
    Updating example
 
 

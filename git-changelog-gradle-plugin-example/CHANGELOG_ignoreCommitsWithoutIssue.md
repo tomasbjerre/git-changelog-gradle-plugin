@@ -3,6 +3,12 @@
 
 Changelog of Git Changelog.
 
+## 1.30
+### Jira
+   JENKINS-34155 Support short SHA *2016-04-12 16:56:23*
+
+
+
 ## 1.13
 ### Incident
    Implementing custom issues

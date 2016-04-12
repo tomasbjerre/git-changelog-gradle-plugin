@@ -5,6 +5,60 @@ Changelog of Git Changelog Gradle plugin.
 ## Unreleased
 ### No issue
 
+**doc**
+
+
+[2c18de4dd5ab621](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/2c18de4dd5ab621) Tomas Bjerre *2016-04-12 16:57:43*
+
+
+## 1.30
+### Jira JENKINS-34155 
+
+**JENKINS-34155 Support short SHA**
+
+
+[7d6410b3a5b9966](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/7d6410b3a5b9966) Tomas Bjerre *2016-04-12 16:56:23*
+
+
+### No issue
+
+**doc**
+
+
+[bd4bc7d6f9986f9](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/bd4bc7d6f9986f9) Tomas Bjerre *2016-04-10 09:15:03*
+
+
+## 1.29
+### No issue
+
+**Lib 1.43, Parsing commits, oldest first**
+
+
+[a492b1147ac9cd6](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/a492b1147ac9cd6) Tomas Bjerre *2016-04-10 09:13:22*
+
+
+## 1.28
+### No issue
+
+**Lib 1.42, Parsing commits, oldest first**
+
+
+[e0ff26d0d7eecfa](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/e0ff26d0d7eecfa) Tomas Bjerre *2016-04-10 09:03:30*
+
+**Updating doc**
+
+
+[e2e13910a0a3eac](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/e2e13910a0a3eac) Tomas Bjerre *2016-04-09 20:41:52*
+
+
+## 1.27
+### No issue
+
+**Lib 1.41, Commits added to correct tags**
+
+
+[54707a708f1ee79](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/54707a708f1ee79) Tomas Bjerre *2016-04-09 20:40:35*
+
 **Updating example**
 
 
