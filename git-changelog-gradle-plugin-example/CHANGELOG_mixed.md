@@ -9,6 +9,10 @@ Changelog of Git Changelog Maven plugin.
 
 
 ### These commits have not issue in their commit comment
+   Lib 1.45 *18:44:42*
+
+   doc *16:58:44*
+
    doc *16:57:43*
 
    doc *09:15:03*
