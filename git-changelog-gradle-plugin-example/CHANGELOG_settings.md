@@ -2,8 +2,13 @@
 
 Changelog of Git Changelog Gradle plugin.
 
-## Next release
+## 1.31
 ### Other changes
+
+**Lib 1.45**
+
+
+[c497663d4baa276](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/c497663d4baa276) Tomas Bjerre *2016-04-13 18:45:12*
 
 **Lib 1.45**
 
