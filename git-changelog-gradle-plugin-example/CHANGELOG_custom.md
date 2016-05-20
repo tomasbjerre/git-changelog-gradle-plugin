@@ -5,6 +5,12 @@ Changelog of Git Changelog Maven plugin.
 
 ## Unreleased
 ### No issue
+   doc
+
+
+
+## 1.32
+### No issue
    Ignoring trailing slash in JIRA URL
 
    doc
