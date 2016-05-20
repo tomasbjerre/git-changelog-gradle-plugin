@@ -9,6 +9,10 @@ Changelog of Git Changelog Maven plugin.
 
 
 ### These commits have not issue in their commit comment
+   Ignoring trailing slash in JIRA URL *19:14:37*
+
+   doc *18:47:25*
+
    Lib 1.45 *18:45:12*
 
    Lib 1.45 *18:44:42*

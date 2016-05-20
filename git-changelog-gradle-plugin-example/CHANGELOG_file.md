@@ -2,6 +2,20 @@
 
 Changelog of Git Changelog Gradle plugin.
 
+## Unreleased
+### No issue
+
+**Ignoring trailing slash in JIRA URL**
+
+
+[c709181434721c4](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/c709181434721c4) Tomas Bjerre *2016-05-20 19:14:37*
+
+**doc**
+
+
+[9ab59a6366cbba9](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/9ab59a6366cbba9) Tomas Bjerre *2016-04-13 18:47:25*
+
+
 ## 1.31
 ### No issue
 
