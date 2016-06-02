@@ -2,8 +2,13 @@
 
 Changelog of Git Changelog Gradle plugin.
 
-## Unreleased
+## 1.33
 ### No issue
+
+**Lib 1.49, finding first commit as parents from HEAD**
+
+
+[780b2da1a68f2bc](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/780b2da1a68f2bc) Tomas Bjerre *2016-06-02 18:23:12*
 
 **doc**
 

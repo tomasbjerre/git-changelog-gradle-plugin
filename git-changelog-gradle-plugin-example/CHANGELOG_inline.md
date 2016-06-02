@@ -3,8 +3,12 @@
 
 Changelog of Git Changelog Maven plugin.
 
-## Unreleased
+## 1.33
 ### No issue
+
+[780b2da1a68f2bc](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/780b2da1a68f2bc) Tomas Bjerre *2016-06-02 18:23:12*
+
+Lib 1.49, finding first commit as parents from HEAD
 
 [842eb75a106dbec](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/842eb75a106dbec) Tomas Bjerre *2016-05-20 19:16:48*
 
