@@ -8,7 +8,7 @@ Changelog of Git Changelog Gradle plugin.
 **doc**
 
 
-[325f8307e13a896](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/325f8307e13a896) Tomas Bjerre *2016-05-20 19:16:23*
+[842eb75a106dbec](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/842eb75a106dbec) Tomas Bjerre *2016-05-20 19:16:48*
 
 
 ## 1.32
@@ -244,7 +244,7 @@ Changelog of Git Changelog Gradle plugin.
 
 
 ## 1.16
-### GitHub #5 
+### GitHub [#5](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/5) NoSuchMethodError when using github integration
 
 **Added variables: messageTitle, messageBody, messageItems #5**
 
