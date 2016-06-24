@@ -3,8 +3,10 @@
 
 Changelog of Git Changelog Maven plugin.
 
-## Unreleased
+## 1.34
 ### No issue
+   Including commits from merges lib issue 49
+
    Lib 1.49, finding first commit as parents from HEAD
 
 

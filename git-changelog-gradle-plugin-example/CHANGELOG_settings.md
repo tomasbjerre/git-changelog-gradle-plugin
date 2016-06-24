@@ -2,8 +2,13 @@
 
 Changelog of Git Changelog Gradle plugin.
 
-## Next release
+## 1.34
 ### Other changes
+
+**Including commits from merges lib issue 49**
+
+
+[0899840508e7952](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/0899840508e7952) Tomas Bjerre *2016-06-24 09:32:25*
 
 **Lib 1.49, finding first commit as parents from HEAD**
 
