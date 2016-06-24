@@ -9,6 +9,8 @@ Changelog of Git Changelog Maven plugin.
 
 
 ### These commits have not issue in their commit comment
+   Lib 1.49, finding first commit as parents from HEAD *18:28:34*
+
    Lib 1.49, finding first commit as parents from HEAD *18:23:12*
 
    doc *19:16:48*
