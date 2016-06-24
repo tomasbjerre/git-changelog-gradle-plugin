@@ -29,9 +29,4 @@ Changelog of Git Changelog Gradle plugin.
 
 [a9bf29122e184a1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/a9bf29122e184a1) Tomas Bjerre *2015-11-14 20:15:20*
 
-**Initial commit**
-
-
-[5d7de6e3c378671](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/5d7de6e3c378671) Tomas Bjerre *2015-11-14 19:50:29*
-
 

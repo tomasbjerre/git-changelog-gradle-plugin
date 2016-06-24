@@ -9,6 +9,8 @@ Changelog of Git Changelog Maven plugin.
 
 
 ### These commits have not issue in their commit comment
+   doc *09:34:04*
+
    Including commits from merges lib issue 49 *09:32:25*
 
    Lib 1.49, finding first commit as parents from HEAD *18:28:34*
@@ -193,8 +195,6 @@ Changelog of Git Changelog Maven plugin.
    More work for 1.0 *13:01:25*
 
    Initial *20:15:20*
-
-   Initial commit *19:50:29*
 
 
 
