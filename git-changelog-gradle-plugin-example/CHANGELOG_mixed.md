@@ -9,7 +9,7 @@ Changelog of Git Changelog Maven plugin.
 
 
 ### These commits have not issue in their commit comment
-   Adding {{hashFull}} variable *18:26:32*
+   Adding {{hashFull}} variable *18:27:12*
 
    doc *00:20:39*
 

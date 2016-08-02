@@ -2,13 +2,13 @@
 
 Changelog of Git Changelog Gradle plugin.
 
-## Unreleased
+## 1.37
 ### No issue
 
 **Adding {{hashFull}} variable**
 
 
-[41d14130e5db0d1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/41d14130e5db0d1) Tomas Bjerre *2016-08-02 18:26:32*
+[a8fefac12cd4069](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/a8fefac12cd4069) Tomas Bjerre *2016-08-02 18:27:12*
 
 **doc**
 

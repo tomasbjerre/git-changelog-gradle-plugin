@@ -3,7 +3,7 @@
 
 Changelog of Git Changelog Maven plugin.
 
-## Unreleased
+## 1.37
 ### No issue
    Adding {{hashFull}} variable
 
