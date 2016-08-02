@@ -9,6 +9,16 @@ Changelog of Git Changelog Maven plugin.
 
 
 ### These commits have not issue in their commit comment
+   Adding {{hashFull}} variable *18:26:32*
+
+   doc *00:20:39*
+
+   Faster *00:05:41*
+
+   doc *21:19:09*
+
+   Fixing merge commits... again... *21:17:20*
+
    doc *09:34:04*
 
    Including commits from merges lib issue 49 *09:32:25*

@@ -5,6 +5,39 @@ Changelog of Git Changelog Gradle plugin.
 ## Unreleased
 ### No issue
 
+**Adding {{hashFull}} variable**
+
+
+[41d14130e5db0d1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/41d14130e5db0d1) Tomas Bjerre *2016-08-02 18:26:32*
+
+**doc**
+
+
+[4e5509c1c1cf847](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/4e5509c1c1cf847) Tomas Bjerre *2016-06-25 00:20:39*
+
+
+## 1.36
+### No issue
+
+**Faster**
+
+
+[9f10076c152d8cc](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/9f10076c152d8cc) Tomas Bjerre *2016-06-25 00:05:41*
+
+**doc**
+
+
+[d1e5df127614552](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/d1e5df127614552) Tomas Bjerre *2016-06-24 21:19:09*
+
+
+## 1.35
+### No issue
+
+**Fixing merge commits... again...**
+
+
+[218ddf1dc0001f5](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/218ddf1dc0001f5) Tomas Bjerre *2016-06-24 21:17:20*
+
 **doc**
 
 
