@@ -4,11 +4,21 @@
 Changelog of Git Changelog Maven plugin.
 
 ## These commits are not included in any tag
+### These commits have not issue in their commit comment
+   Correcting version *14:37:02*
+
+
+
+## 0
 ### Jira
    JENKINS-34155 Support short SHA *16:56:23*
 
 
 ### These commits have not issue in their commit comment
+   Lib 1.56 correcting link to Jira *14:33:12*
+
+   Doc *18:29:21*
+
    Adding {{hashFull}} variable *18:27:12*
 
    doc *00:20:39*

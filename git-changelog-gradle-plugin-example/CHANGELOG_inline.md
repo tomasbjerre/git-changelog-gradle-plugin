@@ -3,6 +3,26 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## 1.38
+### No issue
+
+[f2a73d0ee6e4927](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/f2a73d0ee6e4927) Tomas Bjerre *2016-08-11 14:37:02*
+
+Correcting version
+
+
+## 0
+### No issue
+
+[cd6e07b6ba370ee](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/cd6e07b6ba370ee) Tomas Bjerre *2016-08-11 14:33:12*
+
+Lib 1.56 correcting link to Jira
+
+[803a5f64f400ba8](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/803a5f64f400ba8) Tomas Bjerre *2016-08-02 18:29:21*
+
+Doc
+
+
 ## 1.37
 ### No issue
 

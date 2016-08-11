@@ -3,6 +3,20 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## 1.38
+### No issue
+   Correcting version
+
+
+
+## 0
+### No issue
+   Lib 1.56 correcting link to Jira
+
+   Doc
+
+
+
 ## 1.37
 ### No issue
    Adding {{hashFull}} variable
