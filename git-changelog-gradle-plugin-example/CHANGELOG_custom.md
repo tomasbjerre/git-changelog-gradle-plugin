@@ -3,6 +3,22 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## Unreleased
+### No issue
+   Adding annotation to context of tag
+
+   doc
+
+
+
+## 1.39
+### No issue
+   Adding merge boolean to commits
+
+   doc
+
+
+
 ## 1.38
 ### No issue
    Correcting version

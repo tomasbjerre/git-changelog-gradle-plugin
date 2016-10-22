@@ -3,6 +3,30 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## Unreleased
+### No issue
+
+[59e0171ef713f63](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/59e0171ef713f63) Tomas Bjerre *2016-10-22 10:27:03*
+
+Adding annotation to context of tag
+
+[070be300680768f](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/070be300680768f) Tomas Bjerre *2016-10-05 19:30:09*
+
+doc
+
+
+## 1.39
+### No issue
+
+[a91d6410ac7ab39](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/a91d6410ac7ab39) Tomas Bjerre *2016-10-05 18:41:43*
+
+Adding merge boolean to commits
+
+[da8b749e115eadc](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/da8b749e115eadc) Tomas Bjerre *2016-08-11 14:40:21*
+
+doc
+
+
 ## 1.38
 ### No issue
 

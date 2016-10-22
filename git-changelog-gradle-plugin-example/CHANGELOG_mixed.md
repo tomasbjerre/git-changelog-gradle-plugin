@@ -5,6 +5,14 @@ Changelog of Git Changelog Maven plugin.
 
 ## These commits are not included in any tag
 ### These commits have not issue in their commit comment
+   Adding annotation to context of tag *10:27:03*
+
+   doc *19:30:09*
+
+   Adding merge boolean to commits *18:41:43*
+
+   doc *14:40:21*
+
    Correcting version *14:37:02*
 
 
