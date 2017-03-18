@@ -5,7 +5,19 @@ Changelog of Git Changelog Maven plugin.
 
 ## These commits are not included in any tag
 ### These commits have not issue in their commit comment
-   Adding annotation to context of tag *10:27:03*
+   doc *09:35:25*
+
+   Git Changelog Lib 1.58 -> 1.64
+
+ * Jira issueType and labels
+ * GitHub labels
+ * 10 seconds timeout to GitHub *09:33:32*
+
+   Set theme jekyll-theme-slate *20:20:13*
+
+   doc *10:33:53*
+
+   Adding annotation to context of tag *10:27:44*
 
    doc *19:30:09*
 

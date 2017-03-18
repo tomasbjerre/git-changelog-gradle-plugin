@@ -6,7 +6,35 @@ Changelog of Git Changelog Maven plugin.
 ## Unreleased
 ### No issue
 
-[59e0171ef713f63](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/59e0171ef713f63) Tomas Bjerre *2016-10-22 10:27:03*
+[79445fe2b637b25](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/79445fe2b637b25) Tomas Bjerre *2017-03-18 09:35:25*
+
+doc
+
+
+## 1.41
+### No issue
+
+[4b11be4a5b1d298](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/4b11be4a5b1d298) Tomas Bjerre *2017-03-18 09:33:32*
+
+Git Changelog Lib 1.58 -> 1.64
+
+ * Jira issueType and labels
+ * GitHub labels
+ * 10 seconds timeout to GitHub
+
+[57ad0c56ec60af3](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/57ad0c56ec60af3) Tomas Bjerre *2017-02-07 20:20:13*
+
+Set theme jekyll-theme-slate
+
+[0f46ec14274d48b](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/0f46ec14274d48b) Tomas Bjerre *2016-10-22 10:33:53*
+
+doc
+
+
+## 1.40
+### No issue
+
+[8b315d7b4d0c6e0](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/8b315d7b4d0c6e0) Tomas Bjerre *2016-10-22 10:27:44*
 
 Adding annotation to context of tag
 

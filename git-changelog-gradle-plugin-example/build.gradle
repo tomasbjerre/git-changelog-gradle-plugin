@@ -7,7 +7,7 @@ buildscript {
  }
 
  dependencies {
-  classpath "se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.41-SNAPSHOT"
+  classpath "se.bjurr.gitchangelog:git-changelog-gradle-plugin:1.42-SNAPSHOT"
  }
 }
 

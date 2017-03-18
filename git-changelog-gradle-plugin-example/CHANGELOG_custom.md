@@ -5,6 +5,26 @@ Changelog of Git Changelog Maven plugin.
 
 ## Unreleased
 ### No issue
+   doc
+
+
+
+## 1.41
+### No issue
+   Git Changelog Lib 1.58 -> 1.64
+
+ * Jira issueType and labels
+ * GitHub labels
+ * 10 seconds timeout to GitHub
+
+   Set theme jekyll-theme-slate
+
+   doc
+
+
+
+## 1.40
+### No issue
    Adding annotation to context of tag
 
    doc
