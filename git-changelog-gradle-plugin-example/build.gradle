@@ -81,11 +81,22 @@ task generateGitChangelogTemplateFromFile(type: se.bjurr.gitchangelog.plugin.gra
 //
 // Template from file and GitHub token
 //
-task generateGitChangelogTemplateFromFileAndToken(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+task generateGitChangelogTemplateWithGitHubIssues(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
  gitHubApi = "https://api.github.com/repos/tomasbjerre/git-changelog-gradle-plugin";
  gitHubToken = System.properties['GITHUB_OAUTH2TOKEN'];
  gitHubIssuePattern = "#([0-9]*)";
  filePath = "CHANGELOG.md";
+ templateContent = new File('changelog.mustache').getText('UTF-8');
+}
+
+//
+// Template from file and GitLab token
+//
+task generateGitChangelogTemplateWithGitLabIssues(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+ gitLabServer = "https://gitlab.com/";
+ gitLabProjectName = "violations-test";
+ gitLabToken = System.properties['GITLAB_TOKEN'];
+ filePath = "CHANGELOG_GITLAB.md";
  templateContent = new File('changelog.mustache').getText('UTF-8');
 }
 

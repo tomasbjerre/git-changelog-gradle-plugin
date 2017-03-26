@@ -6,7 +6,27 @@ Changelog of Git Changelog Maven plugin.
 ## Unreleased
 ### No issue
 
-[79445fe2b637b25](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/79445fe2b637b25) Tomas Bjerre *2017-03-18 09:35:25*
+[697ffb2c810657c](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/697ffb2c810657c) Tomas Bjerre *2017-03-20 18:43:51*
+
+doc
+
+
+## 1.43
+### No issue
+
+[65bbb3948850167](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/65bbb3948850167) Tomas Bjerre *2017-03-20 18:27:20*
+
+doc
+
+
+## 1.42
+### No issue
+
+[fe7e9fd812ead29](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/fe7e9fd812ead29) Tomas Bjerre *2017-03-20 18:20:36*
+
+Fix Jira labels
+
+[c542dfe71851922](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/c542dfe71851922) Tomas Bjerre *2017-03-18 09:35:54*
 
 doc
 
