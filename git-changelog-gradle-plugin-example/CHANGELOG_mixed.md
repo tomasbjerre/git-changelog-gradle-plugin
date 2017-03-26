@@ -5,6 +5,10 @@ Changelog of Git Changelog Maven plugin.
 
 ## These commits are not included in any tag
 ### These commits have not issue in their commit comment
+   doc *05:09:25*
+
+   GitLab integration *05:07:07*
+
    doc *18:43:51*
 
    doc *18:27:20*

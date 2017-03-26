@@ -9,6 +9,14 @@ Changelog of Git Changelog Maven plugin.
 
 
 
+## 1.44
+### No issue
+   GitLab integration
+
+   doc
+
+
+
 ## 1.43
 ### No issue
    doc

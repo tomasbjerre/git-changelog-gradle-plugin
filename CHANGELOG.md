@@ -8,6 +8,20 @@ Changelog of Git Changelog Gradle plugin.
 **doc**
 
 
+[dc452bb36f0a75c](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/dc452bb36f0a75c) Tomas Bjerre *2017-03-26 05:09:25*
+
+
+## 1.44
+### No issue
+
+**GitLab integration**
+
+
+[636a45d1daba1f6](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/636a45d1daba1f6) Tomas Bjerre *2017-03-26 05:07:07*
+
+**doc**
+
+
 [697ffb2c810657c](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/697ffb2c810657c) Tomas Bjerre *2017-03-20 18:43:51*
 
 
