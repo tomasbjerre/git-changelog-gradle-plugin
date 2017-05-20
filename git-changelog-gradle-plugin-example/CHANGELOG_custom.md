@@ -5,6 +5,16 @@ Changelog of Git Changelog Maven plugin.
 
 ## Unreleased
 ### No issue
+   Using file(..) instead of new File(..) in examples #7
+
+   doc
+
+
+
+## 1.45
+### No issue
+   tag time added to tag model
+
    doc
 
 

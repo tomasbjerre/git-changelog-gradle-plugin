@@ -5,7 +5,13 @@ Changelog of Git Changelog Maven plugin.
 
 ## These commits are not included in any tag
 ### These commits have not issue in their commit comment
-   doc *05:09:25*
+   Using file(..) instead of new File(..) in examples #7 *14:10:11*
+
+   doc *09:24:18*
+
+   tag time added to tag model *09:20:14*
+
+   doc *05:10:01*
 
    GitLab integration *05:07:07*
 

@@ -24,7 +24,7 @@ task generateGitChangelogMinimal(type: se.bjurr.gitchangelog.plugin.gradle.GitCh
 // Settings file
 //
 task generateGitChangelogSettings(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- settingsFile = "changelog.json";
+ settingsFile = file("changelog.json").getAbsolutePath();
  filePath = "CHANGELOG_settings.md";
 }
 
@@ -75,7 +75,7 @@ Changelog of Git Changelog Maven plugin.
 //
 task generateGitChangelogTemplateFromFile(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
  filePath = "CHANGELOG_file.md";
- templateContent = new File('changelog.mustache').getText('UTF-8');
+ templateContent = file('changelog.mustache').getText('UTF-8');
 }
 
 //
@@ -86,7 +86,7 @@ task generateGitChangelogTemplateWithGitHubIssues(type: se.bjurr.gitchangelog.pl
  gitHubToken = System.properties['GITHUB_OAUTH2TOKEN'];
  gitHubIssuePattern = "#([0-9]*)";
  filePath = "CHANGELOG.md";
- templateContent = new File('changelog.mustache').getText('UTF-8');
+ templateContent = file('changelog.mustache').getText('UTF-8');
 }
 
 //
@@ -97,7 +97,7 @@ task generateGitChangelogTemplateWithGitLabIssues(type: se.bjurr.gitchangelog.pl
  gitLabProjectName = "violations-test";
  gitLabToken = System.properties['GITLAB_TOKEN'];
  filePath = "CHANGELOG_GITLAB.md";
- templateContent = new File('changelog.mustache').getText('UTF-8');
+ templateContent = file('changelog.mustache').getText('UTF-8');
 }
 
 //
@@ -109,7 +109,7 @@ task generateGitChangelogTemplateFromFileAndJira(type: se.bjurr.gitchangelog.plu
  jiraIssuePattern = "\\b[a-zA-Z]([a-zA-Z]+)-([0-9]+)\\b";
  jiraServer = "https://yourJiraServer.com/jira";
  filePath = "CHANGELOG_jira.md";
- templateContent = new File('changelog.mustache').getText('UTF-8');
+ templateContent = file('changelog.mustache').getText('UTF-8');
 }
 
 //

@@ -6,7 +6,23 @@ Changelog of Git Changelog Maven plugin.
 ## Unreleased
 ### No issue
 
-[dc452bb36f0a75c](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/dc452bb36f0a75c) Tomas Bjerre *2017-03-26 05:09:25*
+[723e09669066755](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/723e09669066755) Your Name *2017-05-20 14:10:11*
+
+Using file(..) instead of new File(..) in examples #7
+
+[d0754c14ba30320](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/d0754c14ba30320) Tomas Bjerre *2017-04-14 09:24:18*
+
+doc
+
+
+## 1.45
+### No issue
+
+[d21964445069bf0](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/d21964445069bf0) Tomas Bjerre *2017-04-14 09:20:14*
+
+tag time added to tag model
+
+[a998896882677cd](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/a998896882677cd) Tomas Bjerre *2017-03-26 05:10:01*
 
 doc
 
