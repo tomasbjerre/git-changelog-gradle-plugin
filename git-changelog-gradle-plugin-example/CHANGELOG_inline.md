@@ -6,7 +6,7 @@ Changelog of Git Changelog Maven plugin.
 ## Unreleased
 ### No issue
 
-[723e09669066755](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/723e09669066755) Your Name *2017-05-20 14:10:11*
+[278bbaca992f908](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/278bbaca992f908) Your Name *2017-05-20 14:14:53*
 
 Using file(..) instead of new File(..) in examples #7
 

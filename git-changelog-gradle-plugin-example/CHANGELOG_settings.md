@@ -8,7 +8,7 @@ Changelog of Git Changelog Gradle plugin.
 **Using file(..) instead of new File(..) in examples #7**
 
 
-[723e09669066755](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/723e09669066755) Your Name *2017-05-20 14:10:11*
+[278bbaca992f908](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/278bbaca992f908) Your Name *2017-05-20 14:14:53*
 
 
 ### Other changes

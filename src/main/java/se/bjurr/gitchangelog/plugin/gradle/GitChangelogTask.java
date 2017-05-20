@@ -18,6 +18,9 @@ import se.bjurr.gitchangelog.api.GitChangelogApi;
 public class GitChangelogTask extends DefaultTask {
 
   private static final Logger log = LoggerFactory.getLogger(DefaultTask.class.getName());
+
+  private String fromRepo;
+
   private String toRef;
   private String toCommit;
 
@@ -55,6 +58,14 @@ public class GitChangelogTask extends DefaultTask {
   private String gitLabServer;
   private String gitLabProjectName;
   private String gitLabToken;
+
+  public void setFromRepo(String fromRepo) {
+	this.fromRepo = fromRepo;
+}
+
+  public String getFromRepo() {
+	return fromRepo;
+}
 
   public void setGitLabProjectName(String gitLabProjectName) {
     this.gitLabProjectName = gitLabProjectName;
@@ -299,6 +310,9 @@ public class GitChangelogTask extends DefaultTask {
 
       GitChangelogApi builder;
       builder = gitChangelogApiBuilder();
+
+      builder.withFromRepo(fromRepo);
+
       if (isSupplied(settingsFile)) {
         builder.withSettings(new File(settingsFile).toURI().toURL());
       }

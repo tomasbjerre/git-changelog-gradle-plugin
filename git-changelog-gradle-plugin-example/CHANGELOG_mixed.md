@@ -5,7 +5,7 @@ Changelog of Git Changelog Maven plugin.
 
 ## These commits are not included in any tag
 ### These commits have not issue in their commit comment
-   Using file(..) instead of new File(..) in examples #7 *14:10:11*
+   Using file(..) instead of new File(..) in examples #7 *14:14:53*
 
    doc *09:24:18*
 
