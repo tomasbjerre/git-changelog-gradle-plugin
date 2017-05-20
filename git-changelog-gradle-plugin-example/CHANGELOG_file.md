@@ -2,8 +2,13 @@
 
 Changelog of Git Changelog Gradle plugin.
 
-## Unreleased
+## 1.46
 ### No issue
+
+**Adding fromRepo attribute #8**
+
+
+[e656098d86f5cbd](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/e656098d86f5cbd) Your Name *2017-05-20 14:43:23*
 
 **Using file(..) instead of new File(..) in examples #7**
 

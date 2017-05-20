@@ -3,8 +3,10 @@
 
 Changelog of Git Changelog Maven plugin.
 
-## Unreleased
+## 1.46
 ### No issue
+   Adding fromRepo attribute #8
+
    Using file(..) instead of new File(..) in examples #7
 
    doc

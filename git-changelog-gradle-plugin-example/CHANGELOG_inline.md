@@ -3,8 +3,12 @@
 
 Changelog of Git Changelog Maven plugin.
 
-## Unreleased
+## 1.46
 ### No issue
+
+[e656098d86f5cbd](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/e656098d86f5cbd) Your Name *2017-05-20 14:43:23*
+
+Adding fromRepo attribute #8
 
 [278bbaca992f908](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/278bbaca992f908) Your Name *2017-05-20 14:14:53*
 

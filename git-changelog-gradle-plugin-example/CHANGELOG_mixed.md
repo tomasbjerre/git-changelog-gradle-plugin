@@ -5,6 +5,8 @@ Changelog of Git Changelog Maven plugin.
 
 ## These commits are not included in any tag
 ### These commits have not issue in their commit comment
+   Adding fromRepo attribute #8 *14:43:23*
+
    Using file(..) instead of new File(..) in examples #7 *14:14:53*
 
    doc *09:24:18*

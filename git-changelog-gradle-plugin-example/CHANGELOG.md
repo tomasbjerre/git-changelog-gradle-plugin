@@ -2,13 +2,21 @@
 
 Changelog of Git Changelog Gradle plugin.
 
-## Unreleased
+## 1.46
 ### GitHub [#7](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/7) Relative paths for files aren&#39;t always right..
 
 **Using file(..) instead of new File(..) in examples #7**
 
 
 [278bbaca992f908](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/278bbaca992f908) Your Name *2017-05-20 14:14:53*
+
+
+### GitHub [#8](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/8) fromRepo not exposed
+
+**Adding fromRepo attribute #8**
+
+
+[e656098d86f5cbd](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/e656098d86f5cbd) Your Name *2017-05-20 14:43:23*
 
 
 ### No issue
