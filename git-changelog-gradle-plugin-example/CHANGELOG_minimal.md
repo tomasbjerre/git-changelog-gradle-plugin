@@ -2,6 +2,20 @@
 
 Changelog of Git Changelog Gradle plugin.
 
+## Unreleased
+### No issue
+
+**Better handling of relative paths #7**
+
+
+[551ad2ad7425ca7](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/551ad2ad7425ca7) Tomas Bjerre *2017-05-22 16:15:57*
+
+**doc**
+
+
+[ae98fb5e6e74075](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/ae98fb5e6e74075) Your Name *2017-05-20 14:47:09*
+
+
 ## 1.46
 ### No issue
 

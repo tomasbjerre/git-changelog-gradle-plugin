@@ -4,7 +4,6 @@ import static com.google.common.base.Strings.isNullOrEmpty;
 import static com.google.common.collect.Lists.newArrayList;
 import static se.bjurr.gitchangelog.api.GitChangelogApi.gitChangelogApiBuilder;
 
-import java.io.File;
 import java.util.List;
 
 import org.gradle.api.DefaultTask;
@@ -314,7 +313,7 @@ public class GitChangelogTask extends DefaultTask {
       builder.withFromRepo(fromRepo);
 
       if (isSupplied(settingsFile)) {
-        builder.withSettings(new File(settingsFile).toURI().toURL());
+        builder.withSettings(getProject().file(settingsFile).toURI().toURL());
       }
 
       if (isSupplied(toRef)) {

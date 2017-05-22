@@ -3,6 +3,14 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## Unreleased
+### No issue
+   Better handling of relative paths #7
+
+   doc
+
+
+
 ## 1.46
 ### No issue
    Adding fromRepo attribute #8
