@@ -5,7 +5,9 @@ Changelog of Git Changelog Maven plugin.
 
 ## These commits are not included in any tag
 ### These commits have not issue in their commit comment
-   Better handling of relative paths #7 *16:15:57*
+   doc *16:18:47*
+
+   Better handling of relative paths #7 *16:16:38*
 
    doc *14:47:09*
 

@@ -5,6 +5,12 @@ Changelog of Git Changelog Maven plugin.
 
 ## Unreleased
 ### No issue
+   doc
+
+
+
+## 1.47
+### No issue
    Better handling of relative paths #7
 
    doc
