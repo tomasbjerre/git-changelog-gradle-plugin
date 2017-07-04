@@ -40,6 +40,7 @@ public class GitChangelogTask extends DefaultTask {
   private String timeZone;
   private boolean removeIssueFromMessage;
   private String ignoreCommitsIfMessageMatches;
+  private String ignoreCommitsIfOlderThan;
   private String untaggedName;
   private String noIssueName;
   private boolean ignoreCommitsWithoutIssue;
@@ -220,6 +221,10 @@ public class GitChangelogTask extends DefaultTask {
 
   public void setIgnoreCommitsIfMessageMatches(String ignoreCommitsIfMessageMatches) {
     this.ignoreCommitsIfMessageMatches = ignoreCommitsIfMessageMatches;
+  }
+
+  public void setIgnoreCommitsIfOlderThan(String ignoreCommitsIfOlderThan) {
+    this.ignoreCommitsIfOlderThan = ignoreCommitsIfOlderThan;
   }
 
   public void setNoIssueName(String noIssueName) {
