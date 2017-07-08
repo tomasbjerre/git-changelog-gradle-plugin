@@ -5,6 +5,8 @@ Changelog of Git Changelog Maven plugin.
 
 ## Unreleased
 ### No issue
+   Ignore commits older than #9
+
    doc
 
 

@@ -4,14 +4,14 @@ import static com.google.common.base.Strings.isNullOrEmpty;
 import static com.google.common.collect.Lists.newArrayList;
 import static se.bjurr.gitchangelog.api.GitChangelogApi.gitChangelogApiBuilder;
 
+import java.io.File;
+import java.util.Date;
 import java.util.List;
-
 import org.gradle.api.DefaultTask;
 import org.gradle.api.tasks.TaskAction;
 import org.gradle.api.tasks.TaskExecutionException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import se.bjurr.gitchangelog.api.GitChangelogApi;
 
 public class GitChangelogTask extends DefaultTask {
@@ -28,7 +28,7 @@ public class GitChangelogTask extends DefaultTask {
 
   private String settingsFile;
   private String templateContent;
-  private String filePath;
+  private File file;
 
   private String mediaWikiUrl;
   private String mediaWikiTitle;
@@ -58,13 +58,23 @@ public class GitChangelogTask extends DefaultTask {
   private String gitLabProjectName;
   private String gitLabToken;
 
+  private Date ignoreCommitsOlderThan;
+
+  public void setIgnoreCommitsOlderThan(Date ignoreCommitsOlderThan) {
+    this.ignoreCommitsOlderThan = ignoreCommitsOlderThan;
+  }
+
+  public Date getIgnoreCommitsOlderThan() {
+    return ignoreCommitsOlderThan;
+  }
+
   public void setFromRepo(String fromRepo) {
-	this.fromRepo = fromRepo;
-}
+    this.fromRepo = fromRepo;
+  }
 
   public String getFromRepo() {
-	return fromRepo;
-}
+    return fromRepo;
+  }
 
   public void setGitLabProjectName(String gitLabProjectName) {
     this.gitLabProjectName = gitLabProjectName;
@@ -142,8 +152,8 @@ public class GitChangelogTask extends DefaultTask {
     return settingsFile;
   }
 
-  public String getFilePath() {
-    return filePath;
+  public File getFile() {
+    return file;
   }
 
   public String getFromRef() {
@@ -158,8 +168,8 @@ public class GitChangelogTask extends DefaultTask {
     return toRef;
   }
 
-  public void setFilePath(String filePath) {
-    this.filePath = filePath;
+  public void setFile(File file) {
+    this.file = file;
   }
 
   public void setFromCommit(String fromCommit) {
@@ -347,7 +357,10 @@ public class GitChangelogTask extends DefaultTask {
       }
       builder.withRemoveIssueFromMessageArgument(removeIssueFromMessage);
       if (isSupplied(ignoreCommitsIfMessageMatches)) {
-        builder.withIgnoreCommitsWithMesssage(ignoreCommitsIfMessageMatches);
+        builder.withIgnoreCommitsWithMessage(ignoreCommitsIfMessageMatches);
+      }
+      if (ignoreCommitsOlderThan != null) {
+        builder.withIgnoreCommitsOlderThan(ignoreCommitsOlderThan);
       }
       if (isSupplied(untaggedName)) {
         builder.withUntaggedName(untaggedName);
@@ -402,20 +415,20 @@ public class GitChangelogTask extends DefaultTask {
         builder.withJiraServer(jiraServer);
       }
 
-      if (isSupplied(filePath)) {
-        builder.toFile(filePath);
+      if (file != null) {
+        builder.toFile(file);
         log.info("#");
-        log.info("# Wrote: " + filePath);
+        log.info("# Wrote: " + file);
         log.info("#");
       }
 
       if (isSupplied(mediaWikiUrl)) {
-        builder//
-            .toMediaWiki(//
-                mediaWikiUsername, //
-                mediaWikiPassword, //
-                mediaWikiUrl, //
-                mediaWikiTitle);
+        builder //
+            .toMediaWiki( //
+            mediaWikiUsername, //
+            mediaWikiPassword, //
+            mediaWikiUrl, //
+            mediaWikiTitle);
         log.info("#");
         log.info("# Created: " + mediaWikiUrl + "/index.php/" + mediaWikiTitle);
         log.info("#");
