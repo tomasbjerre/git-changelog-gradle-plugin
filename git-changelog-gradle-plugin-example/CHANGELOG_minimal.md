@@ -5,10 +5,22 @@ Changelog of Git Changelog Gradle plugin.
 ## Unreleased
 ### No issue
 
+**doc**
+
+
+[bc3d55a49f0cd22](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/bc3d55a49f0cd22) Tomas Bjerre *2017-07-09 19:50:09*
+
+
+## 1.48
+### GitHub [#9](https://github.com/tomasbjerre/git-changelog-gradle-plugin/pull/9) Support for tomasbjerre/git-changelog-lib#47
+
 **Ignore commits older than #9**
 
 
-[ef3a84e3b4850f8](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/ef3a84e3b4850f8) Tomas Bjerre *2017-07-08 06:05:54*
+[e185afe0630ecf2](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/e185afe0630ecf2) Tomas Bjerre *2017-07-08 06:06:26*
+
+
+### No issue
 
 **doc**
 
@@ -17,12 +29,15 @@ Changelog of Git Changelog Gradle plugin.
 
 
 ## 1.47
-### No issue
+### GitHub [#7](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/7) Relative paths for files aren&#39;t always right..
 
 **Better handling of relative paths #7**
 
 
 [a3e98d30881c76e](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/a3e98d30881c76e) Tomas Bjerre *2017-05-22 16:16:38*
+
+
+### No issue
 
 **doc**
 
@@ -31,17 +46,23 @@ Changelog of Git Changelog Gradle plugin.
 
 
 ## 1.46
-### No issue
+### GitHub [#7](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/7) Relative paths for files aren&#39;t always right..
+
+**Using file(..) instead of new File(..) in examples #7**
+
+
+[278bbaca992f908](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/278bbaca992f908) Your Name *2017-05-20 14:14:53*
+
+
+### GitHub [#8](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/8) fromRepo not exposed
 
 **Adding fromRepo attribute #8**
 
 
 [e656098d86f5cbd](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/e656098d86f5cbd) Your Name *2017-05-20 14:43:23*
 
-**Using file(..) instead of new File(..) in examples #7**
 
-
-[278bbaca992f908](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/278bbaca992f908) Your Name *2017-05-20 14:14:53*
+### No issue
 
 **doc**
 
@@ -392,17 +413,20 @@ Changelog of Git Changelog Gradle plugin.
 
 
 ## 1.22
+### GitHub [#4](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/4) GitHub OAuth2 Token support
+
+**Support GitHub OAuth2 token #4**
+
+
+[e7396385437d9f8](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/e7396385437d9f8) Tomas Bjerre *2016-03-15 20:56:29*
+
+
 ### No issue
 
 **Updating release and publish plugins**
 
 
 [6feacb255e8cf21](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/6feacb255e8cf21) Tomas Bjerre *2016-03-15 21:07:59*
-
-**Support GitHub OAuth2 token #4**
-
-
-[e7396385437d9f8](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/e7396385437d9f8) Tomas Bjerre *2016-03-15 20:56:29*
 
 **Updating CHANGELOG.md**
 
@@ -473,12 +497,15 @@ Changelog of Git Changelog Gradle plugin.
 
 
 ## 1.16
-### No issue
+### GitHub [#5](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/5) NoSuchMethodError when using github integration
 
 **Added variables: messageTitle, messageBody, messageItems #5**
 
 
 [911a92eefbfc04c](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/911a92eefbfc04c) Tomas Bjerre *2016-02-09 19:33:06*
+
+
+### No issue
 
 **Updating CHANGELOG.md after release**
 
@@ -538,7 +565,7 @@ Changelog of Git Changelog Gradle plugin.
 
 
 ## 1.12
-### No issue
+### GitHub [#3](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/3) Each task should have its own namespace
 
 **Storing settings on each task #3**
 
@@ -562,12 +589,15 @@ Changelog of Git Changelog Gradle plugin.
 
 
 ## 1.10
-### No issue
+### GitHub [#1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/1) Use latest lib
 
 **Using lib 1.17 #1**
 
 
 [b58012a56766e79](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/b58012a56766e79) Tomas Bjerre *2015-12-06 07:40:52*
+
+
+### No issue
 
 **doc**
 
@@ -576,7 +606,7 @@ Changelog of Git Changelog Gradle plugin.
 
 
 ## 1.9
-### No issue
+### GitHub [#1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/1) Use latest lib
 
 **Using lib 1.15 #1**
 
@@ -599,12 +629,15 @@ Changelog of Git Changelog Gradle plugin.
 
 
 ## 1.7
-### No issue
+### GitHub [#1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/1) Use latest lib
 
 **using lib 1.13 #1**
 
 
 [378d5ebbd4a0d29](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/378d5ebbd4a0d29) Tomas Bjerre *2015-11-23 22:09:40*
+
+
+### No issue
 
 **doc**
 
@@ -613,12 +646,15 @@ Changelog of Git Changelog Gradle plugin.
 
 
 ## 1.6
-### No issue
+### GitHub [#1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/1) Use latest lib
 
 **Using lib 1.12 #1**
 
 
 [31b0e8f2ca18e95](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/31b0e8f2ca18e95) Tomas Bjerre *2015-11-23 18:11:30*
+
+
+### No issue
 
 **doc**
 

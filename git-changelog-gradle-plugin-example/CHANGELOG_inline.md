@@ -6,9 +6,20 @@ Changelog of Git Changelog Maven plugin.
 ## Unreleased
 ### No issue
 
-[ef3a84e3b4850f8](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/ef3a84e3b4850f8) Tomas Bjerre *2017-07-08 06:05:54*
+[bc3d55a49f0cd22](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/bc3d55a49f0cd22) Tomas Bjerre *2017-07-09 19:50:09*
+
+doc
+
+
+## 1.48
+### GitHub [#9](https://github.com/tomasbjerre/git-changelog-gradle-plugin/pull/9) Support for tomasbjerre/git-changelog-lib#47
+
+[e185afe0630ecf2](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/e185afe0630ecf2) Tomas Bjerre *2017-07-08 06:06:26*
 
 Ignore commits older than #9
+
+
+### No issue
 
 [109a63e61305810](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/109a63e61305810) Tomas Bjerre *2017-05-22 16:19:24*
 
@@ -16,11 +27,14 @@ doc
 
 
 ## 1.47
-### No issue
+### GitHub [#7](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/7) Relative paths for files aren&#39;t always right..
 
 [a3e98d30881c76e](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/a3e98d30881c76e) Tomas Bjerre *2017-05-22 16:16:38*
 
 Better handling of relative paths #7
+
+
+### No issue
 
 [ae98fb5e6e74075](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/ae98fb5e6e74075) Your Name *2017-05-20 14:47:09*
 
@@ -28,15 +42,21 @@ doc
 
 
 ## 1.46
-### No issue
+### GitHub [#7](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/7) Relative paths for files aren&#39;t always right..
+
+[278bbaca992f908](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/278bbaca992f908) Your Name *2017-05-20 14:14:53*
+
+Using file(..) instead of new File(..) in examples #7
+
+
+### GitHub [#8](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/8) fromRepo not exposed
 
 [e656098d86f5cbd](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/e656098d86f5cbd) Your Name *2017-05-20 14:43:23*
 
 Adding fromRepo attribute #8
 
-[278bbaca992f908](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/278bbaca992f908) Your Name *2017-05-20 14:14:53*
 
-Using file(..) instead of new File(..) in examples #7
+### No issue
 
 [d0754c14ba30320](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/d0754c14ba30320) Tomas Bjerre *2017-04-14 09:24:18*
 
@@ -339,15 +359,18 @@ Update example
 
 
 ## 1.22
+### GitHub [#4](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/4) GitHub OAuth2 Token support
+
+[e7396385437d9f8](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/e7396385437d9f8) Tomas Bjerre *2016-03-15 20:56:29*
+
+Support GitHub OAuth2 token #4
+
+
 ### No issue
 
 [6feacb255e8cf21](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/6feacb255e8cf21) Tomas Bjerre *2016-03-15 21:07:59*
 
 Updating release and publish plugins
-
-[e7396385437d9f8](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/e7396385437d9f8) Tomas Bjerre *2016-03-15 20:56:29*
-
-Support GitHub OAuth2 token #4
 
 [3655040d316782d](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/3655040d316782d) Tomas Bjerre *2016-02-28 10:47:04*
 
@@ -411,11 +434,14 @@ Updating CHANGELOG.md after release
 
 
 ## 1.16
-### No issue
+### GitHub [#5](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/5) NoSuchMethodError when using github integration
 
 [911a92eefbfc04c](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/911a92eefbfc04c) Tomas Bjerre *2016-02-09 19:33:06*
 
 Added variables: messageTitle, messageBody, messageItems #5
+
+
+### No issue
 
 [8b01ab7c2cc3510](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/8b01ab7c2cc3510) Tomas Bjerre *2016-02-01 18:07:00*
 
@@ -468,7 +494,7 @@ Updating README.md after release
 
 
 ## 1.12
-### No issue
+### GitHub [#3](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/3) Each task should have its own namespace
 
 [782cace31d3814f](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/782cace31d3814f) Tomas Bjerre *2016-01-31 12:14:15*
 
@@ -490,11 +516,14 @@ Documentation and lib 1.22
 
 
 ## 1.10
-### No issue
+### GitHub [#1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/1) Use latest lib
 
 [b58012a56766e79](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/b58012a56766e79) Tomas Bjerre *2015-12-06 07:40:52*
 
 Using lib 1.17 #1
+
+
+### No issue
 
 [273b67ba969b42d](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/273b67ba969b42d) Tomas Bjerre *2015-12-04 22:58:53*
 
@@ -502,7 +531,7 @@ doc
 
 
 ## 1.9
-### No issue
+### GitHub [#1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/1) Use latest lib
 
 [6daf3e46b3c8e4b](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/6daf3e46b3c8e4b) Tomas Bjerre *2015-12-04 22:17:54*
 
@@ -522,11 +551,14 @@ doc
 
 
 ## 1.7
-### No issue
+### GitHub [#1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/1) Use latest lib
 
 [378d5ebbd4a0d29](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/378d5ebbd4a0d29) Tomas Bjerre *2015-11-23 22:09:40*
 
 using lib 1.13 #1
+
+
+### No issue
 
 [1303f55cdbf330f](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/1303f55cdbf330f) Tomas Bjerre *2015-11-23 18:14:55*
 
@@ -534,11 +566,14 @@ doc
 
 
 ## 1.6
-### No issue
+### GitHub [#1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/1) Use latest lib
 
 [31b0e8f2ca18e95](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/31b0e8f2ca18e95) Tomas Bjerre *2015-11-23 18:11:30*
 
 Using lib 1.12 #1
+
+
+### No issue
 
 [02682e41e00cef3](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/02682e41e00cef3) Tomas Bjerre *2015-11-21 14:32:43*
 

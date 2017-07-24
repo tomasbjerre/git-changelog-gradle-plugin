@@ -5,26 +5,40 @@ Changelog of Git Changelog Maven plugin.
 
 ## Unreleased
 ### No issue
+   doc
+
+
+
+## 1.48
+### GitHub [#9](https://github.com/tomasbjerre/git-changelog-gradle-plugin/pull/9) Support for tomasbjerre/git-changelog-lib#47
    Ignore commits older than #9
 
+
+### No issue
    doc
 
 
 
 ## 1.47
-### No issue
+### GitHub [#7](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/7) Relative paths for files aren&#39;t always right..
    Better handling of relative paths #7
 
+
+### No issue
    doc
 
 
 
 ## 1.46
-### No issue
-   Adding fromRepo attribute #8
-
+### GitHub [#7](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/7) Relative paths for files aren&#39;t always right..
    Using file(..) instead of new File(..) in examples #7
 
+
+### GitHub [#8](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/8) fromRepo not exposed
+   Adding fromRepo attribute #8
+
+
+### No issue
    doc
 
 
@@ -228,10 +242,12 @@ Changelog of Git Changelog Maven plugin.
 
 
 ## 1.22
+### GitHub [#4](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/4) GitHub OAuth2 Token support
+   Support GitHub OAuth2 token #4
+
+
 ### No issue
    Updating release and publish plugins
-
-   Support GitHub OAuth2 token #4
 
    Updating CHANGELOG.md
 
@@ -278,9 +294,11 @@ Changelog of Git Changelog Maven plugin.
 
 
 ## 1.16
-### No issue
+### GitHub [#5](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/5) NoSuchMethodError when using github integration
    Added variables: messageTitle, messageBody, messageItems #5
 
+
+### No issue
    Updating CHANGELOG.md after release
 
 
@@ -328,7 +346,7 @@ Changelog of Git Changelog Maven plugin.
 
 
 ## 1.12
-### No issue
+### GitHub [#3](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/3) Each task should have its own namespace
    Storing settings on each task #3
 
  * Also using lib 1.23
@@ -344,15 +362,17 @@ Changelog of Git Changelog Maven plugin.
 
 
 ## 1.10
-### No issue
+### GitHub [#1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/1) Use latest lib
    Using lib 1.17 #1
 
+
+### No issue
    doc
 
 
 
 ## 1.9
-### No issue
+### GitHub [#1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/1) Use latest lib
    Using lib 1.15 #1
 
 
@@ -366,17 +386,21 @@ Changelog of Git Changelog Maven plugin.
 
 
 ## 1.7
-### No issue
+### GitHub [#1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/1) Use latest lib
    using lib 1.13 #1
 
+
+### No issue
    doc
 
 
 
 ## 1.6
-### No issue
+### GitHub [#1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/1) Use latest lib
    Using lib 1.12 #1
 
+
+### No issue
    doc
 
 

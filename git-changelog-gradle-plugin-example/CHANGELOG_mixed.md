@@ -4,18 +4,26 @@
 Changelog of Git Changelog Maven plugin.
 
 ## These commits are not included in any tag
+### GitHub
+   Better handling of relative paths #7 *16:16:38*
+
+   Using file(..) instead of new File(..) in examples #7 *14:14:53*
+
+
+### GitHub
+   Adding fromRepo attribute #8 *14:43:23*
+
+
+### GitHub
+   Ignore commits older than #9 *06:06:26*
+
+
 ### These commits have not issue in their commit comment
-   Ignore commits older than #9 *06:05:54*
+   doc *19:50:09*
 
    doc *16:19:24*
 
-   Better handling of relative paths #7 *16:16:38*
-
    doc *14:47:09*
-
-   Adding fromRepo attribute #8 *14:43:23*
-
-   Using file(..) instead of new File(..) in examples #7 *14:14:53*
 
    doc *09:24:18*
 
@@ -56,6 +64,24 @@ Changelog of Git Changelog Maven plugin.
 
 
 ## 0
+### GitHub
+   Using lib 1.17 #1 *07:40:52*
+
+
+### GitHub
+   Storing settings on each task #3
+
+ * Also using lib 1.23 *12:14:15*
+
+
+### GitHub
+   Support GitHub OAuth2 token #4 *20:56:29*
+
+
+### GitHub
+   Added variables: messageTitle, messageBody, messageItems #5 *19:33:06*
+
+
 ### Jira
    JENKINS-34155 Support short SHA *16:56:23*
 
@@ -127,8 +153,6 @@ Changelog of Git Changelog Maven plugin.
 
    Updating release and publish plugins *21:07:59*
 
-   Support GitHub OAuth2 token #4 *20:56:29*
-
    Updating CHANGELOG.md *10:47:04*
 
    Supplying commit in each issue mentioned in message *08:44:05*
@@ -151,8 +175,6 @@ Changelog of Git Changelog Maven plugin.
 
    Updating CHANGELOG.md after release *19:35:00*
 
-   Added variables: messageTitle, messageBody, messageItems #5 *19:33:06*
-
    Updating CHANGELOG.md after release *18:07:00*
 
    Allowing custom issues not to include link
@@ -174,22 +196,16 @@ Changelog of Git Changelog Maven plugin.
 
    Updating README.md after release *12:18:06*
 
-   Storing settings on each task #3
-
- * Also using lib 1.23 *12:14:15*
-
    lib 1.13 *11:15:10*
 
    Documentation and lib 1.22 *09:30:35*
-
-   Using lib 1.17 #1 *07:40:52*
 
    doc *22:58:53*
 
 
 
 ## 1.9
-### These commits have not issue in their commit comment
+### GitHub
    Using lib 1.15 #1 *22:17:54*
 
 
@@ -203,17 +219,21 @@ Changelog of Git Changelog Maven plugin.
 
 
 ## 1.7
-### These commits have not issue in their commit comment
+### GitHub
    using lib 1.13 #1 *22:09:40*
 
+
+### These commits have not issue in their commit comment
    doc *18:14:55*
 
 
 
 ## 1.6
-### These commits have not issue in their commit comment
+### GitHub
    Using lib 1.12 #1 *18:11:30*
 
+
+### These commits have not issue in their commit comment
    doc *14:32:43*
 
 

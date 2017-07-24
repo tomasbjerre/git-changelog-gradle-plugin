@@ -5,25 +5,37 @@ Changelog of Git Changelog.
 
 ## Unreleased
 ### No issue
-   Ignore commits older than #9 *2017-07-08 06:05:54*
+   doc *2017-07-09 19:50:09*
 
+
+
+## 1.48
+### GitHub
+   Ignore commits older than #9 *2017-07-08 06:06:26*
+
+
+### No issue
    doc *2017-05-22 16:19:24*
 
 
 
 ## 1.47
-### No issue
+### GitHub
    Better handling of relative paths #7 *2017-05-22 16:16:38*
 
+
+### No issue
    doc *2017-05-20 14:47:09*
 
 
 
 ## 1.46
-### No issue
-   Adding fromRepo attribute #8 *2017-05-20 14:43:23*
-
+### GitHub
    Using file(..) instead of new File(..) in examples #7 *2017-05-20 14:14:53*
+
+
+### GitHub
+   Adding fromRepo attribute #8 *2017-05-20 14:43:23*
 
 
 
