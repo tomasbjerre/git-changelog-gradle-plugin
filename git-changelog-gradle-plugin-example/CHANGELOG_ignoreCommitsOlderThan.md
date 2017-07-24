@@ -3,8 +3,10 @@
 
 Changelog of Git Changelog.
 
-## Unreleased
+## 1.49
 ### No issue
+   Lib 1.70 *2017-07-24 19:43:57*
+
    doc *2017-07-09 19:50:09*
 
 

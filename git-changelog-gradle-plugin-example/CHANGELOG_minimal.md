@@ -2,8 +2,13 @@
 
 Changelog of Git Changelog Gradle plugin.
 
-## Unreleased
+## 1.49
 ### No issue
+
+**Lib 1.70**
+
+
+[eb32cb7c632fd50](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/eb32cb7c632fd50) Tomas Bjerre *2017-07-24 19:43:57*
 
 **doc**
 
