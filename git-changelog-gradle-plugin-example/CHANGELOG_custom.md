@@ -3,7 +3,7 @@
 
 Changelog of Git Changelog Maven plugin.
 
-## Unreleased
+## 1.52
 ### No issue
    Avoiding usage of Guava Objects
 

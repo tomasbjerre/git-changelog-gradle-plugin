@@ -3,10 +3,10 @@
 
 Changelog of Git Changelog Maven plugin.
 
-## Unreleased
+## 1.52
 ### No issue
 
-[7c2d1fda18b96f5](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/7c2d1fda18b96f5) Tomas Bjerre *2017-11-02 17:13:13*
+[d7f352acc81683e](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/d7f352acc81683e) Tomas Bjerre *2017-11-02 17:14:15*
 
 Avoiding usage of Guava Objects
 

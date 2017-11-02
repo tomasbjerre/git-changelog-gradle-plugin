@@ -3,9 +3,9 @@
 
 Changelog of Git Changelog.
 
-## Unreleased
+## 1.52
 ### No issue
-   Avoiding usage of Guava Objects *2017-11-02 17:13:13*
+   Avoiding usage of Guava Objects *2017-11-02 17:14:15*
 
    Doc *2017-10-28 11:23:02*
 
