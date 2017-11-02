@@ -3,6 +3,30 @@
 
 Changelog of Git Changelog.
 
+## Unreleased
+### No issue
+   Avoiding usage of Guava Objects *2017-11-02 17:13:13*
+
+   Doc *2017-10-28 11:23:02*
+
+
+
+## 1.51
+### No issue
+   Gradle publish plugin 0.9.9 *2017-10-28 10:49:45*
+
+   doc *2017-07-25 18:31:19*
+
+
+
+## 1.50
+### No issue
+   Lib 1.71 *2017-07-25 18:27:12*
+
+   doc *2017-07-24 20:02:45*
+
+
+
 ## 1.49
 ### No issue
    Lib 1.70 *2017-07-24 19:43:57*

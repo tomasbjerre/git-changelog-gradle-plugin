@@ -2,6 +2,48 @@
 
 Changelog of Git Changelog Gradle plugin.
 
+## Unreleased
+### No issue
+
+**Avoiding usage of Guava Objects**
+
+
+[7c2d1fda18b96f5](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/7c2d1fda18b96f5) Tomas Bjerre *2017-11-02 17:13:13*
+
+**Doc**
+
+
+[6976aa12d53049e](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/6976aa12d53049e) Tomas Bjerre *2017-10-28 11:23:02*
+
+
+## 1.51
+### No issue
+
+**Gradle publish plugin 0.9.9**
+
+
+[a4f123715188f61](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/a4f123715188f61) Tomas Bjerre *2017-10-28 10:49:45*
+
+**doc**
+
+
+[05d90e9fdb837a6](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/05d90e9fdb837a6) Tomas Bjerre *2017-07-25 18:31:19*
+
+
+## 1.50
+### No issue
+
+**Lib 1.71**
+
+
+[9e42357f0f8a330](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/9e42357f0f8a330) Tomas Bjerre *2017-07-25 18:27:12*
+
+**doc**
+
+
+[4ca8b778ad9ee34](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/4ca8b778ad9ee34) Tomas Bjerre *2017-07-24 20:02:45*
+
+
 ## 1.49
 ### No issue
 

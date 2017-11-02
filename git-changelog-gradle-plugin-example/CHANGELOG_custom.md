@@ -3,6 +3,30 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## Unreleased
+### No issue
+   Avoiding usage of Guava Objects
+
+   Doc
+
+
+
+## 1.51
+### No issue
+   Gradle publish plugin 0.9.9
+
+   doc
+
+
+
+## 1.50
+### No issue
+   Lib 1.71
+
+   doc
+
+
+
 ## 1.49
 ### No issue
    Lib 1.70
