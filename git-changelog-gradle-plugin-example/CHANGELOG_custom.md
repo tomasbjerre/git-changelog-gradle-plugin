@@ -3,7 +3,7 @@
 
 Changelog of Git Changelog Maven plugin.
 
-## Unreleased
+## 1.53
 ### No issue
    Disabling integrations if not used
 

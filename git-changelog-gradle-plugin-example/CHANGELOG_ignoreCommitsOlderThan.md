@@ -3,9 +3,9 @@
 
 Changelog of Git Changelog.
 
-## Unreleased
+## 1.53
 ### No issue
-   Disabling integrations if not used *2017-11-18 12:31:40*
+   Disabling integrations if not used *2017-11-18 12:35:27*
 
    Doc *2017-11-02 17:18:14*
 

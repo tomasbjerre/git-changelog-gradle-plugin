@@ -2,13 +2,13 @@
 
 Changelog of Git Changelog Gradle plugin.
 
-## Unreleased
+## 1.53
 ### No issue
 
 **Disabling integrations if not used**
 
 
-[2f07e0aa43247e9](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/2f07e0aa43247e9) Tomas Bjerre *2017-11-18 12:31:40*
+[cc80c59ea5010b1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/cc80c59ea5010b1) Tomas Bjerre *2017-11-18 12:35:27*
 
 **Doc**
 
