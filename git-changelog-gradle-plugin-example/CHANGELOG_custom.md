@@ -3,6 +3,14 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## Unreleased
+### No issue
+   Disabling integrations if not used
+
+   Doc
+
+
+
 ## 1.52
 ### No issue
    Avoiding usage of Guava Objects

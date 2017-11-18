@@ -2,6 +2,20 @@
 
 Changelog of Git Changelog Gradle plugin.
 
+## Unreleased
+### No issue
+
+**Disabling integrations if not used**
+
+
+[2f07e0aa43247e9](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/2f07e0aa43247e9) Tomas Bjerre *2017-11-18 12:31:40*
+
+**Doc**
+
+
+[67998f029dc2650](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/67998f029dc2650) Tomas Bjerre *2017-11-02 17:18:14*
+
+
 ## 1.52
 ### No issue
 

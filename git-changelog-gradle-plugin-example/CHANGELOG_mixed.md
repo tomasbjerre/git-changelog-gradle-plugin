@@ -19,6 +19,10 @@ Changelog of Git Changelog Maven plugin.
 
 
 ### These commits have not issue in their commit comment
+   Disabling integrations if not used *12:31:40*
+
+   Doc *17:18:14*
+
    Avoiding usage of Guava Objects *17:14:15*
 
    Doc *11:23:02*

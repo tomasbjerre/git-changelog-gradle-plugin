@@ -3,6 +3,14 @@
 
 Changelog of Git Changelog.
 
+## Unreleased
+### No issue
+   Disabling integrations if not used *2017-11-18 12:31:40*
+
+   Doc *2017-11-02 17:18:14*
+
+
+
 ## 1.52
 ### No issue
    Avoiding usage of Guava Objects *2017-11-02 17:14:15*
