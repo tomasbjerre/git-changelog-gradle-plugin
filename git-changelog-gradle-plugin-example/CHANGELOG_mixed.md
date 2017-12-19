@@ -19,6 +19,12 @@ Changelog of Git Changelog Maven plugin.
 
 
 ### These commits have not issue in their commit comment
+   Description available for Jira issues *12:10:36*
+
+   Adjusting to Bintray *12:10:26*
+
+   Doc *12:39:39*
+
    Disabling integrations if not used *12:35:27*
 
    Doc *17:18:14*

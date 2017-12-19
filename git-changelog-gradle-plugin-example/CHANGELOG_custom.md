@@ -3,6 +3,16 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## 1.54
+### No issue
+   Description available for Jira issues
+
+   Adjusting to Bintray
+
+   Doc
+
+
+
 ## 1.53
 ### No issue
    Disabling integrations if not used

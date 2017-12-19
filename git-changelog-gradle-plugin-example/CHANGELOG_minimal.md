@@ -2,6 +2,25 @@
 
 Changelog of Git Changelog Gradle plugin.
 
+## 1.54
+### No issue
+
+**Description available for Jira issues**
+
+
+[08c318c4fe0b851](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/08c318c4fe0b851) Tomas Bjerre *2017-12-19 12:10:36*
+
+**Adjusting to Bintray**
+
+
+[93d8d88c9812987](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/93d8d88c9812987) Tomas Bjerre *2017-12-19 12:10:26*
+
+**Doc**
+
+
+[5ee1f247a7f4e79](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/5ee1f247a7f4e79) Tomas Bjerre *2017-11-18 12:39:39*
+
+
 ## 1.53
 ### No issue
 

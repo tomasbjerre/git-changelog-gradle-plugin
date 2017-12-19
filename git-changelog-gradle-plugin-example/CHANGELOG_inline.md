@@ -3,6 +3,22 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## 1.54
+### No issue
+
+[08c318c4fe0b851](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/08c318c4fe0b851) Tomas Bjerre *2017-12-19 12:10:36*
+
+Description available for Jira issues
+
+[93d8d88c9812987](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/93d8d88c9812987) Tomas Bjerre *2017-12-19 12:10:26*
+
+Adjusting to Bintray
+
+[5ee1f247a7f4e79](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/5ee1f247a7f4e79) Tomas Bjerre *2017-11-18 12:39:39*
+
+Doc
+
+
 ## 1.53
 ### No issue
 

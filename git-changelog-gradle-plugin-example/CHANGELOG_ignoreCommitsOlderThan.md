@@ -3,6 +3,16 @@
 
 Changelog of Git Changelog.
 
+## 1.54
+### No issue
+   Description available for Jira issues *2017-12-19 12:10:36*
+
+   Adjusting to Bintray *2017-12-19 12:10:26*
+
+   Doc *2017-11-18 12:39:39*
+
+
+
 ## 1.53
 ### No issue
    Disabling integrations if not used *2017-11-18 12:35:27*
