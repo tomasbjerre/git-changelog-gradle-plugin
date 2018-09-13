@@ -3,6 +3,12 @@
 
 Changelog of Git Changelog.
 
+## 1.55
+### Jira
+   Closing RevWalk JENKINS-19994 *2017-12-30 20:38:52*
+
+
+
 ## 1.48
 ### GitHub
    Ignore commits older than #9 *2017-07-08 06:06:26*

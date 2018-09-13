@@ -3,6 +3,22 @@
 
 Changelog of Git Changelog.
 
+## 1.56
+### No issue
+   git-changelog-lib 1.82 *2018-09-13 07:20:10*
+
+
+
+## 1.55
+### Jira
+   Closing RevWalk JENKINS-19994 *2017-12-30 20:38:52*
+
+
+### No issue
+   Doc *2017-12-19 12:31:47*
+
+
+
 ## 1.54
 ### No issue
    Description available for Jira issues *2017-12-19 12:10:36*

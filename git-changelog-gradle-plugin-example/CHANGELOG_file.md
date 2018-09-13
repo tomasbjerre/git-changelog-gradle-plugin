@@ -2,6 +2,32 @@
 
 Changelog of Git Changelog Gradle plugin.
 
+## 1.56
+### No issue
+
+**git-changelog-lib 1.82**
+
+
+[df30491510ac279](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/df30491510ac279) Tomas Bjerre *2018-09-13 07:20:10*
+
+
+## 1.55
+### Jira JENKINS-19994 
+
+**Closing RevWalk JENKINS-19994**
+
+
+[bd848b309dc2e0d](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/bd848b309dc2e0d) Tomas Bjerre *2017-12-30 20:38:52*
+
+
+### No issue
+
+**Doc**
+
+
+[4c348e84921ce41](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/4c348e84921ce41) Tomas Bjerre *2017-12-19 12:31:47*
+
+
 ## 1.54
 ### No issue
 

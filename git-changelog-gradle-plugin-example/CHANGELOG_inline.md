@@ -3,6 +3,29 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## 1.56
+### No issue
+
+[df30491510ac279](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/df30491510ac279) Tomas Bjerre *2018-09-13 07:20:10*
+
+git-changelog-lib 1.82
+
+
+## 1.55
+### Jira
+
+[bd848b309dc2e0d](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/bd848b309dc2e0d) Tomas Bjerre *2017-12-30 20:38:52*
+
+Closing RevWalk JENKINS-19994
+
+
+### No issue
+
+[4c348e84921ce41](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/4c348e84921ce41) Tomas Bjerre *2017-12-19 12:31:47*
+
+Doc
+
+
 ## 1.54
 ### No issue
 

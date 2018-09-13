@@ -3,6 +3,22 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## 1.56
+### No issue
+   git-changelog-lib 1.82
+
+
+
+## 1.55
+### Jira
+   Closing RevWalk JENKINS-19994
+
+
+### No issue
+   Doc
+
+
+
 ## 1.54
 ### No issue
    Description available for Jira issues

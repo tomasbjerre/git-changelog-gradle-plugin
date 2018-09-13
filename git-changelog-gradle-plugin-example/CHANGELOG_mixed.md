@@ -18,7 +18,15 @@ Changelog of Git Changelog Maven plugin.
    Ignore commits older than #9 *06:06:26*
 
 
+### Jira
+   Closing RevWalk JENKINS-19994 *20:38:52*
+
+
 ### These commits have not issue in their commit comment
+   git-changelog-lib 1.82 *07:20:10*
+
+   Doc *12:31:47*
+
    Description available for Jira issues *12:10:36*
 
    Adjusting to Bintray *12:10:26*
