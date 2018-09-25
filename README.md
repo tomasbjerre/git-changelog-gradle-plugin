@@ -10,7 +10,7 @@ There is a complete running example [here](https://github.com/tomasbjerre/git-ch
 
 There are some more examples in the [build.gradle](https://github.com/tomasbjerre/git-changelog-gradle-plugin/blob/master/git-changelog-gradle-plugin-example/build.gradle).
 
-Here is and example that will produce a CHANGELOG.md.
+Here is and example that will produce a CHANGELOG.md when running `./gradlew gitChangelogTask`.
 
 ```
 buildscript {
@@ -28,16 +28,38 @@ apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"
 
 task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
  file = new File("CHANGELOG.md");
- templateContent = file('changelog.mustache').getText('UTF-8');
+Changelog of ${projectDisplayName}.
+
+{{#tags}}
+## {{name}}
+ {{#issues}}
+  {{#hasIssue}}
+   {{#hasLink}}
+### {{name}} [{{issue}}]({{link}}) {{title}} {{#hasIssueType}} *{{issueType}}* {{/hasIssueType}} {{#hasLabels}} {{#labels}} *{{.}}* {{/labels}} {{/hasLabels}}
+   {{/hasLink}}
+   {{^hasLink}}
+### {{name}} {{issue}} {{title}} {{#hasIssueType}} *{{issueType}}* {{/hasIssueType}} {{#hasLabels}} {{#labels}} *{{.}}* {{/labels}} {{/hasLabels}}
+   {{/hasLink}}
+  {{/hasIssue}}
+  {{^hasIssue}}
+### {{name}}
+  {{/hasIssue}}
+
+  {{#commits}}
+**{{{messageTitle}}}**
+
+{{#messageBodyItems}}
+ * {{.}}
+{{/messageBodyItems}}
+
+[{{hash}}](https://github.com/{{ownerName}}/{{repoName}}/commit/{{hash}}) {{authorName}} *{{commitTime}}*
+
+  {{/commits}}
+
+ {{/issues}}
+{{/tags}}
+ """;
 }
 ```
 
-And then to generate CHANGELOG.md, just run `gradle gitChangelog`.
-
 More documentation can be found in the [Git Changelog Lib](https://github.com/tomasbjerre/git-changelog-lib).
-
-## Developer instructions
-
-To build the code you need to run `build.sh` in root of repo. You may also have a look at `.travis.yml`.
-
-To do a release you need to do `./gradlew release -Dgradle.publish.key=... -Dgradle.publish.secret=...` and release the artifact from [staging](https://oss.sonatype.org/#stagingRepositories). More information [here](http://central.sonatype.org/pages/releasing-the-deployment.html).
