@@ -19,5 +19,5 @@ apply from: project.buildscript.classLoader.getResource('gradle-plugin.gradle').
 
 
 dependencies {
- compile 'se.bjurr.gitchangelog:git-changelog-lib:1.84'
+ compile 'se.bjurr.gitchangelog:git-changelog-lib:1.85'
 }
