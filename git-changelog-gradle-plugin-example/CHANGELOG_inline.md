@@ -3,6 +3,14 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## 1.58
+### No issue
+
+[6cb50b9bd7820be](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/6cb50b9bd7820be) Tomas Bjerre *2018-10-27 16:27:04*
+
+GitLab API v4
+
+
 ## 1.57
 ### No issue
 

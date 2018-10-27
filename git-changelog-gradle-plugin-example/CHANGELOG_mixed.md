@@ -23,6 +23,8 @@ Changelog of Git Changelog Maven plugin.
 
 
 ### These commits have not issue in their commit comment
+   GitLab API v4 *16:27:04*
+
    isJira isGitHub... *06:05:00*
 
    doc *07:22:54*

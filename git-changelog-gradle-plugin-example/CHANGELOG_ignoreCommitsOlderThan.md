@@ -3,6 +3,12 @@
 
 Changelog of Git Changelog.
 
+## 1.58
+### No issue
+   GitLab API v4 *2018-10-27 16:27:04*
+
+
+
 ## 1.57
 ### No issue
    isJira isGitHub... *2018-10-27 06:05:00*

@@ -2,6 +2,15 @@
 
 Changelog of Git Changelog Gradle plugin.
 
+## 1.58
+### No issue
+
+**GitLab API v4**
+
+
+[6cb50b9bd7820be](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/6cb50b9bd7820be) Tomas Bjerre *2018-10-27 16:27:04*
+
+
 ## 1.57
 ### No issue
 
