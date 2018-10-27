@@ -124,7 +124,7 @@ task generateGitChangelogTemplateWithGitHubIssues(type: se.bjurr.gitchangelog.pl
 //
 //task generateGitChangelogTemplateWithGitLabIssues(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
 // gitLabServer = "https://gitlab.com/";
-// gitLabProjectName = "violations-test";
+// gitLabProjectName = "tomas.bjerre85/violations-test";
 // gitLabToken = System.properties['GITLAB_TOKEN'];
 // file = new File("CHANGELOG_GITLAB.md");
 // templateContent = file('changelog.mustache').getText('UTF-8');

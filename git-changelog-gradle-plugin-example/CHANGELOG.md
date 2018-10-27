@@ -2,6 +2,15 @@
 
 Changelog of Git Changelog Gradle plugin.
 
+## 1.59
+### No issue
+
+**Correcting GitLab integration after upgrade**
+
+
+[3954c5f904227ef](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/3954c5f904227ef) Tomas Bjerre *2018-10-27 17:56:49*
+
+
 ## 1.58
 ### No issue
 

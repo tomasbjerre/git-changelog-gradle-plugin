@@ -3,6 +3,12 @@
 
 Changelog of Git Changelog.
 
+## 1.59
+### No issue
+   Correcting GitLab integration after upgrade *2018-10-27 17:56:49*
+
+
+
 ## 1.58
 ### No issue
    GitLab API v4 *2018-10-27 16:27:04*

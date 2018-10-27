@@ -3,6 +3,12 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## 1.59
+### No issue
+   Correcting GitLab integration after upgrade
+
+
+
 ## 1.58
 ### No issue
    GitLab API v4
