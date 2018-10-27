@@ -3,6 +3,16 @@
 
 Changelog of Git Changelog.
 
+## 1.57
+### No issue
+   isJira isGitHub... *2018-10-27 06:05:00*
+
+   doc *2018-09-25 07:22:54*
+
+   using latest version in example *2018-09-13 09:02:58*
+
+
+
 ## 1.56
 ### No issue
    git-changelog-lib 1.82 *2018-09-13 07:20:10*

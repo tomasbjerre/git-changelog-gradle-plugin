@@ -23,6 +23,12 @@ Changelog of Git Changelog Maven plugin.
 
 
 ### These commits have not issue in their commit comment
+   isJira isGitHub... *06:05:00*
+
+   doc *07:22:54*
+
+   using latest version in example *09:02:58*
+
    git-changelog-lib 1.82 *07:20:10*
 
    Doc *12:31:47*

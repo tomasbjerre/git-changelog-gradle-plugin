@@ -3,6 +3,16 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## 1.57
+### No issue
+   isJira isGitHub...
+
+   doc
+
+   using latest version in example
+
+
+
 ## 1.56
 ### No issue
    git-changelog-lib 1.82
