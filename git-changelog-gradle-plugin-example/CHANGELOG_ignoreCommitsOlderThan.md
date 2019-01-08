@@ -3,6 +3,12 @@
 
 Changelog of Git Changelog.
 
+## 1.60
+### No issue
+   Jira linked issues *2019-01-08 18:01:20*
+
+
+
 ## 1.59
 ### No issue
    Correcting GitLab integration after upgrade *2018-10-27 17:56:49*

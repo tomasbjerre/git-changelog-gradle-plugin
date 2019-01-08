@@ -3,6 +3,12 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## 1.60
+### No issue
+   Jira linked issues
+
+
+
 ## 1.59
 ### No issue
    Correcting GitLab integration after upgrade

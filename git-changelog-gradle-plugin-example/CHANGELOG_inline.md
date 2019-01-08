@@ -3,6 +3,14 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## 1.60
+### No issue
+
+[2efc65342c971e7](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/2efc65342c971e7) Tomas Bjerre *2019-01-08 18:01:20*
+
+Jira linked issues
+
+
 ## 1.59
 ### No issue
 

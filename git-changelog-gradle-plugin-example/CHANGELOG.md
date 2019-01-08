@@ -2,6 +2,15 @@
 
 Changelog of Git Changelog Gradle plugin.
 
+## 1.60
+### No issue
+
+**Jira linked issues**
+
+
+[2efc65342c971e7](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/2efc65342c971e7) Tomas Bjerre *2019-01-08 18:01:20*
+
+
 ## 1.59
 ### No issue
 
