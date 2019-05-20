@@ -3,6 +3,12 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## 1.61
+### No issue
+   Gradle 5
+
+
+
 ## 1.60
 ### No issue
    Jira linked issues

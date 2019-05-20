@@ -2,6 +2,15 @@
 
 Changelog of Git Changelog Gradle plugin.
 
+## 1.61
+### No issue
+
+**Gradle 5**
+
+
+[bd0732f190bf807](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/bd0732f190bf807) Tomas Bjerre *2019-05-20 14:29:54*
+
+
 ## 1.60
 ### No issue
 

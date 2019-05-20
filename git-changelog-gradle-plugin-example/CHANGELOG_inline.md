@@ -3,6 +3,14 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## 1.61
+### No issue
+
+[bd0732f190bf807](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/bd0732f190bf807) Tomas Bjerre *2019-05-20 14:29:54*
+
+Gradle 5
+
+
 ## 1.60
 ### No issue
 

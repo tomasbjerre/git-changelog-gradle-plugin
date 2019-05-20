@@ -3,6 +3,12 @@
 
 Changelog of Git Changelog.
 
+## 1.61
+### No issue
+   Gradle 5 *2019-05-20 14:29:54*
+
+
+
 ## 1.60
 ### No issue
    Jira linked issues *2019-01-08 18:01:20*
