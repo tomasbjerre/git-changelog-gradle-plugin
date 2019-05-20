@@ -335,7 +335,8 @@ Changelog of Git Changelog Maven plugin.
 }
 
 
-task generateChangelogs << {
+tasks.register("generateChangelogs") {
+ doLast { }
 }
 
 generateChangelogs.dependsOn {
