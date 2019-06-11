@@ -2,6 +2,20 @@
 
 Changelog of Git Changelog Gradle plugin.
 
+## 1.62
+### No issue
+
+**JDK 11 compatible**
+
+
+[f63417b07082607](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/f63417b07082607) Tomas Bjerre *2019-06-11 16:36:28*
+
+**Updating tests**
+
+
+[3c83fe68d95357e](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/3c83fe68d95357e) Tomas Bjerre *2019-05-20 15:07:55*
+
+
 ## 1.61
 ### No issue
 

@@ -3,6 +3,14 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## 1.62
+### No issue
+   JDK 11 compatible
+
+   Updating tests
+
+
+
 ## 1.61
 ### No issue
    Gradle 5

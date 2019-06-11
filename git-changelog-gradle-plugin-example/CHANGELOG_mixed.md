@@ -23,6 +23,10 @@ Changelog of Git Changelog Maven plugin.
 
 
 ### These commits have not issue in their commit comment
+   JDK 11 compatible *16:36:28*
+
+   Updating tests *15:07:55*
+
    Jira linked issues *18:01:20*
 
    Correcting GitLab integration after upgrade *17:56:49*
