@@ -3,6 +3,14 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## 1.63
+### No issue
+
+[3e0032c3034d3a5](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/3e0032c3034d3a5) Tomas Bjerre *2019-06-11 17:04:17*
+
+Removing dependency on javax.xml
+
+
 ## 1.62
 ### No issue
 

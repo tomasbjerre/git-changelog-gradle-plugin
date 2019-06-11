@@ -2,6 +2,15 @@
 
 Changelog of Git Changelog Gradle plugin.
 
+## 1.63
+### No issue
+
+**Removing dependency on javax.xml**
+
+
+[3e0032c3034d3a5](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/3e0032c3034d3a5) Tomas Bjerre *2019-06-11 17:04:17*
+
+
 ## 1.62
 ### No issue
 

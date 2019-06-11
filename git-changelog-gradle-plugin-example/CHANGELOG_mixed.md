@@ -23,6 +23,8 @@ Changelog of Git Changelog Maven plugin.
 
 
 ### These commits have not issue in their commit comment
+   Removing dependency on javax.xml *17:04:17*
+
    JDK 11 compatible *16:36:28*
 
    Updating tests *15:07:55*

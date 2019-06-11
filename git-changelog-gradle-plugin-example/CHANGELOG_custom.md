@@ -3,6 +3,12 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## 1.63
+### No issue
+   Removing dependency on javax.xml
+
+
+
 ## 1.62
 ### No issue
    JDK 11 compatible

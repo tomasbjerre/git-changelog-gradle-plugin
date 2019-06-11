@@ -3,6 +3,12 @@
 
 Changelog of Git Changelog.
 
+## 1.63
+### No issue
+   Removing dependency on javax.xml *2019-06-11 17:04:17*
+
+
+
 ## 1.62
 ### No issue
    JDK 11 compatible *2019-06-11 16:36:28*
