@@ -320,10 +320,12 @@ public class GitChangelogTask extends DefaultTask {
       GitChangelogApi builder;
       builder = gitChangelogApiBuilder();
 
-      builder.withFromRepo(fromRepo);
-
       if (isSupplied(settingsFile)) {
         builder.withSettings(getProject().file(settingsFile).toURI().toURL());
+      }
+
+      if (isSupplied(fromRepo)) {
+        builder.withFromRepo(fromRepo);
       }
 
       if (isSupplied(toRef)) {
