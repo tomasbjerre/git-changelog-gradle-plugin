@@ -12,7 +12,7 @@ There are some more examples in the [build.gradle](https://github.com/tomasbjerr
 
 Here is and example that will produce a CHANGELOG.md when running `./gradlew gitChangelogTask`.
 
-```
+```groovy
 buildscript {
   repositories {
     maven {
@@ -28,6 +28,7 @@ apply plugin: "se.bjurr.gitchangelog.git-changelog-gradle-plugin"
 
 task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
  file = new File("CHANGELOG.md");
+ templateContent = """
 Changelog of ${projectDisplayName}.
 
 {{#tags}}

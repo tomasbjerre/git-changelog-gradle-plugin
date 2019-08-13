@@ -3,6 +3,15 @@
 
 Changelog of Git Changelog.
 
+## 1.64
+### No issue
+   Update .travis.yml *2019-08-13 04:35:49*
+
+   Set fromRepo property only if provided and after read settings file.
+This will provide ability to override path to git repo from gradle script. *2019-08-13 00:22:29*
+
+
+
 ## 1.63
 ### No issue
    Removing dependency on javax.xml *2019-06-11 17:04:17*

@@ -3,6 +3,19 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## 1.64
+### No issue
+
+[32f936846588f3b](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/32f936846588f3b) Tomas Bjerre *2019-08-13 04:35:49*
+
+Update .travis.yml
+
+[7d3d5d212468ca4](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/7d3d5d212468ca4) mdolinin *2019-08-13 00:22:29*
+
+Set fromRepo property only if provided and after read settings file.
+This will provide ability to override path to git repo from gradle script.
+
+
 ## 1.63
 ### No issue
 

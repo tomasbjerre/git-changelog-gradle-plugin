@@ -5,6 +5,12 @@ Changelog of Git Changelog Maven plugin.
 
 ## These commits are not included in any tag
 ### GitHub
+   Merge pull request #17 from mdolinin/feature/provide-ability-to-override-repo-property-from-gradle
+
+Set fromRepo property only if provided and after read settings file. *13:20:29*
+
+
+### GitHub
    Better handling of relative paths #7 *16:16:38*
 
    Using file(..) instead of new File(..) in examples #7 *14:14:53*
@@ -23,6 +29,11 @@ Changelog of Git Changelog Maven plugin.
 
 
 ### These commits have not issue in their commit comment
+   Update .travis.yml *04:35:49*
+
+   Set fromRepo property only if provided and after read settings file.
+This will provide ability to override path to git repo from gradle script. *00:22:29*
+
    Removing dependency on javax.xml *17:04:17*
 
    JDK 11 compatible *16:36:28*

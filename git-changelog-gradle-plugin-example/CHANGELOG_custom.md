@@ -3,6 +3,15 @@
 
 Changelog of Git Changelog Maven plugin.
 
+## 1.64
+### No issue
+   Update .travis.yml
+
+   Set fromRepo property only if provided and after read settings file.
+This will provide ability to override path to git repo from gradle script.
+
+
+
 ## 1.63
 ### No issue
    Removing dependency on javax.xml

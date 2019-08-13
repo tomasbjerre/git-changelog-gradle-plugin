@@ -2,6 +2,21 @@
 
 Changelog of Git Changelog Gradle plugin.
 
+## 1.64
+### No issue
+
+**Update .travis.yml**
+
+
+[32f936846588f3b](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/32f936846588f3b) Tomas Bjerre *2019-08-13 04:35:49*
+
+**Set fromRepo property only if provided and after read settings file.**
+
+ * This will provide ability to override path to git repo from gradle script. 
+
+[7d3d5d212468ca4](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/7d3d5d212468ca4) mdolinin *2019-08-13 00:22:29*
+
+
 ## 1.63
 ### No issue
 
