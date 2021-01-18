@@ -7,6 +7,22 @@ Changelog of Git Changelog Maven plugin.
 ## Unreleased
  
   
+  
+### No issue
+  
+
+  
+[70f8f20e06bae55](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/70f8f20e06bae55) Tomas Bjerre *2021-01-18 17:07:28*
+
+[Gradle Release Plugin] - new version commit:  '1.66-SNAPSHOT'.
+
+  
+
+ 
+
+## 1.65
+ 
+  
 ### GitHub [#19](https://github.com/tomasbjerre/git-changelog-gradle-plugin/pull/19) Update README to use Plugin DSL
   
   
@@ -25,6 +41,16 @@ Update README to use Plugin DSL
   
 ### No issue
   
+
+  
+[7bf95dc563708c4](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/7bf95dc563708c4) Tomas Bjerre *2021-01-18 17:07:19*
+
+[Gradle Release Plugin] - pre tag commit:  '1.65'.
+
+  
+[6b2f6f7d332ff2a](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/6b2f6f7d332ff2a) Tomas Bjerre *2021-01-18 17:04:59*
+
+Removing default ignore filter on message
 
   
 [1eedaff75faae6b](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/1eedaff75faae6b) Tomas Bjerre *2019-10-09 16:58:05*

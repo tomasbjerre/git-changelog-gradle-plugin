@@ -7,6 +7,20 @@ Changelog of Git Changelog Maven plugin.
 ## Unreleased
  
   
+  
+### No issue
+  
+  
+   [Gradle Release Plugin] - new version commit:  '1.66-SNAPSHOT'.
+
+  
+
+ 
+
+
+## 1.65
+ 
+  
 ### GitHub [#19](https://github.com/tomasbjerre/git-changelog-gradle-plugin/pull/19) Update README to use Plugin DSL
   
   
@@ -22,6 +36,12 @@ Update README to use Plugin DSL
   
 ### No issue
   
+  
+   [Gradle Release Plugin] - pre tag commit:  '1.65'.
+
+  
+   Removing default ignore filter on message
+
   
    doc
 

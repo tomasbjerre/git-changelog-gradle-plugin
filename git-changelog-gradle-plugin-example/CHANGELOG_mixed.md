@@ -57,6 +57,9 @@ Update README to use Plugin DSL *13:18:01*
  
 ### These commits have not issue in their commit comment
   
+   Removing default ignore filter on message *17:04:59*
+
+  
    doc *16:58:05*
 
   

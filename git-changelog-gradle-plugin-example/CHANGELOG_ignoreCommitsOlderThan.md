@@ -6,6 +6,17 @@ Changelog of Git Changelog.
 
 ## Unreleased
  
+### No issue
+  
+   [Gradle Release Plugin] - new version commit:  '1.66-SNAPSHOT'. *2021-01-18 17:07:28*
+
+  
+
+ 
+
+
+## 1.65
+ 
 ### GitHub
   
    Merge pull request #19 from ccrvincent/ccrvincent/updateReadme
@@ -16,6 +27,12 @@ Update README to use Plugin DSL *2019-09-09 13:18:01*
 
  
 ### No issue
+  
+   [Gradle Release Plugin] - pre tag commit:  '1.65'. *2021-01-18 17:07:19*
+
+  
+   Removing default ignore filter on message *2021-01-18 17:04:59*
+
   
    doc *2019-10-09 16:58:05*
 
