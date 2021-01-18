@@ -30,11 +30,6 @@ public class GitChangelogTask extends DefaultTask {
   private String templateContent;
   private File file;
 
-  private String mediaWikiUrl;
-  private String mediaWikiTitle;
-  private String mediaWikiUsername;
-  private String mediaWikiPassword;
-
   private String readableTagName;
   private String dateFormat;
   private String timeZone;
@@ -190,38 +185,6 @@ public class GitChangelogTask extends DefaultTask {
 
   public void setToRef(String toRef) {
     this.toRef = toRef;
-  }
-
-  public void setMediaWikiPassword(String mediaWikiPassword) {
-    this.mediaWikiPassword = mediaWikiPassword;
-  }
-
-  public void setMediaWikiTitle(String mediaWikiTitle) {
-    this.mediaWikiTitle = mediaWikiTitle;
-  }
-
-  public void setMediaWikiUrl(String mediaWikiUrl) {
-    this.mediaWikiUrl = mediaWikiUrl;
-  }
-
-  public void setMediaWikiUsername(String mediaWikiUsername) {
-    this.mediaWikiUsername = mediaWikiUsername;
-  }
-
-  public String getMediaWikiPassword() {
-    return mediaWikiPassword;
-  }
-
-  public String getMediaWikiTitle() {
-    return mediaWikiTitle;
-  }
-
-  public String getMediaWikiUrl() {
-    return mediaWikiUrl;
-  }
-
-  public String getMediaWikiUsername() {
-    return mediaWikiUsername;
   }
 
   public void setDateFormat(String dateFormat) {
@@ -424,17 +387,6 @@ public class GitChangelogTask extends DefaultTask {
         log.info("#");
       }
 
-      if (isSupplied(mediaWikiUrl)) {
-        builder //
-            .toMediaWiki( //
-            mediaWikiUsername, //
-            mediaWikiPassword, //
-            mediaWikiUrl, //
-            mediaWikiTitle);
-        log.info("#");
-        log.info("# Created: " + mediaWikiUrl + "/index.php/" + mediaWikiTitle);
-        log.info("#");
-      }
     } catch (Exception e) {
       log.error("GitChangelog", e);
     }
