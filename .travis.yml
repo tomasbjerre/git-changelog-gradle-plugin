@@ -4,6 +4,6 @@ jdk:
   - openjdk8
   - openjdk11
 script:
-  - ./build.sh
+  - ./gradlew build -i -s
 notifications:
   email: false

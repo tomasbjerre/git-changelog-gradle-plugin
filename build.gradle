@@ -1,23 +1,23 @@
 apply plugin: 'java'
 
-project.ext.tags = ['git', 'changelog', 'releasenotes', 'patchnotes']
-group = 'se.bjurr.gitchangelog'
-description = 'Gradle plugin for Git Changelog'
-
-
 buildscript {
  repositories {
-  maven { url "https://jitpack.io" }
+  mavenCentral()
+  mavenLocal()
  }
  dependencies {
-  classpath 'com.github.tomasbjerre:gradle-scripts:master-SNAPSHOT'
+  classpath 'se.bjurr.gradle:gradle-scripts:2.+'
  }
 }
-apply from: project.buildscript.classLoader.getResource('java.gradle').toURI()
-apply from: project.buildscript.classLoader.getResource('release.gradle').toURI()
-apply from: project.buildscript.classLoader.getResource('gradle-plugin.gradle').toURI()
+project.ext.buildConfig = [
+  repoType: "GRADLE",
+  gradlePlugin: [
+    tags: ['git', 'changelog', 'releasenotes', 'patchnotes']
+  ],
+]
+apply from: project.buildscript.classLoader.getResource('main.gradle').toURI()
 
 
 dependencies {
- compile 'se.bjurr.gitchangelog:git-changelog-lib:1.96'
+ compile 'se.bjurr.gitchangelog:git-changelog-lib:1.+'
 }
