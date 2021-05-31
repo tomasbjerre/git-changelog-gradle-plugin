@@ -1,17 +1,18 @@
 package se.bjurr.gitchangelog.plugin.gradle;
 
-import static com.google.common.base.Strings.isNullOrEmpty;
-import static com.google.common.collect.Lists.newArrayList;
 import static se.bjurr.gitchangelog.api.GitChangelogApi.gitChangelogApiBuilder;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+
 import org.gradle.api.DefaultTask;
 import org.gradle.api.tasks.TaskAction;
 import org.gradle.api.tasks.TaskExecutionException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import se.bjurr.gitchangelog.api.GitChangelogApi;
 
 public class GitChangelogTask extends DefaultTask {
@@ -40,7 +41,7 @@ public class GitChangelogTask extends DefaultTask {
   private boolean ignoreCommitsWithoutIssue;
   private String ignoreTagsIfNameMatches;
 
-  private List<List<String>> customIssues = newArrayList();
+  private List<List<String>> customIssues = new ArrayList<>();
   private String gitHubApi;
   private String gitHubToken;
   private String gitHubIssuePattern;
@@ -55,7 +56,7 @@ public class GitChangelogTask extends DefaultTask {
 
   private Date ignoreCommitsOlderThan;
 
-  private List<HelperParam> handlebarsHelpers = newArrayList();
+  private List<HelperParam> handlebarsHelpers = new ArrayList<>();
 
   public void setHandlebarsHelpers(final List<HelperParam> handlebarsHelpers) {
     this.handlebarsHelpers = handlebarsHelpers;
@@ -403,6 +404,6 @@ public class GitChangelogTask extends DefaultTask {
   }
 
   private boolean isSupplied(final String param) {
-    return !isNullOrEmpty(param);
+    return param == null || param.isEmpty();
   }
 }
