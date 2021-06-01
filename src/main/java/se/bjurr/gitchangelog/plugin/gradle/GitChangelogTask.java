@@ -6,13 +6,11 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
 import org.gradle.api.DefaultTask;
 import org.gradle.api.tasks.TaskAction;
 import org.gradle.api.tasks.TaskExecutionException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import se.bjurr.gitchangelog.api.GitChangelogApi;
 
 public class GitChangelogTask extends DefaultTask {
@@ -53,10 +51,8 @@ public class GitChangelogTask extends DefaultTask {
   public String gitLabServer;
   public String gitLabProjectName;
   public String gitLabToken;
-  public  Date ignoreCommitsOlderThan;
+  public Date ignoreCommitsOlderThan;
   public List<HelperParam> handlebarsHelpers = new ArrayList<>();
-
-
 
   @TaskAction
   public void gitChangelogPluginTasks() throws TaskExecutionException {
