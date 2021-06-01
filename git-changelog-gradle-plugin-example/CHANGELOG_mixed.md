@@ -4,6 +4,44 @@
 Changelog of Git Changelog Maven plugin.
 
 ## These commits are not included in any tag
+### These commits have not issue in their commit comment
+   chore(release): Updating changelog with 1.68.4 [GRADLE SCRIPT] *18:47:43*
+
+
+
+## 1.68.4
+### These commits have not issue in their commit comment
+   chore(release): 1.68.4 [GRADLE SCRIPT] *18:47:29*
+
+   chore(release): Updating changelog with 1.68.3 [GRADLE SCRIPT] *18:42:18*
+
+
+
+## 1.68.3
+### These commits have not issue in their commit comment
+   chore(release): 1.68.3 [GRADLE SCRIPT] *18:42:05*
+
+   chore(release): Updating changelog with 1.68.2 [GRADLE SCRIPT] *18:35:18*
+
+
+
+## 1.68.2
+### These commits have not issue in their commit comment
+   chore(release): 1.68.2 [GRADLE SCRIPT] *18:35:10*
+
+   chore: removing usage of Guava *18:34:15*
+
+
+
+## 1.68.1
+### These commits have not issue in their commit comment
+   New version: 1.68.1 [GRADLE SCRIPT] *16:52:47*
+
+   Updating changelog with 1.68.0 [GRADLE SCRIPT] *16:46:19*
+
+
+
+## 1.68.0
 ### GitHub
    Merge pull request #17 from mdolinin/feature/provide-ability-to-override-repo-property-from-gradle
 
@@ -39,6 +77,12 @@ Update README to use Plugin DSL *13:18:01*
 
 
 ### These commits have not issue in their commit comment
+   New version: 1.68.0 [GRADLE SCRIPT] *16:46:06*
+
+   feat: support conventional commits *16:43:16*
+
+   new build script *15:46:18*
+
    Removing default ignore filter on message *17:04:59*
 
    doc *16:58:05*

@@ -14,13 +14,6 @@ buildscript {
 apply plugin: 'se.bjurr.gitchangelog.git-changelog-gradle-plugin'
 
 //
-// Minimal config
-//
-task generateGitChangelogMinimal(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- file = new File("CHANGELOG_minimal.md");
-}
-
-//
 // Set references to create releasenotes for version 1.1
 //
 task generateGitReleasenotes11RepoPath(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
@@ -148,6 +141,13 @@ task generateGitChangelogTemplateWithGitHubIssues(type: se.bjurr.gitchangelog.pl
 task generateGitChangelog11(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
  file = new File("CHANGELOG_1_1.md");
  toRef = "1.1";
+ templateContent = """
+{{#issues}}
+ {{#commits}}
+  {{{hash}}}
+ {{/commits}}
+{{/issues}}
+""";
 }
 
 //

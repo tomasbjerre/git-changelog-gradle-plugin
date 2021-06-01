@@ -6,7 +6,75 @@ Changelog of Git Changelog Maven plugin.
 ## Unreleased
 ### No issue
 
-[ed4a847c084ed7d](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/ed4a847c084ed7d) Tomas Bjerre *2021-03-29 15:49:11*
+[da5068ced66ce4d](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/da5068ced66ce4d) Tomas Bjerre *2021-05-31 18:47:43*
+
+chore(release): Updating changelog with 1.68.4 [GRADLE SCRIPT]
+
+
+## 1.68.4
+### No issue
+
+[c2b8dcc156b1cd0](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/c2b8dcc156b1cd0) Tomas Bjerre *2021-05-31 18:47:29*
+
+chore(release): 1.68.4 [GRADLE SCRIPT]
+
+[7d135c9345f8920](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/7d135c9345f8920) Tomas Bjerre *2021-05-31 18:42:18*
+
+chore(release): Updating changelog with 1.68.3 [GRADLE SCRIPT]
+
+
+## 1.68.3
+### No issue
+
+[1934dfc27ee6142](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/1934dfc27ee6142) Tomas Bjerre *2021-05-31 18:42:05*
+
+chore(release): 1.68.3 [GRADLE SCRIPT]
+
+[93b3f05e71f1d47](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/93b3f05e71f1d47) Tomas Bjerre *2021-05-31 18:35:18*
+
+chore(release): Updating changelog with 1.68.2 [GRADLE SCRIPT]
+
+
+## 1.68.2
+### No issue
+
+[251b6d4e6520f21](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/251b6d4e6520f21) Tomas Bjerre *2021-05-31 18:35:10*
+
+chore(release): 1.68.2 [GRADLE SCRIPT]
+
+[0e3c87acd1a5918](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/0e3c87acd1a5918) Tomas Bjerre *2021-05-31 18:34:15*
+
+chore: removing usage of Guava
+
+
+## 1.68.1
+### No issue
+
+[7f13ea6f0fca830](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/7f13ea6f0fca830) Tomas Bjerre *2021-05-27 16:52:47*
+
+New version: 1.68.1 [GRADLE SCRIPT]
+
+[7a2c37e5baac25d](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/7a2c37e5baac25d) Tomas Bjerre *2021-05-27 16:46:19*
+
+Updating changelog with 1.68.0 [GRADLE SCRIPT]
+
+
+## 1.68.0
+### No issue
+
+[a62b702f0729bd2](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/a62b702f0729bd2) Tomas Bjerre *2021-05-27 16:46:06*
+
+New version: 1.68.0 [GRADLE SCRIPT]
+
+[ae0117c7db35ca5](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/ae0117c7db35ca5) Tomas Bjerre *2021-05-27 16:43:16*
+
+feat: support conventional commits
+
+[f1da2169260afa8](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/f1da2169260afa8) Tomas Bjerre *2021-04-04 15:46:18*
+
+new build script
+
+[d62b445288102e2](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/d62b445288102e2) Tomas Bjerre *2021-03-29 15:49:40*
 
 [Gradle Release Plugin] - new version commit:  '1.67-SNAPSHOT'.
 

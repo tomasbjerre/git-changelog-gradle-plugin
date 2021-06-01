@@ -4,6 +4,7 @@ jdk:
   - openjdk8
   - openjdk11
 script:
-  - ./gradlew build -i -s
+  - ./gradlew publishToMavenLocal -i -s
+  - cd git-changelog-gradle-plugin-example && ./gradlew generateChangelogs
 notifications:
   email: false

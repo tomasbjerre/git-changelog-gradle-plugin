@@ -5,7 +5,51 @@ Changelog of Git Changelog.
 
 ## Unreleased
 ### No issue
-   [Gradle Release Plugin] - new version commit:  '1.67-SNAPSHOT'. *2021-03-29 15:49:11*
+   chore(release): Updating changelog with 1.68.4 [GRADLE SCRIPT] *2021-05-31 18:47:43*
+
+
+
+## 1.68.4
+### No issue
+   chore(release): 1.68.4 [GRADLE SCRIPT] *2021-05-31 18:47:29*
+
+   chore(release): Updating changelog with 1.68.3 [GRADLE SCRIPT] *2021-05-31 18:42:18*
+
+
+
+## 1.68.3
+### No issue
+   chore(release): 1.68.3 [GRADLE SCRIPT] *2021-05-31 18:42:05*
+
+   chore(release): Updating changelog with 1.68.2 [GRADLE SCRIPT] *2021-05-31 18:35:18*
+
+
+
+## 1.68.2
+### No issue
+   chore(release): 1.68.2 [GRADLE SCRIPT] *2021-05-31 18:35:10*
+
+   chore: removing usage of Guava *2021-05-31 18:34:15*
+
+
+
+## 1.68.1
+### No issue
+   New version: 1.68.1 [GRADLE SCRIPT] *2021-05-27 16:52:47*
+
+   Updating changelog with 1.68.0 [GRADLE SCRIPT] *2021-05-27 16:46:19*
+
+
+
+## 1.68.0
+### No issue
+   New version: 1.68.0 [GRADLE SCRIPT] *2021-05-27 16:46:06*
+
+   feat: support conventional commits *2021-05-27 16:43:16*
+
+   new build script *2021-04-04 15:46:18*
+
+   [Gradle Release Plugin] - new version commit:  '1.67-SNAPSHOT'. *2021-03-29 15:49:40*
 
 
 

@@ -5,6 +5,50 @@ Changelog of Git Changelog Maven plugin.
 
 ## Unreleased
 ### No issue
+   chore(release): Updating changelog with 1.68.4 [GRADLE SCRIPT]
+
+
+
+## 1.68.4
+### No issue
+   chore(release): 1.68.4 [GRADLE SCRIPT]
+
+   chore(release): Updating changelog with 1.68.3 [GRADLE SCRIPT]
+
+
+
+## 1.68.3
+### No issue
+   chore(release): 1.68.3 [GRADLE SCRIPT]
+
+   chore(release): Updating changelog with 1.68.2 [GRADLE SCRIPT]
+
+
+
+## 1.68.2
+### No issue
+   chore(release): 1.68.2 [GRADLE SCRIPT]
+
+   chore: removing usage of Guava
+
+
+
+## 1.68.1
+### No issue
+   New version: 1.68.1 [GRADLE SCRIPT]
+
+   Updating changelog with 1.68.0 [GRADLE SCRIPT]
+
+
+
+## 1.68.0
+### No issue
+   New version: 1.68.0 [GRADLE SCRIPT]
+
+   feat: support conventional commits
+
+   new build script
+
    [Gradle Release Plugin] - new version commit:  '1.67-SNAPSHOT'.
 
 

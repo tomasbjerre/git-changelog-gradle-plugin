@@ -167,9 +167,23 @@ task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask
 It can also be used to get the next semantic version based on commits.
 
 ```groovy
-import se.bjurr.gitchangelog.api.GitChangelogApi;
+classpath 'se.bjurr.gitchangelog:git-changelog-lib:1.+'
 
-def nextVersion = GitChangelogApi.gitChangelogApiBuilder()
+...
+
+buildscript {
+ repositories {
+  mavenCentral()
+  mavenLocal()
+ }
+ dependencies {
+  ...
+  classpath 'se.bjurr.gitchangelog:git-changelog-lib:1.+'
+ }
+}
+
+
+def nextVersion = se.bjurr.gitchangelog.api.GitChangelogApi.gitChangelogApiBuilder()
   .withSemanticMajorVersionPattern("^[Bb]reaking")
   .withSemanticMinorVersionPattern("[Ff]eature")
   .getNextSemanticVersion();

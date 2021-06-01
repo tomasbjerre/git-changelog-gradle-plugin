@@ -1,5 +1,4 @@
 apply plugin: 'java'
-apply plugin: 'maven'
 
 buildscript {
  repositories {
@@ -20,5 +19,5 @@ apply from: project.buildscript.classLoader.getResource('main.gradle').toURI()
 
 
 dependencies {
- compile 'se.bjurr.gitchangelog:git-changelog-lib:1.+'
+ implementation 'se.bjurr.gitchangelog:git-changelog-lib:1.+'
 }
