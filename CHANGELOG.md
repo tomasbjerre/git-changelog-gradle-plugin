@@ -2,6 +2,15 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 1.68.5
+### No issue
+
+**fix: temporary removing plugins not working with Gradle 7**
+
+
+[a293732ecf8ee92](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/a293732ecf8ee92) Tomas Bjerre *2021-06-01 14:49:11*
+
+
 ## 1.68.2
 ### No issue
 
