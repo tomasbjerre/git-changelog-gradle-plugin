@@ -3,8 +3,62 @@
 
 Changelog of Git Changelog.
 
-## Unreleased
+## 1.71.3
 ### No issue
+   chore(release): 1.71.3 [GRADLE SCRIPT] *2021-06-11 18:06:55*
+
+
+
+## 1.71.2
+### No issue
+   chore(release): 1.71.2 [GRADLE SCRIPT] *2021-06-09 17:02:10*
+
+
+
+## 1.71.1
+### No issue
+   chore(release): 1.71.1 [GRADLE SCRIPT] *2021-06-09 17:00:05*
+
+   chore(release): Updating changelog with 1.71.0 [GRADLE SCRIPT] *2021-06-09 14:32:18*
+
+
+
+## 1.71.0
+### No issue
+   chore(release): 1.71.0 [GRADLE SCRIPT] *2021-06-09 14:32:11*
+
+   fix: when file was in a new folder, it created folder *2021-06-09 14:31:25*
+
+   chore(release): Updating changelog with 1.70.0 [GRADLE SCRIPT] *2021-06-03 17:10:13*
+
+
+
+## 1.70.0
+### No issue
+   chore(release): 1.70.0 [GRADLE SCRIPT] *2021-06-03 17:10:04*
+
+   chore(release): Updating changelog with 1.69.0 [GRADLE SCRIPT] *2021-06-02 19:15:38*
+
+
+
+## 1.69.0
+### No issue
+   chore(release): 1.69.0 [GRADLE SCRIPT] *2021-06-02 19:15:31*
+
+
+
+## 1.68.6
+### No issue
+   chore(release): 1.68.6 [GRADLE SCRIPT] *2021-06-01 15:46:23*
+
+
+
+## 1.68.5
+### No issue
+   chore(release): 1.68.5 [GRADLE SCRIPT] *2021-06-01 14:50:19*
+
+   fix: temporary removing plugins not working with Gradle 7 *2021-06-01 14:49:11*
+
    chore(release): Updating changelog with 1.68.4 [GRADLE SCRIPT] *2021-05-31 18:47:43*
 
 

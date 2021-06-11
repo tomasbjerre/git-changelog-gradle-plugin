@@ -3,8 +3,62 @@
 
 Changelog of Git Changelog Maven plugin.
 
-## Unreleased
+## 1.71.3
 ### No issue
+   chore(release): 1.71.3 [GRADLE SCRIPT]
+
+
+
+## 1.71.2
+### No issue
+   chore(release): 1.71.2 [GRADLE SCRIPT]
+
+
+
+## 1.71.1
+### No issue
+   chore(release): 1.71.1 [GRADLE SCRIPT]
+
+   chore(release): Updating changelog with 1.71.0 [GRADLE SCRIPT]
+
+
+
+## 1.71.0
+### No issue
+   chore(release): 1.71.0 [GRADLE SCRIPT]
+
+   fix: when file was in a new folder, it created folder
+
+   chore(release): Updating changelog with 1.70.0 [GRADLE SCRIPT]
+
+
+
+## 1.70.0
+### No issue
+   chore(release): 1.70.0 [GRADLE SCRIPT]
+
+   chore(release): Updating changelog with 1.69.0 [GRADLE SCRIPT]
+
+
+
+## 1.69.0
+### No issue
+   chore(release): 1.69.0 [GRADLE SCRIPT]
+
+
+
+## 1.68.6
+### No issue
+   chore(release): 1.68.6 [GRADLE SCRIPT]
+
+
+
+## 1.68.5
+### No issue
+   chore(release): 1.68.5 [GRADLE SCRIPT]
+
+   fix: temporary removing plugins not working with Gradle 7
+
    chore(release): Updating changelog with 1.68.4 [GRADLE SCRIPT]
 
 

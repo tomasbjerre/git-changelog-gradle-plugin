@@ -2,8 +2,101 @@
 
 Changelog of Git Changelog Gradle plugin.
 
-## Unreleased
+## 1.71.3
 ### No issue
+
+**chore(release): 1.71.3 [GRADLE SCRIPT]**
+
+
+[42a8b1ec8a0afd2](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/42a8b1ec8a0afd2) Tomas Bjerre *2021-06-11 18:06:55*
+
+
+## 1.71.2
+### No issue
+
+**chore(release): 1.71.2 [GRADLE SCRIPT]**
+
+
+[165409ca72c16b4](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/165409ca72c16b4) Tomas Bjerre *2021-06-09 17:02:10*
+
+
+## 1.71.1
+### No issue
+
+**chore(release): 1.71.1 [GRADLE SCRIPT]**
+
+
+[a2558b2be1236ba](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/a2558b2be1236ba) Tomas Bjerre *2021-06-09 17:00:05*
+
+**chore(release): Updating changelog with 1.71.0 [GRADLE SCRIPT]**
+
+
+[897dce3c324d3b5](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/897dce3c324d3b5) Tomas Bjerre *2021-06-09 14:32:18*
+
+
+## 1.71.0
+### No issue
+
+**chore(release): 1.71.0 [GRADLE SCRIPT]**
+
+
+[e53e178ded1f2a9](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/e53e178ded1f2a9) Tomas Bjerre *2021-06-09 14:32:11*
+
+**fix: when file was in a new folder, it created folder**
+
+
+[caa231c47e6aa90](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/caa231c47e6aa90) Tomas Bjerre *2021-06-09 14:31:25*
+
+**chore(release): Updating changelog with 1.70.0 [GRADLE SCRIPT]**
+
+
+[8c696174d3442e1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/8c696174d3442e1) Tomas Bjerre *2021-06-03 17:10:13*
+
+
+## 1.70.0
+### No issue
+
+**chore(release): 1.70.0 [GRADLE SCRIPT]**
+
+
+[79b3b57d64b46e1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/79b3b57d64b46e1) Tomas Bjerre *2021-06-03 17:10:04*
+
+**chore(release): Updating changelog with 1.69.0 [GRADLE SCRIPT]**
+
+
+[0a376ed5e97ba70](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/0a376ed5e97ba70) Tomas Bjerre *2021-06-02 19:15:38*
+
+
+## 1.69.0
+### No issue
+
+**chore(release): 1.69.0 [GRADLE SCRIPT]**
+
+
+[ae72662edc7b271](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/ae72662edc7b271) Tomas Bjerre *2021-06-02 19:15:31*
+
+
+## 1.68.6
+### No issue
+
+**chore(release): 1.68.6 [GRADLE SCRIPT]**
+
+
+[648994274b4834f](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/648994274b4834f) Tomas Bjerre *2021-06-01 15:46:23*
+
+
+## 1.68.5
+### No issue
+
+**chore(release): 1.68.5 [GRADLE SCRIPT]**
+
+
+[5bd649fef16486a](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/5bd649fef16486a) Tomas Bjerre *2021-06-01 14:50:19*
+
+**fix: temporary removing plugins not working with Gradle 7**
+
+
+[a293732ecf8ee92](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/a293732ecf8ee92) Tomas Bjerre *2021-06-01 14:49:11*
 
 **chore(release): Updating changelog with 1.68.4 [GRADLE SCRIPT]**
 

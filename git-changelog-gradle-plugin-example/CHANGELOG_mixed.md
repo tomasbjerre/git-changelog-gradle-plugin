@@ -3,8 +3,60 @@
 
 Changelog of Git Changelog Maven plugin.
 
-## These commits are not included in any tag
+## 1.71.3
 ### These commits have not issue in their commit comment
+   chore(release): 1.71.3 [GRADLE SCRIPT] *18:06:55*
+
+
+
+## 1.71.2
+### These commits have not issue in their commit comment
+   chore(release): 1.71.2 [GRADLE SCRIPT] *17:02:10*
+
+
+
+## 1.71.1
+### These commits have not issue in their commit comment
+   chore(release): 1.71.1 [GRADLE SCRIPT] *17:00:05*
+
+   chore(release): Updating changelog with 1.71.0 [GRADLE SCRIPT] *14:32:18*
+
+
+
+## 1.71.0
+### These commits have not issue in their commit comment
+   chore(release): 1.71.0 [GRADLE SCRIPT] *14:32:11*
+
+   fix: when file was in a new folder, it created folder *14:31:25*
+
+   chore(release): Updating changelog with 1.70.0 [GRADLE SCRIPT] *17:10:13*
+
+
+
+## 1.70.0
+### These commits have not issue in their commit comment
+   chore(release): 1.70.0 [GRADLE SCRIPT] *17:10:04*
+
+   chore(release): Updating changelog with 1.69.0 [GRADLE SCRIPT] *19:15:38*
+
+
+
+## 1.69.0
+### These commits have not issue in their commit comment
+   chore(release): 1.69.0 [GRADLE SCRIPT] *19:15:31*
+
+
+
+## 1.68.6
+### These commits have not issue in their commit comment
+   chore(release): 1.68.6 [GRADLE SCRIPT] *15:46:23*
+
+
+
+## 1.68.5
+### These commits have not issue in their commit comment
+   chore(release): 1.68.5 [GRADLE SCRIPT] *14:50:19*
+
    chore(release): Updating changelog with 1.68.4 [GRADLE SCRIPT] *18:47:43*
 
 
