@@ -2,6 +2,18 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## [1.71.4](https://github.com/tomasbjerre/git-changelog-gradle-plugin/releases/tag/1.71.4) (2021-06-17)
+
+
+
+
+
+### Bug Fixes
+
+-  adding default changelog template jenkinsci/git-changelog-plugin#58 ([d0f2c](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/d0f2ce5982797b5))  
+
+
+
 ## [1.71.0](https://github.com/tomasbjerre/git-changelog-gradle-plugin/releases/tag/1.71.0) (2021-06-09)
 
 
