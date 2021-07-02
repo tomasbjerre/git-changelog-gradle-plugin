@@ -11,9 +11,9 @@ There is a complete running example [here](https://github.com/tomasbjerre/git-ch
 
 There are some more examples in the [build.gradle](https://github.com/tomasbjerre/git-changelog-gradle-plugin/blob/master/git-changelog-gradle-plugin-example/build.gradle).
 
-Here is and example that will produce a CHANGELOG.md when running `./gradlew gitChangelogTask`.
-
 More documentation can be found in the [Git Changelog Lib](https://github.com/tomasbjerre/git-changelog-lib).
+
+It will use `master` branch by default, you can change that with something like `toRef = "main"`.
 
 ### `settings.gradle`
 
@@ -159,21 +159,6 @@ task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask
     {{/startsWith}}
   {{/commits}}
   """;
-}
-```
-### Edge case usage
-#### When your default branch is not `master`, use `toRef = $BRANCH_NAME`.
-
-If `toIdOpt.isPresent()` is NULL, `toId` is set to the master branch as `toId = gitRepo.getRef(REF_MASTER)` in GitChangelogApi.java so specify `toRef` by providing the branch name you'd like to base in.
-```kotlin
-// Kotlin 
-tasks.create<se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask>("gitChangelogTask") {
-    file = File("CHANGELOG.md")
-    fromRepo = File("$projectDir").toString()
-    toRef = "main"
-    templateContent = """
-      // Template here!    
-    """
 }
 ```
 
