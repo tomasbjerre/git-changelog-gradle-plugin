@@ -111,6 +111,7 @@ task generateGitChangelogTemplateWithGitHubIssues(type: se.bjurr.gitchangelog.pl
  gitHubApi = "https://api.github.com/repos/tomasbjerre/git-changelog-gradle-plugin";
  gitHubToken = System.properties['GITHUB_OAUTH2TOKEN'];
  gitHubIssuePattern = "#([0-9]*)";
+ gitHubEnabled = true;
  file = new File("CHANGELOG.md");
  templateContent = file('changelog.mustache').getText('UTF-8');
 }
@@ -122,6 +123,7 @@ task generateGitChangelogTemplateWithGitHubIssues(type: se.bjurr.gitchangelog.pl
 // gitLabServer = "https://gitlab.com/";
 // gitLabProjectName = "tomas.bjerre85/violations-test";
 // gitLabToken = System.properties['GITLAB_TOKEN'];
+// gitLabEnabled = true;
 // file = new File("CHANGELOG_GITLAB.md");
 // templateContent = file('changelog.mustache').getText('UTF-8');
 //}
@@ -130,6 +132,7 @@ task generateGitChangelogTemplateWithGitHubIssues(type: se.bjurr.gitchangelog.pl
 // Template from file and Jira login
 //
 //task generateGitChangelogTemplateFromFileAndJira(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+// jiraEnabled = true;
 // jiraUsername = System.properties['JIRA_USERNAME'];
 // jiraPassword = System.properties['JIRA_PASSWORD'];
 // jiraIssuePattern = "\\b[a-zA-Z]([a-zA-Z]+)-([0-9]+)\\b";

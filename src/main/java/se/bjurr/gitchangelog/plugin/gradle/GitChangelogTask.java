@@ -40,17 +40,23 @@ public class GitChangelogTask extends DefaultTask {
   public String ignoreTagsIfNameMatches;
 
   public List<List<String>> customIssues = new ArrayList<>();
+
+  public boolean gitHubEnabled;
   public String gitHubApi;
   public String gitHubToken;
   public String gitHubIssuePattern;
+
+  public boolean jiraEnabled;
   public String jiraUsername;
   public String jiraPassword;
   public String jiraIssuePattern;
   public String jiraServer;
 
+  public boolean gitLabEnabled;
   public String gitLabServer;
   public String gitLabProjectName;
   public String gitLabToken;
+
   public Date ignoreCommitsOlderThan;
   public List<HelperParam> handlebarsHelpers = new ArrayList<>();
 
@@ -59,7 +65,11 @@ public class GitChangelogTask extends DefaultTask {
     try {
       this.getProject().getExtensions().findByType(GitChangelogPluginExtension.class);
 
-      final GitChangelogApi builder = gitChangelogApiBuilder();
+      final GitChangelogApi builder =
+          gitChangelogApiBuilder()
+              .withJiraEnabled(this.jiraEnabled)
+              .withGitLabEnabled(this.gitLabEnabled)
+              .withGitHubEnabled(this.gitHubEnabled);
 
       for (final HelperParam helper : this.handlebarsHelpers) {
         builder //
