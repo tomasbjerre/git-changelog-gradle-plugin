@@ -6,13 +6,11 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
 import org.gradle.api.DefaultTask;
 import org.gradle.api.tasks.TaskAction;
 import org.gradle.api.tasks.TaskExecutionException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import se.bjurr.gitchangelog.api.GitChangelogApi;
 
 public class GitChangelogTask extends DefaultTask {
@@ -71,7 +69,7 @@ public class GitChangelogTask extends DefaultTask {
 
       final GitChangelogApi builder =
           gitChangelogApiBuilder()
-          .withUseIntegrations(this.useIntegrations)
+              .withUseIntegrations(this.useIntegrations)
               .withJiraEnabled(this.jiraEnabled)
               .withGitLabEnabled(this.gitLabEnabled)
               .withGitHubEnabled(this.gitHubEnabled);
