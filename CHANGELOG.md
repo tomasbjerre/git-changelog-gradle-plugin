@@ -2,6 +2,18 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 1.72.0 (2022-03-31)
+
+
+
+### Features
+
+-  prependToFile ([6fcf0](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/6fcf01c78fa7501) Tomas Bjerre)  
+
+
+
+
+
 ## 1.71.6 (2022-01-16)
 
 
