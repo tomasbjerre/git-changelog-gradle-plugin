@@ -18,6 +18,7 @@ apply plugin: 'se.bjurr.gitchangelog.git-changelog-gradle-plugin'
 //
 task generateGitReleasenotes11RepoPath(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
  file = file("whatever/CHANGELOG_1_0_1_1_repo_path.md");
+ prependToFile = false; // false will replace the file, true will prepend content
  fromRepo = file(".");
  fromRef = "1.0";
  toRef = "1.1";

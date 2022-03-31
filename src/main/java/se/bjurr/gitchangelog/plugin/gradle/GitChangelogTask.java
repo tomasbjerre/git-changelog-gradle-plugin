@@ -61,6 +61,7 @@ public class GitChangelogTask extends DefaultTask {
   public List<HelperParam> handlebarsHelpers = new ArrayList<>();
 
   public boolean useIntegrations;
+  public boolean prependToFile;
 
   @TaskAction
   public void gitChangelogPluginTasks() throws TaskExecutionException {
@@ -177,7 +178,11 @@ public class GitChangelogTask extends DefaultTask {
       }
 
       if (this.file != null) {
-        builder.toFile(this.file);
+        if (this.prependToFile) {
+          builder.prependToFile(this.file);
+        } else {
+          builder.toFile(this.file);
+        }
         log.info("#");
         log.info("# Wrote: " + this.file);
         log.info("#");
