@@ -26,7 +26,9 @@ public class GitChangelogTask extends DefaultTask {
   public String fromCommit;
 
   public String settingsFile;
+  public String templateBaseDir;
   public String templateContent;
+  public String templateSuffix;
   public File file;
 
   public String readableTagName;
@@ -91,10 +93,6 @@ public class GitChangelogTask extends DefaultTask {
       if (this.isSupplied(this.toRef)) {
         builder.withToRef(this.toRef);
       }
-
-      if (this.isSupplied(this.templateContent)) {
-        builder.withTemplateContent(this.templateContent);
-      }
       if (this.isSupplied(this.fromCommit)) {
         builder.withFromCommit(this.fromCommit);
       }
@@ -103,6 +101,16 @@ public class GitChangelogTask extends DefaultTask {
       }
       if (this.isSupplied(this.toCommit)) {
         builder.withToCommit(this.toCommit);
+      }
+
+      if (this.isSupplied(this.templateBaseDir)) {
+        builder.withTemplateBaseDir(this.templateBaseDir);
+      }
+      if (this.isSupplied(this.templateContent)) {
+        builder.withTemplateContent(this.templateContent);
+      }
+      if (this.isSupplied(this.templateSuffix)) {
+        builder.withTemplateSuffix(this.templateSuffix);
       }
 
       if (this.isSupplied(this.ignoreTagsIfNameMatches)) {
@@ -130,6 +138,7 @@ public class GitChangelogTask extends DefaultTask {
       if (this.isSupplied(this.noIssueName)) {
         builder.withNoIssueName(this.noIssueName);
       }
+
       builder.withIgnoreCommitsWithoutIssue(this.ignoreCommitsWithoutIssue);
       for (final List<String> customIssue : this.customIssues) {
         final String name = customIssue.get(0);
@@ -184,7 +193,7 @@ public class GitChangelogTask extends DefaultTask {
           builder.toFile(this.file);
         }
         log.info("#");
-        log.info("# Wrote: " + this.file);
+        log.info("# Wrote: " + this.file + " to: " + this.file.getCanonicalFile().toPath());
         log.info("#");
       }
 
