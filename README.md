@@ -33,7 +33,7 @@ plugin {
 }
 
 task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- file = new File("CHANGELOG.md");
+ file = file("CHANGELOG.md");
  templateContent = """
   // Template here!
  """;

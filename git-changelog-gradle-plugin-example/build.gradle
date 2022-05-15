@@ -1,4 +1,4 @@
-apply plugin: 'java'
+apply plugin: 'java-gradle-plugin'
 
 buildscript {
  repositories {
@@ -67,7 +67,7 @@ Releasenotes.
 //
 task generateGitChangelogInlineTemplate(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
  fromRepo = file(".");
- file = new File("CHANGELOG_inline.md");
+ file = file("CHANGELOG_inline.md");
  templateContent = """
 # Git Changelog Maven plugin changelog
 
@@ -78,6 +78,41 @@ Changelog of Git Changelog Maven plugin.
  {{#issues}}
   {{#hasLink}}
 ### {{name}} [{{issue}}]({{link}}) {{title}}
+  {{/hasLink}}
+  {{^hasLink}}
+### {{name}}
+  {{/hasLink}}
+
+  {{#commits}}
+[{{hash}}](https://github.com/tomasbjerre/git-changelog-maven-plugin/commit/{{hash}}) {{authorName}} *{{commitTime}}*
+
+{{{message}}}
+
+  {{/commits}}
+
+ {{/issues}}
+{{/tags}}
+ """;
+}
+
+//
+// Partials
+//
+task generateGitChangelogWithPartials(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+ fromRepo = file(".");
+ file = file("CHANGELOG_partials.md");
+ templateBaseDir = file(".")
+ templateSuffix = ".partial"
+ templateContent = """
+# Git Changelog Maven plugin changelog
+
+Changelog of Git Changelog Maven plugin.
+
+{{#tags}}
+## {{name}}
+ {{#issues}}
+  {{#hasLink}}
+{{>changelog_linkedIssue}}
   {{/hasLink}}
   {{^hasLink}}
 ### {{name}}
