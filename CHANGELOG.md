@@ -2,6 +2,18 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 1.73.0 (2022-05-15)
+
+
+
+### Features
+
+-  enable partial templates by exposing missing Git Changelog lib properties ([1d6ed](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/1d6eddd48bd84ac) perrke)  
+
+
+
+
+
 ## 1.72.0 (2022-03-31)
 
 
@@ -36,13 +48,6 @@ Changelog of git-changelog-gradle-plugin.
 
 -  only parse enabled issues ([b11ec](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/b11ec3d3d77758f) Tomas Bjerre)  
 
-
-### Other changes
-
-**docs(README.md): how to configure the default branch (master -> main)**
-
-
-[4aedd](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/4aedd4ebd07d18a) Claire L *2021-07-02 00:07:13*
 
 
 ## 1.71.4 (2021-06-17)
