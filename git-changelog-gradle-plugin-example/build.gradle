@@ -1,4 +1,4 @@
-apply plugin: 'java-gradle-plugin'
+apply plugin: 'java'
 
 buildscript {
  repositories {
