@@ -7,7 +7,7 @@ This is a Gradle plugin for [Git Changelog Lib](https://github.com/tomasbjerre/g
 
 ## Usage
 
-There is a complete running example [here](https://github.com/tomasbjerre/git-changelog-gradle-plugin/tree/master/git-changelog-gradle-plugin-example).
+There is a complete running example [here](/git-changelog-gradle-plugin-example) and also with Kotlin DSL [here](/git-changelog-gradle-plugin-example-kotlin).
 
 There are some more examples in the [build.gradle](https://github.com/tomasbjerre/git-changelog-gradle-plugin/blob/master/git-changelog-gradle-plugin-example/build.gradle).
 

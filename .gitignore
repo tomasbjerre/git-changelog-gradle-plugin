@@ -9,3 +9,4 @@ bin
 temp
 .gradle
 .okhttpcache
+git-changelog-gradle-plugin-example-kotlin/*.md
