@@ -13,6 +13,7 @@ public class GitChangelogGradlePlugin implements Plugin<Project> {
     final GitChangelogTask gitChangelogTask =
         target.getTasks().create("gitChangelog", GitChangelogTask.class);
     gitChangelogTask.file = target.getRootProject().file("CHANGELOG.md");
-    gitChangelogTask.ignoreCommitsIfMessageMatches = "^\\[maven-release-plugin\\].*|^\\[Gradle Release Plugin\\].*|^Merge.*|.*\\[GRADLE SCRIPT\\].*";
+    gitChangelogTask.ignoreCommitsIfMessageMatches =
+        "^\\[maven-release-plugin\\].*|^\\[Gradle Release Plugin\\].*|^Merge.*|.*\\[GRADLE SCRIPT\\].*";
   }
 }
