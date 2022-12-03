@@ -15,15 +15,12 @@ More documentation can be found in the [Git Changelog Lib](https://github.com/to
 
 It will use `master` branch by default, you can change that with something like `toRef = "main"`.
 
-### `settings.gradle`
+### Default tasks
 
-```groovy
-pluginManagement {
-  repositories {
-    gradlePluginPortal()
-  }
-}
-```
+These tasks are configured when plugin is applied, no further configuration needed to use them.
+
+ - `gitChangelogSemanticVersion` - Will use set version in `gradle.properties` from [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
+ - `gitChangelog` - Will update `CHANGELOG.md` using [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
 ### `build.gradle`
 
@@ -32,11 +29,19 @@ plugin {
   id 'se.bjurr.gitchangelog.git-changelog-gradle-plugin' version 'X'
 }
 
+// Optional config if you want to configure the changelog
 task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- file = new File"CHANGELOG.md");
  templateContent = """
   // Template here!
  """;
+}
+
+// Optional config if you want to configure versioning
+task gitChangelogVersionTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogSemanticVersionTask) {
+ suffixSnapshot = true;
+ majorVersionPattern = "^[Bb]reaking"
+ minorVersionPattern = "[Ff]eature"
+ patchVersionPattern = "[Ff]ix"
 }
 ```
 

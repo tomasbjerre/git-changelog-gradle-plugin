@@ -13,6 +13,21 @@ buildscript {
 
 apply plugin: 'se.bjurr.gitchangelog.git-changelog-gradle-plugin'
 
+// Optional config if you want to configure the changelog
+task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+ templateContent = """
+  // Template here!
+ """;
+}
+
+// Optional config if you want to configure versioning
+task gitChangelogVersionTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogSemanticVersionTask) {
+ suffixSnapshot = true;
+ majorVersionPattern = "^[Bb]reaking"
+ minorVersionPattern = "[Ff]eature"
+ patchVersionPattern = "[Ff]ix"
+}
+
 //
 // Set references to create releasenotes for version 1.1
 //

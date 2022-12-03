@@ -15,7 +15,7 @@ import se.bjurr.gitchangelog.api.GitChangelogApi;
 
 public class GitChangelogTask extends DefaultTask {
 
-  private static final Logger log = LoggerFactory.getLogger(DefaultTask.class.getName());
+  private static final Logger log = LoggerFactory.getLogger(GitChangelogTask.class.getName());
 
   public String fromRepo;
 
