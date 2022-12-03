@@ -17,9 +17,9 @@ apply plugin: 'se.bjurr.gitchangelog.git-changelog-gradle-plugin'
 // Set references to create releasenotes for version 1.1
 //
 task generateGitReleasenotes11RepoPath(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- file = file("whatever/CHANGELOG_1_0_1_1_repo_path.md");
+ file = new File("whatever/CHANGELOG_1_0_1_1_repo_path.md");
  prependToFile = false; // false will replace the file, true will prepend content
- fromRepo = file(".");
+ fromRepo = new File(".");
  fromRef = "1.0";
  toRef = "1.1";
  templateContent = """
@@ -48,7 +48,7 @@ Releasenotes.
 // Settings file
 //
 //task generateGitChangelogSettings(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-// settingsFile = file("changelog.json").getAbsolutePath();
+// settingsFile = new File("changelog.json").getAbsolutePath();
 // file = new File("CHANGELOG_settings.md");
 //}
 
@@ -66,8 +66,8 @@ Releasenotes.
 // Template configured inline
 //
 task generateGitChangelogInlineTemplate(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- fromRepo = file(".");
- file = file("CHANGELOG_inline.md");
+ fromRepo = new File(".");
+ file = new File("CHANGELOG_inline.md");
  templateContent = """
 # Git Changelog Maven plugin changelog
 
@@ -99,9 +99,9 @@ Changelog of Git Changelog Maven plugin.
 // Partials
 //
 task generateGitChangelogWithPartials(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- fromRepo = file(".");
- file = file("CHANGELOG_partials.md");
- templateBaseDir = file(".")
+ fromRepo = new File(".");
+ file = new File("CHANGELOG_partials.md");
+ templateBaseDir = new File(".")
  templateSuffix = ".partial"
  templateContent = """
 # Git Changelog Maven plugin changelog
@@ -133,23 +133,23 @@ Changelog of Git Changelog Maven plugin.
 //
 // Template from file
 //
-task generateGitChangelogTemplateFromFile(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- fromRepo = file(".");
+task generateGitChangelogTemplateFromnewFile(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+ fromRepo = new File(".");
  file = new File("CHANGELOG_file.md");
- templateContent = file('changelog.mustache').getText('UTF-8');
+ templateContent = new File('changelog.mustache').getText('UTF-8');
 }
 
 //
 // Template from file and GitHub token
 //
 task generateGitChangelogTemplateWithGitHubIssues(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- fromRepo = file(".");
+ fromRepo = new File(".");
  gitHubApi = "https://api.github.com/repos/tomasbjerre/git-changelog-gradle-plugin";
  gitHubToken = System.properties['GITHUB_OAUTH2TOKEN'];
  gitHubIssuePattern = "#([0-9]*)";
  gitHubEnabled = true;
  file = new File("CHANGELOG.md");
- templateContent = file('changelog.mustache').getText('UTF-8');
+ templateContent = new File('changelog.mustache').getText('UTF-8');
 }
 
 //
@@ -161,7 +161,7 @@ task generateGitChangelogTemplateWithGitHubIssues(type: se.bjurr.gitchangelog.pl
 // gitLabToken = System.properties['GITLAB_TOKEN'];
 // gitLabEnabled = true;
 // file = new File("CHANGELOG_GITLAB.md");
-// templateContent = file('changelog.mustache').getText('UTF-8');
+// templateContent = new File('changelog.mustache').getText('UTF-8');
 //}
 
 //
@@ -174,14 +174,14 @@ task generateGitChangelogTemplateWithGitHubIssues(type: se.bjurr.gitchangelog.pl
 // jiraIssuePattern = "\\b[a-zA-Z]([a-zA-Z]+)-([0-9]+)\\b";
 // jiraServer = "https://yourJiraServer.com/jira";
 // file = new File("CHANGELOG_jira.md");
-// templateContent = file('changelog.mustache').getText('UTF-8');
+// templateContent = new File('changelog.mustache').getText('UTF-8');
 //}
 
 //
 // Set reference to create changelog for version 1.1
 //
 task generateGitChangelog11(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- fromRepo = file(".");
+ fromRepo = new File(".");
  file = new File("CHANGELOG_1_1.md");
  toRef = "1.1";
  templateContent = """
@@ -197,7 +197,7 @@ task generateGitChangelog11(type: se.bjurr.gitchangelog.plugin.gradle.GitChangel
 // Set references to create releasenotes for version 1.1
 //
 task generateGitReleasenotes11(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- fromRepo = file(".");
+ fromRepo = new File(".");
  file = new File("CHANGELOG_1_0_1_1.md");
  fromRef = "1.0";
  toRef = "1.1";
@@ -228,7 +228,7 @@ Releasenotes.
 // for the from and to commit to inject hashes from command line.
 //
 task generateGitChangelogCommits(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- fromRepo = file(".");
+ fromRepo = new File(".");
  file = new File("CHANGELOG_commits.md");
  fromCommit = "d5657ba4353bff4c8924981d4da4aacfcbd9bd54";
  toCommit = "3568f412a65a16d1848d8d5316a7cb30261cf271";
@@ -258,7 +258,7 @@ Releasenotes.
 // Mixed features
 //
 task generateGitChangelogMixed(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- fromRepo = file(".");
+ fromRepo = new File(".");
  readableTagName = ".*/([^/]*)";
  dateFormat = "HH:mm:ss";
  timeZone = "UTC";
@@ -292,7 +292,7 @@ Changelog of Git Changelog Maven plugin.
 // Mixed features
 //
 task generateGitChangelogIgnoreCommitsWithoutIssue(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- fromRepo = file(".");
+ fromRepo = new File(".");
  // If a commit cannot be mapped to a configured issue, it will not 
  // be included if set to true. If set to true, noIssueName has no effect.
  ignoreCommitsWithoutIssue = true;
@@ -324,7 +324,7 @@ Changelog of Git Changelog.
 // Ignore old commits
 //
 task generateGitChangelogIgnoreCommitsOlderThan(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- fromRepo = file(".");
+ fromRepo = new File(".");
  ignoreCommitsOlderThan = Date.parse("yyyy-MM-dd hh:mm:ss", "2017-05-20 00:00:00");
  file = new File("CHANGELOG_ignoreCommitsOlderThan.md");
  templateContent = """
@@ -351,7 +351,7 @@ Changelog of Git Changelog.
 // Custom issues
 //
 task generateGitChangelogCustomIssues(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- fromRepo = file(".");
+ fromRepo = new File(".");
  file = new File("CHANGELOG_custom.md");
  customIssues = [
   [ "Incident", "INC[0-9]*", "http://inc/\${PATTERN_GROUP}", "\${PATTERN_GROUP}" ],
