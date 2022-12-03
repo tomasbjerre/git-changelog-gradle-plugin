@@ -2,109 +2,61 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 1.74.0 (2022-12-03)
+
+### Features
+
+-  adjusting to Gradle 7.6 ([f0bc9](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/f0bc9823fa1e5a7) Tomas Bjerre)  [#40](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/40)  
+
 ## 1.73.0 (2022-05-15)
-
-
 
 ### Features
 
 -  enable partial templates by exposing missing Git Changelog lib properties ([1d6ed](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/1d6eddd48bd84ac) perrke)  
 
-
-
-
-
 ## 1.72.0 (2022-03-31)
-
-
 
 ### Features
 
 -  prependToFile ([6fcf0](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/6fcf01c78fa7501) Tomas Bjerre)  
 
-
-
-
-
 ## 1.71.6 (2022-01-16)
-
-
-
-
 
 ### Bug Fixes
 
 -  disable integrations with a boolean useIntegrations ([45e5f](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/45e5ff7ad187a14) Tomas Bjerre)  
 
-
-
 ## 1.71.5 (2022-01-05)
-
-
-
-
 
 ### Bug Fixes
 
 -  only parse enabled issues ([b11ec](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/b11ec3d3d77758f) Tomas Bjerre)  
 
-
-
 ## 1.71.4 (2021-06-17)
-
-
-
-
 
 ### Bug Fixes
 
 -  adding default changelog template jenkinsci/git-changelog-plugin#58 ([d0f2c](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/d0f2ce5982797b5) Tomas Bjerre)  
 
-
-
 ## 1.71.0 (2021-06-09)
-
-
-
-
 
 ### Bug Fixes
 
 -  when file was in a new folder, it created folder ([caa23](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/caa231c47e6aa90) Tomas Bjerre)  
 
-
-
 ## 1.68.5 (2021-06-01)
-
-
-
-
 
 ### Bug Fixes
 
 -  temporary removing plugins not working with Gradle 7 ([a2937](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/a293732ecf8ee92) Tomas Bjerre)  
 
-
-
 ## 1.68.2 (2021-05-31)
 
-
-
-
-
-
-
-
 ## 1.68.0 (2021-05-27)
-
-
 
 ### Features
 
 -  support conventional commits ([ae011](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/ae0117c7db35ca5) Tomas Bjerre)  
-
-
-
 
 ### Other changes
 
@@ -116,12 +68,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.66 (2021-03-29)
 
-
-
-
-
-
-
 ### Other changes
 
 **pretty printing output JENKINS-65252**
@@ -131,12 +77,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.65 (2021-01-18)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -163,12 +103,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.64 (2019-08-13)
 
-
-
-
-
-
-
 ### Other changes
 
 **Update .travis.yml**
@@ -185,12 +119,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.63 (2019-06-11)
 
-
-
-
-
-
-
 ### Other changes
 
 **Removing dependency on javax.xml**
@@ -200,12 +128,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.62 (2019-06-11)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -222,12 +144,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.61 (2019-05-20)
 
-
-
-
-
-
-
 ### Other changes
 
 **Gradle 5**
@@ -237,12 +153,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.60 (2019-01-08)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -254,12 +164,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.59 (2018-10-27)
 
-
-
-
-
-
-
 ### Other changes
 
 **Correcting GitLab integration after upgrade**
@@ -270,12 +174,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.58 (2018-10-27)
 
-
-
-
-
-
-
 ### Other changes
 
 **GitLab API v4**
@@ -285,12 +183,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.57 (2018-10-27)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -312,12 +204,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.56 (2018-09-13)
 
-
-
-
-
-
-
 ### Other changes
 
 **git-changelog-lib 1.82**
@@ -327,12 +213,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.55 (2017-12-30)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -348,12 +228,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.54 (2017-12-19)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -375,12 +249,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.53 (2017-11-18)
 
-
-
-
-
-
-
 ### Other changes
 
 **Disabling integrations if not used**
@@ -395,12 +263,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.52 (2017-11-02)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -417,12 +279,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.51 (2017-10-28)
 
-
-
-
-
-
-
 ### Other changes
 
 **Gradle publish plugin 0.9.9**
@@ -437,12 +293,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.50 (2017-07-25)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -459,12 +309,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.49 (2017-07-24)
 
-
-
-
-
-
-
 ### Other changes
 
 **Lib 1.70**
@@ -479,12 +323,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.48 (2017-07-08)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -501,12 +339,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.47 (2017-05-22)
 
-
-
-
-
-
-
 ### Other changes
 
 **Better handling of relative paths #7**
@@ -521,12 +353,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.46 (2017-05-20)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -548,12 +374,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.45 (2017-04-14)
 
-
-
-
-
-
-
 ### Other changes
 
 **tag time added to tag model**
@@ -568,12 +388,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.44 (2017-03-26)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -590,12 +404,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.43 (2017-03-20)
 
-
-
-
-
-
-
 ### Other changes
 
 **doc**
@@ -605,12 +413,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.42 (2017-03-20)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -626,12 +428,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.41 (2017-03-18)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -656,12 +452,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.40 (2016-10-22)
 
-
-
-
-
-
-
 ### Other changes
 
 **Adding annotation to context of tag**
@@ -676,12 +466,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.39 (2016-10-05)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -698,12 +482,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.38 (2016-08-11)
 
-
-
-
-
-
-
 ### Other changes
 
 **Correcting version**
@@ -713,12 +491,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 0 (2016-08-11)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -735,12 +507,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.37 (2016-08-02)
 
-
-
-
-
-
-
 ### Other changes
 
 **Adding {{hashFull}} variable**
@@ -755,12 +521,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.36 (2016-06-25)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -777,12 +537,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.35 (2016-06-24)
 
-
-
-
-
-
-
 ### Other changes
 
 **Fixing merge commits... again...**
@@ -797,12 +551,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.34 (2016-06-24)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -819,12 +567,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.33 (2016-06-02)
 
-
-
-
-
-
-
 ### Other changes
 
 **Lib 1.49, finding first commit as parents from HEAD**
@@ -840,12 +582,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.32 (2016-05-20)
 
-
-
-
-
-
-
 ### Other changes
 
 **Ignoring trailing slash in JIRA URL**
@@ -860,12 +596,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.31 (2016-04-13)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -892,12 +622,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.30 (2016-04-12)
 
-
-
-
-
-
-
 ### Other changes
 
 **JENKINS-34155 Support short SHA**
@@ -913,12 +637,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.29 (2016-04-10)
 
-
-
-
-
-
-
 ### Other changes
 
 **Lib 1.43, Parsing commits, oldest first**
@@ -928,12 +646,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.28 (2016-04-10)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -950,12 +662,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.27 (2016-04-09)
 
-
-
-
-
-
-
 ### Other changes
 
 **Lib 1.41, Commits added to correct tags**
@@ -970,12 +676,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.26 (2016-04-07)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -992,12 +692,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.25 (2016-03-20)
 
-
-
-
-
-
-
 ### Other changes
 
 **Lib 1.39**
@@ -1012,12 +706,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.24 (2016-03-20)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1034,12 +722,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.23 (2016-03-16)
 
-
-
-
-
-
-
 ### Other changes
 
 **Jira integration to get titles**
@@ -1054,12 +736,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.22 (2016-03-15)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1081,12 +757,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.21 (2016-02-20)
 
-
-
-
-
-
-
 ### Other changes
 
 **Supplying commit in each issue mentioned in message**
@@ -1102,12 +772,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.20 (2016-02-15)
 
-
-
-
-
-
-
 ### Other changes
 
 **Lib 1.30, supporting multiple tags on same commit**
@@ -1118,12 +782,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.19 (2016-02-14)
 
-
-
-
-
-
-
 ### Other changes
 
 **Lib 1.29**
@@ -1133,12 +791,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.18 (2016-02-13)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1156,12 +808,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.17 (2016-02-10)
 
-
-
-
-
-
-
 ### Other changes
 
 **Git changelog lib 1.25**
@@ -1178,12 +824,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.16 (2016-02-09)
 
-
-
-
-
-
-
 ### Other changes
 
 **Added variables: messageTitle, messageBody, messageItems #5**
@@ -1198,12 +838,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.15 (2016-02-01)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1221,12 +855,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.14 (2016-01-31)
 
-
-
-
-
-
-
 ### Other changes
 
 **Maven Central version badge in README.md**
@@ -1241,12 +869,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.13 (2016-01-31)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1271,12 +893,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.12 (2016-01-31)
 
-
-
-
-
-
-
 ### Other changes
 
 **Storing settings on each task #3**
@@ -1287,12 +903,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.11 (2016-01-31)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1309,12 +919,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.10 (2015-12-06)
 
-
-
-
-
-
-
 ### Other changes
 
 **Using lib 1.17 #1**
@@ -1330,12 +934,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.9 (2015-12-04)
 
-
-
-
-
-
-
 ### Other changes
 
 **Using lib 1.15 #1**
@@ -1345,12 +943,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.8 (2015-12-01)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1367,12 +959,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.7 (2015-11-23)
 
-
-
-
-
-
-
 ### Other changes
 
 **using lib 1.13 #1**
@@ -1387,12 +973,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.6 (2015-11-23)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1409,12 +989,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.5 (2015-11-21)
 
-
-
-
-
-
-
 ### Other changes
 
 **lib 1.10**
@@ -1424,12 +998,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.4 (2015-11-20)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1446,12 +1014,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.3 (2015-11-18)
 
-
-
-
-
-
-
 ### Other changes
 
 **lib 1.3**
@@ -1466,12 +1028,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.2 (2015-11-17)
-
-
-
-
-
-
 
 ### Other changes
 
@@ -1494,12 +1050,6 @@ Changelog of git-changelog-gradle-plugin.
 
 ## 1.1 (2015-11-16)
 
-
-
-
-
-
-
 ### Other changes
 
 **Adding plugin plugin**
@@ -1514,12 +1064,6 @@ Changelog of git-changelog-gradle-plugin.
 
 
 ## 1.0 (2015-11-15)
-
-
-
-
-
-
 
 ### Other changes
 
