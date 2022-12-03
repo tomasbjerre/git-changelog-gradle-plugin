@@ -2,6 +2,12 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 1.75.0 (2022-12-03)
+
+### Features
+
+-  gitChangelogSemanticVersion ([22af4](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/22af4a7088bc329) Tomas Bjerre)  
+
 ## 1.74.0 (2022-12-03)
 
 ### Features
