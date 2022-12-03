@@ -19,7 +19,7 @@ It will use `master` branch by default, you can change that with something like 
 
 These tasks are configured when plugin is applied, no further configuration needed to use them.
 
- - `gitChangelogSemanticVersion` - Will use set version in `gradle.properties` from [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
+ - `gitChangelogSemanticVersion` - Will set version in `gradle.properties` from [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
  - `gitChangelog` - Will update `CHANGELOG.md` using [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
 ### `build.gradle`
