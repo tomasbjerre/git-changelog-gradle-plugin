@@ -17,7 +17,7 @@ public class GitChangelogTask extends DefaultTask {
 
   private static final Logger log = LoggerFactory.getLogger(GitChangelogTask.class.getName());
 
-  public String fromRepo;
+  public String fromRepo = this.getProject().getRootProject().getRootDir().getAbsolutePath();
 
   public String toRef;
   public String toCommit;

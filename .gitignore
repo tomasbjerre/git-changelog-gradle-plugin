@@ -2,6 +2,7 @@ git-changelog-gradle-plugin-example/whatever/
 .classpath
 .project
 .settings
+.idea
 generated-src
 build
 target
