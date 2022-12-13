@@ -2,6 +2,12 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 1.76.0 (2022-12-13)
+
+### Features
+
+-  Add root gradle project as default git repository directory ([4b859](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/4b859961321c347) SimonIT)  
+
 ## 1.75.0 (2022-12-03)
 
 ### Features
