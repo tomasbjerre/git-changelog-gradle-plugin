@@ -2,6 +2,12 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 1.76.1 (2022-12-20)
+
+### Bug Fixes
+
+-  making semantic version match not greedy ([e5b3e](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/e5b3ec9b6f4232a) Tomas Bjerre)  
+
 ## 1.76.0 (2022-12-13)
 
 ### Features
