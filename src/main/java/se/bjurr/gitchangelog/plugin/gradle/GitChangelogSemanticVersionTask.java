@@ -28,6 +28,7 @@ public class GitChangelogSemanticVersionTask extends DefaultTask {
   public void gitChangelogPluginTasks() throws TaskExecutionException {
     try {
       final GitChangelogApi gitChangelogApiBuilder = gitChangelogApiBuilder();
+      gitChangelogApiBuilder.withFromRepo(this.getProject().getRootDir());
       if (this.isSupplied(this.majorVersionPattern)) {
         gitChangelogApiBuilder.withSemanticMajorVersionPattern(this.majorVersionPattern);
       }
