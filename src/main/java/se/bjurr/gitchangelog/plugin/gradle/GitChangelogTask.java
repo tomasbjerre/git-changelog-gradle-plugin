@@ -29,7 +29,7 @@ public class GitChangelogTask extends DefaultTask {
   public String templateBaseDir;
   public String templateContent;
   public String templateSuffix;
-  public File file;
+  public File file = this.getProject().file("CHANGELOG.md");
 
   public String readableTagName;
   public String dateFormat;
