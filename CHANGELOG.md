@@ -2,6 +2,16 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 1.77.0 (2022-12-22)
+
+### Features
+
+-  Move file default to task ([d60f8](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/d60f89a90e7e079) SimonIT)  
+
+### Bug Fixes
+
+-  Set repo for GitChangelogSemanticVersionTask ([f8707](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/f8707ced3aece51) SimonIT)  
+
 ## 1.76.1 (2022-12-20)
 
 ### Bug Fixes
