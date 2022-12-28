@@ -2,6 +2,8 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 1.77.1 (2022-12-28)
+
 ## 1.77.0 (2022-12-22)
 
 ### Features
