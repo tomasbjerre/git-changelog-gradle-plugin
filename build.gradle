@@ -12,7 +12,8 @@ buildscript {
 project.ext.buildConfig = [
   repoType: "GRADLE",
   gradlePlugin: [
-    tags: ['git', 'changelog', 'releasenotes', 'patchnotes']
+    tags: ['git', 'changelog', 'releasenotes', 'patchnotes',
+           'conventional commits', 'semantic version', 'semantic release']
   ],
 ]
 apply from: project.buildscript.classLoader.getResource('main.gradle').toURI()
