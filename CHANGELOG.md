@@ -2,6 +2,12 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 1.77.2 (2023-01-04)
+
+### Bug Fixes
+
+-  allow space before : in commit message ([0c8b0](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/0c8b08672c8b921) Tomas Bjerre)  
+
 ## 1.77.1 (2022-12-28)
 
 ## 1.77.0 (2022-12-22)
