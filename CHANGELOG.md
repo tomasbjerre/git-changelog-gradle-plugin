@@ -2,6 +2,12 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 1.77.3 (2023-02-16)
+
+### Bug Fixes
+
+-  parsing newest commits first ([38237](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/3823765b3001466) Tomas Bjerre)  
+
 ## 1.77.2 (2023-01-04)
 
 ### Bug Fixes
