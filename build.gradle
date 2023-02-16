@@ -20,5 +20,5 @@ apply from: project.buildscript.classLoader.getResource('main.gradle').toURI()
 
 
 dependencies {
- implementation 'se.bjurr.gitchangelog:git-changelog-lib:1.168.7'
+ implementation 'se.bjurr.gitchangelog:git-changelog-lib:1.168.8'
 }
