@@ -23,6 +23,7 @@ public class GitChangelogSemanticVersionTask extends DefaultTask {
   public String majorVersionPattern;
   public String minorVersionPattern;
   public String patchVersionPattern;
+  public String ignoreTagsIfNameMatches;
 
   @TaskAction
   public void gitChangelogPluginTasks() throws TaskExecutionException {
@@ -37,6 +38,9 @@ public class GitChangelogSemanticVersionTask extends DefaultTask {
       }
       if (this.isSupplied(this.patchVersionPattern)) {
         gitChangelogApiBuilder.withSemanticPatchVersionPattern(this.patchVersionPattern);
+      }
+      if (this.isSupplied(this.ignoreTagsIfNameMatches)) {
+        gitChangelogApiBuilder.withIgnoreTagsIfNameMatches(this.ignoreTagsIfNameMatches);
       }
 
       final SemanticVersion nextSemanticVersion = gitChangelogApiBuilder.getNextSemanticVersion();
