@@ -2,6 +2,12 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 1.78.0 (2023-02-28)
+
+### Features
+
+-  add ignoreTagsIfNameMatches to gitChangelogSemanticVersion ([8d766](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/8d766aed4676ac7) Tomas Bjerre)  
+
 ## 1.77.3 (2023-02-16)
 
 ### Bug Fixes
