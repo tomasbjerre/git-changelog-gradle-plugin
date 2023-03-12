@@ -2,6 +2,12 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 1.78.1 (2023-03-12)
+
+### Bug Fixes
+
+-  avoiding stuck execution ([de937](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/de9379c0a235c86) Tomas Bjerre)  
+
 ## 1.78.0 (2023-02-28)
 
 ### Features
