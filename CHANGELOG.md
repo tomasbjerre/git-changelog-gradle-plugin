@@ -2,6 +2,12 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 1.79.0 (2023-04-22)
+
+### Features
+
+-  stringHelpers ([39183](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/391836431dd84f6) Tomas Bjerre)  
+
 ## 1.78.1 (2023-03-12)
 
 ### Bug Fixes
