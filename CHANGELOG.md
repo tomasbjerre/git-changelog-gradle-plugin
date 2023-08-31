@@ -2,6 +2,12 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 1.80.0 (2023-08-31)
+
+### Features
+
+-  from/toRevision and prioritizing commits semantically when adding to tags ([b8f27](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/b8f27b45a4525f9) Tomas Bjerre)  
+
 ## 1.79.0 (2023-04-22)
 
 ### Features
