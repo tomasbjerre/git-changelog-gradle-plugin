@@ -12,6 +12,7 @@ import org.gradle.api.tasks.TaskExecutionException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import se.bjurr.gitchangelog.api.GitChangelogApi;
+import se.bjurr.gitchangelog.api.InclusivenessStrategy;
 
 public class GitChangelogTask extends DefaultTask {
 
@@ -19,11 +20,29 @@ public class GitChangelogTask extends DefaultTask {
 
   public String fromRepo = this.getProject().getRootProject().getRootDir().getAbsolutePath();
 
-  public String toRef;
-  public String toCommit;
+  /**
+   * @deprecated Use toRevision
+   */
+  @Deprecated public String toRef;
+  /**
+   * @deprecated Use toRevision
+   */
+  @Deprecated public String toCommit;
 
-  public String fromRef;
-  public String fromCommit;
+  public String toRevision;
+  public InclusivenessStrategy toRevisionStrategy = InclusivenessStrategy.DEFAULT;
+
+  /**
+   * @deprecated Use fromRevision
+   */
+  @Deprecated public String fromRef;
+  /**
+   * @deprecated Use fromRevision
+   */
+  @Deprecated public String fromCommit;
+
+  public String fromRevision;
+  public InclusivenessStrategy fromRevisionStrategy = InclusivenessStrategy.DEFAULT;
 
   public String settingsFile;
   public String templateBaseDir;
@@ -96,11 +115,18 @@ public class GitChangelogTask extends DefaultTask {
       if (this.isSupplied(this.fromCommit)) {
         builder.withFromCommit(this.fromCommit);
       }
+      if (this.isSupplied(this.fromRevision)) {
+        builder.withFromRevision(this.fromRevision, this.fromRevisionStrategy);
+      }
+
       if (this.isSupplied(this.fromRef)) {
         builder.withFromRef(this.fromRef);
       }
       if (this.isSupplied(this.toCommit)) {
         builder.withToCommit(this.toCommit);
+      }
+      if (this.isSupplied(this.toRevision)) {
+        builder.withToRevision(this.toRevision, this.toRevisionStrategy);
       }
 
       if (this.isSupplied(this.templateBaseDir)) {

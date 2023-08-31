@@ -1,3 +1,5 @@
+import se.bjurr.gitchangelog.api.InclusivenessStrategy
+
 apply plugin: 'java'
 
 buildscript {
@@ -35,8 +37,10 @@ task generateGitReleasenotes11RepoPath(type: se.bjurr.gitchangelog.plugin.gradle
  file = new File("whatever/CHANGELOG_1_0_1_1_repo_path.md");
  prependToFile = false; // false will replace the file, true will prepend content
  fromRepo = new File(".");
- fromRef = "1.0";
- toRef = "1.1";
+ fromRevision = "1.0";
+ fromRevisionStrategy = InclusivenessStrategy.DEFAULT
+ toRevision = "1.1";
+ toRevisionStrategy = InclusivenessStrategy.DEFAULT
  templateContent = """
 # Releasenotes in 1.1
 
@@ -198,7 +202,7 @@ task generateGitChangelogTemplateWithGitHubIssues(type: se.bjurr.gitchangelog.pl
 task generateGitChangelog11(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
  fromRepo = new File(".");
  file = new File("CHANGELOG_1_1.md");
- toRef = "1.1";
+ toRevision = "1.1";
  templateContent = """
 {{#issues}}
  {{#commits}}
@@ -214,8 +218,8 @@ task generateGitChangelog11(type: se.bjurr.gitchangelog.plugin.gradle.GitChangel
 task generateGitReleasenotes11(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
  fromRepo = new File(".");
  file = new File("CHANGELOG_1_0_1_1.md");
- fromRef = "1.0";
- toRef = "1.1";
+ fromRevision = "1.0";
+ toRevision = "1.1";
  templateContent = """
 # Releasenotes in 1.1
 
@@ -245,8 +249,8 @@ Releasenotes.
 task generateGitChangelogCommits(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
  fromRepo = new File(".");
  file = new File("CHANGELOG_commits.md");
- fromCommit = "d5657ba4353bff4c8924981d4da4aacfcbd9bd54";
- toCommit = "3568f412a65a16d1848d8d5316a7cb30261cf271";
+ fromRevision = "d5657ba4353bff4c8924981d4da4aacfcbd9bd54";
+ toRevision = "3568f412a65a16d1848d8d5316a7cb30261cf271";
  templateContent = """
 # Releasenotes in 1.1
 
