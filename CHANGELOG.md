@@ -2,6 +2,12 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 1.81.0 (2023-09-11)
+
+### Features
+
+-  add filtering for footer tokens ([e07f9](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/e07f9710351cfd2) Tomas Bjerre)  
+
 ## 1.80.0 (2023-08-31)
 
 ### Features
