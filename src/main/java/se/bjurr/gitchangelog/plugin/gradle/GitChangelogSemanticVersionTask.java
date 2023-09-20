@@ -62,9 +62,9 @@ public class GitChangelogSemanticVersionTask extends DefaultTask {
             .lifecycle(
                 "Setting semantic version to "
                     + nextVersion
-                    + " was "
+                    + " (was "
                     + currentVersion
-                    + ". Storing in "
+                    + "). Storing in "
                     + propertyFile);
         gradleProps.setProperty("version", nextVersion);
         gradleProps.store(new FileOutputStream(propertyFile), "");
