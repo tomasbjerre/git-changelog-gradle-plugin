@@ -2,6 +2,13 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 1.81.1 (2023-09-20)
+
+### Bug Fixes
+
+-  **GitChangelogSemanticVersionTask**  Properly close `gradle.properties` ([835da](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/835da6a76abc873) Sebastian Schuberth)  
+-  **GitChangelogGradlePlugin**  Make tasks show up in "tasks" ([71b04](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/71b04a1ae8a1b66) Sebastian Schuberth)  
+
 ## 1.81.0 (2023-09-11)
 
 ### Features
