@@ -3,8 +3,9 @@ package se.bjurr.gitchangelog.plugin.gradle;
 import static se.bjurr.gitchangelog.api.GitChangelogApi.gitChangelogApiBuilder;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.nio.file.Files;
 import java.util.Properties;
 import org.gradle.api.DefaultTask;
 import org.gradle.api.tasks.TaskAction;
@@ -50,7 +51,9 @@ public class GitChangelogSemanticVersionTask extends DefaultTask {
               : nextSemanticVersion.getVersion();
       final File propertyFile = this.getProject().getRootProject().file("gradle.properties");
       final Properties gradleProps = new Properties();
-      gradleProps.load(new FileInputStream(propertyFile));
+      try (InputStream is = Files.newInputStream(propertyFile.toPath())) {
+        gradleProps.load(is);
+      }
       final String currentVersion = gradleProps.getProperty("version");
       if (nextVersion.equals(currentVersion)) {
         this.getProject()
@@ -62,12 +65,14 @@ public class GitChangelogSemanticVersionTask extends DefaultTask {
             .lifecycle(
                 "Setting semantic version to "
                     + nextVersion
-                    + " was "
+                    + " (was "
                     + currentVersion
-                    + ". Storing in "
+                    + "). Storing in "
                     + propertyFile);
         gradleProps.setProperty("version", nextVersion);
-        gradleProps.store(new FileOutputStream(propertyFile), "");
+        try (OutputStream os = Files.newOutputStream(propertyFile.toPath())) {
+          gradleProps.store(os, "");
+        }
         this.getProject().setVersion(nextVersion);
       }
     } catch (final Exception e) {
