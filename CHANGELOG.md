@@ -2,6 +2,12 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 1.81.2 (2023-09-24)
+
+### Bug Fixes
+
+-  using current version in GitChangelogSemanticVersionTask ([f6b0c](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/f6b0c3066058b1a) Tomas Bjerre)  [#48](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/48)  
+
 ## 1.81.1 (2023-09-20)
 
 ### Bug Fixes
