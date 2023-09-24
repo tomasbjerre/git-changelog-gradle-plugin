@@ -20,7 +20,8 @@ public class GitChangelogSemanticVersionTask extends DefaultTask {
   private static final Logger log =
       LoggerFactory.getLogger(GitChangelogSemanticVersionTask.class.getName());
 
-  public Boolean suffixSnapshot = true;
+  public Boolean suffixSnapshot = false;
+  public Boolean suffixSnapshotIfNotTagged = true;
   public String majorVersionPattern;
   public String minorVersionPattern;
   public String patchVersionPattern;
@@ -44,9 +45,14 @@ public class GitChangelogSemanticVersionTask extends DefaultTask {
         gitChangelogApiBuilder.withIgnoreTagsIfNameMatches(this.ignoreTagsIfNameMatches);
       }
 
-      final SemanticVersion nextSemanticVersion = gitChangelogApiBuilder.getNextSemanticVersion();
-      final String nextVersion =
+      final SemanticVersion nextSemanticVersion =
+          gitChangelogApiBuilder.getCurrentSemanticVersion();
+      final boolean notTagged = nextSemanticVersion.findTag().isEmpty();
+      final boolean suffixWithSnapshot =
           this.isSuppliedAndTrue(this.suffixSnapshot)
+              || this.isSuppliedAndTrue(this.suffixSnapshotIfNotTagged) && notTagged;
+      final String nextVersion =
+          suffixWithSnapshot
               ? nextSemanticVersion.getVersion() + "-SNAPSHOT"
               : nextSemanticVersion.getVersion();
       final File propertyFile = this.getProject().getRootProject().file("gradle.properties");
