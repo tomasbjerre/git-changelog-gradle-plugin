@@ -2,6 +2,12 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 1.81.4 (2023-12-01)
+
+### Bug Fixes
+
+-  mapping commits to lowest possible semantic tag ([3a2bd](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/3a2bd5aa4309aca) Tomas Bjerre)  
+
 ## 1.81.3 (2023-09-24)
 
 ### Bug Fixes
