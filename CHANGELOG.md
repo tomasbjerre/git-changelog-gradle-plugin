@@ -2,6 +2,12 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 2.0.0 (2024-01-27)
+
+### Breaking changes
+
+-  JGit 6 and Java 11 ([4395d](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/4395d7b962977fa) Tomas Bjerre)  
+
 ## 1.81.4 (2023-12-01)
 
 ### Bug Fixes
