@@ -2,6 +2,12 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 2.1.0 (2024-02-10)
+
+### Features
+
+-  **conventional-commits**  allow whitespace, colon and comma as separator in scope ([80fb4](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/80fb4045b2905e4) Tomas Bjerre)  
+
 ## 2.0.0 (2024-01-27)
 
 ### Breaking changes
