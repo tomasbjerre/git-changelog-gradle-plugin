@@ -2,6 +2,12 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 2.1.1 (2024-02-25)
+
+### Bug Fixes
+
+-  building with Gradle 8 ([af981](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/af981b60f0780e1) Tomas Bjerre)  
+
 ## 2.1.0 (2024-02-10)
 
 ### Features
