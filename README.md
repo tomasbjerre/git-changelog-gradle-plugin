@@ -1,8 +1,8 @@
 # Git Changelog Gradle Plugin
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/se.bjurr.gitchangelog/git-changelog-gradle-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/se.bjurr.gitchangelog/git-changelog-gradle-plugin)
-
 This is a Gradle plugin for [Git Changelog Lib](https://github.com/tomasbjerre/git-changelog-lib).
+
+Published to [plugins.gradle.org](https://plugins.gradle.org/plugin/se.bjurr.gitchangelog.git-changelog-gradle-plugin).
 
 ## Usage
 
