@@ -24,6 +24,7 @@ public class GitChangelogTask extends DefaultTask {
    * @deprecated Use toRevision
    */
   @Deprecated public String toRef;
+
   /**
    * @deprecated Use toRevision
    */
@@ -36,6 +37,7 @@ public class GitChangelogTask extends DefaultTask {
    * @deprecated Use fromRevision
    */
   @Deprecated public String fromRef;
+
   /**
    * @deprecated Use fromRevision
    */

@@ -1,4 +1,4 @@
-apply plugin: 'java'
+apply plugin: 'java-library'
 
 buildscript {
  repositories {
@@ -13,7 +13,8 @@ project.ext.buildConfig = [
   repoType: "GRADLE",
   gradlePlugin: [
     tags: ['git', 'changelog', 'releasenotes', 'patchnotes',
-           'conventional commits', 'semantic version', 'semantic release']
+           'conventional commits', 'semantic version', 'semantic release'],
+    implementationClass: 'se.bjurr.gitchangelog.plugin.gradle.GitChangelogGradlePlugin'
   ],
 ]
 apply from: project.buildscript.classLoader.getResource('main.gradle').toURI()
