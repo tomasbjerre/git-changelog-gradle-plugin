@@ -18,14 +18,7 @@ project.ext.buildConfig = [
   ],
 ]
 apply from: project.buildscript.classLoader.getResource('main.gradle').toURI()
-  
-  tasks.withType(AbstractPublishToMaven) { publishTask ->
-    tasks.withType(Sign) { jarTask ->
-      logger.lifecycle("${publishTask} must run after ${jarTask}")
-      publishTask.mustRunAfter(jarTask)
-    }
-  }
 
 dependencies {
- implementation 'se.bjurr.gitchangelog:git-changelog-lib:2.1.0'
+ implementation 'se.bjurr.gitchangelog:git-changelog-lib:2.1.1'
 }
