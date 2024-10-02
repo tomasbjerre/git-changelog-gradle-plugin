@@ -2,6 +2,16 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 2.2.0 (2024-10-02)
+
+### Features
+
+-  use special default template when prepending ([cb5cc](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/cb5cc7172dd5229) Tomas Bjerre)  
+
+### Bug Fixes
+
+-  build script ([77772](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/777725bcd56c95d) Tomas Bjerre)  
+
 ## 2.1.2 (2024-02-25)
 
 ### Bug Fixes
