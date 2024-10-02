@@ -8,7 +8,6 @@ import java.util.Date;
 import java.util.List;
 import org.gradle.api.DefaultTask;
 import org.gradle.api.tasks.TaskAction;
-import org.gradle.api.tasks.TaskExecutionException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import se.bjurr.gitchangelog.api.GitChangelogApi;
@@ -87,7 +86,7 @@ public class GitChangelogTask extends DefaultTask {
   public boolean prependToFile;
 
   @TaskAction
-  public void gitChangelogPluginTasks() throws TaskExecutionException {
+  public void gitChangelogPluginTasks() {
     try {
       this.getProject().getExtensions().findByType(GitChangelogPluginExtension.class);
 

@@ -3,45 +3,45 @@ import se.bjurr.gitchangelog.api.InclusivenessStrategy
 apply plugin: 'java'
 
 buildscript {
- repositories {
-  mavenLocal()
-  mavenCentral()
- }
+	repositories {
+		mavenLocal()
+		mavenCentral()
+	}
 
- dependencies {
-  classpath "se.bjurr.gitchangelog:git-changelog-gradle-plugin:+"
- }
+	dependencies {
+		classpath "se.bjurr.gitchangelog:git-changelog-gradle-plugin:+"
+	}
 }
 
 apply plugin: 'se.bjurr.gitchangelog.git-changelog-gradle-plugin'
 
 // Optional config if you want to configure the changelog
 task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- templateContent = """
+	templateContent = """
   // Template here!
  """;
 }
 
 // Optional config if you want to configure versioning
 task gitChangelogVersionTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogSemanticVersionTask) {
- suffixSnapshot = true;
- majorVersionPattern = "^[Bb]reaking"
- minorVersionPattern = "[Ff]eature"
- patchVersionPattern = "[Ff]ix"
+	suffixSnapshot = true;
+	majorVersionPattern = "^[Bb]reaking"
+	minorVersionPattern = "[Ff]eature"
+	patchVersionPattern = "[Ff]ix"
 }
 
 //
 // Set references to create releasenotes for version 1.1
 //
 task generateGitReleasenotes11RepoPath(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- file = new File("whatever/CHANGELOG_1_0_1_1_repo_path.md");
- prependToFile = false; // false will replace the file, true will prepend content
- fromRepo = new File(".");
- fromRevision = "1.0";
- fromRevisionStrategy = InclusivenessStrategy.DEFAULT
- toRevision = "1.1";
- toRevisionStrategy = InclusivenessStrategy.DEFAULT
- templateContent = """
+	file = new File("whatever/CHANGELOG_1_0_1_1_repo_path.md");
+	prependToFile = false; // false will replace the file, true will prepend content
+	fromRepo = new File(".");
+	fromRevision = "1.0";
+	fromRevisionStrategy = InclusivenessStrategy.DEFAULT
+	toRevision = "1.1";
+	toRevisionStrategy = InclusivenessStrategy.DEFAULT
+	templateContent = """
 # Releasenotes in 1.1
 
 Releasenotes.
@@ -85,9 +85,9 @@ Releasenotes.
 // Template configured inline
 //
 task generateGitChangelogInlineTemplate(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- fromRepo = new File(".");
- file = new File("CHANGELOG_inline.md");
- templateContent = """
+	fromRepo = new File(".");
+	file = new File("CHANGELOG_inline.md");
+	templateContent = """
 # Git Changelog Maven plugin changelog
 
 Changelog of Git Changelog Maven plugin.
@@ -118,11 +118,11 @@ Changelog of Git Changelog Maven plugin.
 // Partials
 //
 task generateGitChangelogWithPartials(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- fromRepo = new File(".");
- file = new File("CHANGELOG_partials.md");
- templateBaseDir = new File(".")
- templateSuffix = ".partial"
- templateContent = """
+	fromRepo = new File(".");
+	file = new File("CHANGELOG_partials.md");
+	templateBaseDir = new File(".")
+	templateSuffix = ".partial"
+	templateContent = """
 # Git Changelog Maven plugin changelog
 
 Changelog of Git Changelog Maven plugin.
@@ -153,22 +153,22 @@ Changelog of Git Changelog Maven plugin.
 // Template from file
 //
 task generateGitChangelogTemplateFromnewFile(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- fromRepo = new File(".");
- file = new File("CHANGELOG_file.md");
- templateContent = new File('changelog.mustache').getText('UTF-8');
+	fromRepo = new File(".");
+	file = new File("CHANGELOG_file.md");
+	templateContent = new File('changelog.mustache').getText('UTF-8');
 }
 
 //
 // Template from file and GitHub token
 //
 task generateGitChangelogTemplateWithGitHubIssues(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- fromRepo = new File(".");
- gitHubApi = "https://api.github.com/repos/tomasbjerre/git-changelog-gradle-plugin";
- gitHubToken = System.properties['GITHUB_OAUTH2TOKEN'];
- gitHubIssuePattern = "#([0-9]*)";
- gitHubEnabled = true;
- file = new File("CHANGELOG.md");
- templateContent = new File('changelog.mustache').getText('UTF-8');
+	fromRepo = new File(".");
+	gitHubApi = "https://api.github.com/repos/tomasbjerre/git-changelog-gradle-plugin";
+	gitHubToken = System.properties['GITHUB_OAUTH2TOKEN'];
+	gitHubIssuePattern = "#([0-9]*)";
+	gitHubEnabled = true;
+	file = new File("CHANGELOG.md");
+	templateContent = new File('changelog.mustache').getText('UTF-8');
 }
 
 //
@@ -200,10 +200,10 @@ task generateGitChangelogTemplateWithGitHubIssues(type: se.bjurr.gitchangelog.pl
 // Set reference to create changelog for version 1.1
 //
 task generateGitChangelog11(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- fromRepo = new File(".");
- file = new File("CHANGELOG_1_1.md");
- toRevision = "1.1";
- templateContent = """
+	fromRepo = new File(".");
+	file = new File("CHANGELOG_1_1.md");
+	toRevision = "1.1";
+	templateContent = """
 {{#issues}}
  {{#commits}}
   {{{hash}}}
@@ -216,11 +216,11 @@ task generateGitChangelog11(type: se.bjurr.gitchangelog.plugin.gradle.GitChangel
 // Set references to create releasenotes for version 1.1
 //
 task generateGitReleasenotes11(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- fromRepo = new File(".");
- file = new File("CHANGELOG_1_0_1_1.md");
- fromRevision = "1.0";
- toRevision = "1.1";
- templateContent = """
+	fromRepo = new File(".");
+	file = new File("CHANGELOG_1_0_1_1.md");
+	fromRevision = "1.0";
+	toRevision = "1.1";
+	templateContent = """
 # Releasenotes in 1.1
 
 Releasenotes.
@@ -247,11 +247,11 @@ Releasenotes.
 // for the from and to commit to inject hashes from command line.
 //
 task generateGitChangelogCommits(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- fromRepo = new File(".");
- file = new File("CHANGELOG_commits.md");
- fromRevision = "d5657ba4353bff4c8924981d4da4aacfcbd9bd54";
- toRevision = "3568f412a65a16d1848d8d5316a7cb30261cf271";
- templateContent = """
+	fromRepo = new File(".");
+	file = new File("CHANGELOG_commits.md");
+	fromRevision = "d5657ba4353bff4c8924981d4da4aacfcbd9bd54";
+	toRevision = "3568f412a65a16d1848d8d5316a7cb30261cf271";
+	templateContent = """
 # Releasenotes in 1.1
 
 Releasenotes.
@@ -277,17 +277,17 @@ Releasenotes.
 // Mixed features
 //
 task generateGitChangelogMixed(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- fromRepo = new File(".");
- readableTagName = ".*/([^/]*)";
- dateFormat = "HH:mm:ss";
- timeZone = "UTC";
- removeIssueFromMessage = false;
- ignoreCommitsIfMessageMatches = ".*Gradle.*";
- ignoreTagsIfNameMatches = ".*[0-9]{2}\$";
- untaggedName = "These commits are not included in any tag";
- noIssueName = "These commits have not issue in their commit comment";
- file = new File("CHANGELOG_mixed.md");
- templateContent = """
+	fromRepo = new File(".");
+	readableTagName = ".*/([^/]*)";
+	dateFormat = "HH:mm:ss";
+	timeZone = "UTC";
+	removeIssueFromMessage = false;
+	ignoreCommitsIfMessageMatches = ".*Gradle.*";
+	ignoreTagsIfNameMatches = ".*[0-9]{2}\$";
+	untaggedName = "These commits are not included in any tag";
+	noIssueName = "These commits have not issue in their commit comment";
+	file = new File("CHANGELOG_mixed.md");
+	templateContent = """
 # Git Changelog Maven plugin changelog
 
 Changelog of Git Changelog Maven plugin.
@@ -311,15 +311,20 @@ Changelog of Git Changelog Maven plugin.
 // Mixed features
 //
 task generateGitChangelogIgnoreCommitsWithoutIssue(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- fromRepo = new File(".");
- // If a commit cannot be mapped to a configured issue, it will not 
- // be included if set to true. If set to true, noIssueName has no effect.
- ignoreCommitsWithoutIssue = true;
- customIssues = [
-  [ "Incident", "INC[0-9]*", "http://inc/\${PATTERN_GROUP}", "\${PATTERN_GROUP}" ]
- ]
- file = new File("CHANGELOG_ignoreCommitsWithoutIssue.md");
- templateContent = """
+	fromRepo = new File(".");
+	// If a commit cannot be mapped to a configured issue, it will not
+	// be included if set to true. If set to true, noIssueName has no effect.
+	ignoreCommitsWithoutIssue = true;
+	customIssues = [
+		[
+			"Incident",
+			"INC[0-9]*",
+			"http://inc/\${PATTERN_GROUP}",
+			"\${PATTERN_GROUP}"
+		]
+	]
+	file = new File("CHANGELOG_ignoreCommitsWithoutIssue.md");
+	templateContent = """
 # Git Changelog
 
 Changelog of Git Changelog.
@@ -343,10 +348,10 @@ Changelog of Git Changelog.
 // Ignore old commits
 //
 task generateGitChangelogIgnoreCommitsOlderThan(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- fromRepo = new File(".");
- ignoreCommitsOlderThan = Date.parse("yyyy-MM-dd hh:mm:ss", "2017-05-20 00:00:00");
- file = new File("CHANGELOG_ignoreCommitsOlderThan.md");
- templateContent = """
+	fromRepo = new File(".");
+	ignoreCommitsOlderThan = Date.parse("yyyy-MM-dd hh:mm:ss", "2017-05-20 00:00:00");
+	file = new File("CHANGELOG_ignoreCommitsOlderThan.md");
+	templateContent = """
 # Git Changelog
 
 Changelog of Git Changelog.
@@ -370,14 +375,24 @@ Changelog of Git Changelog.
 // Custom issues
 //
 task generateGitChangelogCustomIssues(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- fromRepo = new File(".");
- file = new File("CHANGELOG_custom.md");
- customIssues = [
-  [ "Incident", "INC[0-9]*", "http://inc/\${PATTERN_GROUP}", "\${PATTERN_GROUP}" ],
-  [ "QC", "QC([0-9]+)", "", "\${PATTERN_GROUP}" ],
-  [ "Issue", "I([0-9]+)" ]
- ]
- templateContent = """
+	fromRepo = new File(".");
+	file = new File("CHANGELOG_custom.md");
+	customIssues = [
+		[
+			"Incident",
+			"INC[0-9]*",
+			"http://inc/\${PATTERN_GROUP}",
+			"\${PATTERN_GROUP}"
+		],
+		[
+			"QC",
+			"QC([0-9]+)",
+			"",
+			"\${PATTERN_GROUP}"
+		],
+		["Issue", "I([0-9]+)"]
+	]
+	templateContent = """
 # Git Changelog Maven plugin changelog
 
 Changelog of Git Changelog Maven plugin.
@@ -404,13 +419,13 @@ Changelog of Git Changelog Maven plugin.
 
 
 tasks.register("generateChangelogs") {
- doLast { }
+	doLast { }
 }
 
 generateChangelogs.dependsOn {
-  tasks.findAll { task -> task.name.startsWith('generateGit') }
+	tasks.findAll { task -> task.name.startsWith('generateGit') }
 }
 
 sourceSets {
- main.java.srcDirs = ['src/main/java']
+	main.java.srcDirs = ['src/main/java']
 }
