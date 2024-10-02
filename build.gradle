@@ -1,8 +1,7 @@
 plugins {
-	id "se.bjurr.gradle.conventional-release" version "latest-SNAPSHOT"
-	id "se.bjurr.gradle.update-versions" version "latest-SNAPSHOT"
-	id "se.bjurr.gradle.java-convention" version "latest-SNAPSHOT"
-	id 'java-gradle-plugin'
+	id "se.bjurr.gradle.conventional-release" version "0.+"
+	id "se.bjurr.gradle.update-versions" version "0.+"
+	id "se.bjurr.gradle.java-convention" version "0.+"
 }
 
 dependencies {
