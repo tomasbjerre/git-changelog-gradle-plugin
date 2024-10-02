@@ -1,3 +1,9 @@
+## 2.2.1 (2024-10-02)
+
+### Bug Fixes
+
+-  releasing with gradle release task ([cb6e4](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/cb6e475e5dc91d9) Tomas Bjerre)  
+
 # git-changelog-gradle-plugin changelog
 
 Changelog of git-changelog-gradle-plugin.
