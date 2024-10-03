@@ -4,6 +4,12 @@ This is a Gradle plugin for [Git Changelog Lib](https://github.com/tomasbjerre/g
 
 Published to [plugins.gradle.org](https://plugins.gradle.org/plugin/se.bjurr.gitchangelog.git-changelog-gradle-plugin).
 
+| Version                  | Java Version |
+| ------------------------ | ------------ |
+| version < 2.0.0          | 8            |
+| 2.0.0 <= version < 2.2.0 | 11           |
+| 2.2.0 <= version         | 17           |
+
 ## Usage
 
 There is a complete running example [here](/git-changelog-gradle-plugin-example) and also with Kotlin DSL [here](/git-changelog-gradle-plugin-example-kotlin).
@@ -18,8 +24,8 @@ It will use `master` branch by default, you can change that with something like 
 
 These tasks are configured when plugin is applied, no further configuration needed to use them.
 
- - `gitChangelogSemanticVersion` - Will set version in `gradle.properties` from [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
- - `gitChangelog` - Will update `CHANGELOG.md` using [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
+- `gitChangelogSemanticVersion` - Will set version in `gradle.properties` from [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
+- `gitChangelog` - Will update `CHANGELOG.md` using [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
 ### `build.gradle`
 
