@@ -1,12 +1,30 @@
+# git-changelog-gradle-plugin changelog
+
+Changelog of git-changelog-gradle-plugin.
+
+## 2.4.0 (2024-10-03)
+
+### Features
+
+-  enable version change to be triggered by property 'setVersionConventional' ([11021](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/1102173439584d5) Tomas Bjerre)  
+
+## 2.3.0 (2024-10-02)
+
+### Bug Fixes
+
+-  removing snapshot build dependencies, using git changelog plugin 2.2.1 ([05da5](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/05da51d52494a02) Tomas Bjerre)  
+
+## 2.2.2 (2024-10-02)
+
+### Features
+
+-  sorting properties when setting version ([a48f3](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/a48f30c138810fb) Tomas Bjerre)  
+
 ## 2.2.1 (2024-10-02)
 
 ### Bug Fixes
 
 -  releasing with gradle release task ([cb6e4](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/cb6e475e5dc91d9) Tomas Bjerre)  
-
-# git-changelog-gradle-plugin changelog
-
-Changelog of git-changelog-gradle-plugin.
 
 ## 2.2.0 (2024-10-02)
 
