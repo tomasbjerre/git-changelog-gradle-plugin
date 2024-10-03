@@ -27,6 +27,21 @@ These tasks are configured when plugin is applied, no further configuration need
 - `gitChangelogSemanticVersion` - Will set version in `gradle.properties` from [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
 - `gitChangelog` - Will update `CHANGELOG.md` using [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
+You can also set the property `setVersionConventional=true` that will trigger the `project.version` to be updated. The `gitChangelogSemanticVersion` will update the version to late if you are also publishing in the same invocation. Triggering the versioning with the property will set the version earlier so that it is correct in the publications. The properties that can be set are:
+
+```properties
+# Needs to be set
+setVersionConventional=true
+
+# These can also be set, but they have defaults
+suffixSnapshot=...
+suffixSnapshotIfNotTagged=...
+majorVersionPattern=...
+minorVersionPattern=...
+patchVersionPattern=...
+ignoreTagsIfNameMatches=...
+```
+
 ### `build.gradle`
 
 ```groovy

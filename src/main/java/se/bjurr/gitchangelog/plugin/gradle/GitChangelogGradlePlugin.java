@@ -2,10 +2,18 @@ package se.bjurr.gitchangelog.plugin.gradle;
 
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;
+import org.gradle.api.invocation.Gradle;
 
 public class GitChangelogGradlePlugin implements Plugin<Project> {
+
   @Override
   public void apply(final Project target) {
+    final String setVersionConventional = this.getOrElse(target, "setVersionConventional", "false");
+    if (setVersionConventional != null && setVersionConventional.equals("true")) {
+      SetSemanticVersion.setVersion(
+          this.getSemanticVersionParamsFromProperties(target.getProject()));
+    }
+
     target.getExtensions().create("gitChangelogPlugin", GitChangelogPluginExtension.class);
 
     target
@@ -29,5 +37,36 @@ public class GitChangelogGradlePlugin implements Plugin<Project> {
               task.ignoreCommitsIfMessageMatches =
                   "^\\[maven-release-plugin\\].*|^\\[Gradle Release Plugin\\].*|^Merge.*|.*\\[GRADLE SCRIPT\\].*";
             });
+  }
+
+  private SetSemanticVersionParameters getSemanticVersionParamsFromProperties(
+      final Project project) {
+
+    final SetSemanticVersionParameters params = new SetSemanticVersionParameters();
+    params.suffixSnapshot = this.getOrElse(project, "suffixSnapshot", false);
+    params.suffixSnapshotIfNotTagged = this.getOrElse(project, "suffixSnapshotIfNotTagged", true);
+    params.majorVersionPattern = this.getOrElse(project, "majorVersionPattern", null);
+    params.minorVersionPattern = this.getOrElse(project, "minorVersionPattern", null);
+    params.patchVersionPattern = this.getOrElse(project, "patchVersionPattern", null);
+    params.ignoreTagsIfNameMatches = this.getOrElse(project, "ignoreTagsIfNameMatches", null);
+    params.project = project;
+    return params;
+  }
+
+  private String getOrElse(final Project project, final String key, final String defaul) {
+    final Gradle gradle = project.getRootProject().getGradle();
+    Object valueOpt = gradle.getExtensions().getExtraProperties().getProperties().get(key);
+    if (valueOpt == null) {
+      valueOpt = project.getProperties().get(key);
+    }
+    if (valueOpt == null) {
+      return defaul;
+    }
+    return valueOpt.toString();
+  }
+
+  private Boolean getOrElse(final Project project, final String key, final boolean defaul) {
+    final String value = this.getOrElse(project, key, Boolean.toString(defaul));
+    return Boolean.valueOf(value);
   }
 }
