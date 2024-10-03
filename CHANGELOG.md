@@ -2,6 +2,12 @@
 
 Changelog of git-changelog-gradle-plugin.
 
+## 2.4.1 (2024-10-03)
+
+### Bug Fixes
+
+-  logging reading of properties ([41430](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/41430b1c9426770) Tomas Bjerre)  
+
 ## 2.4.0 (2024-10-03)
 
 ### Features
