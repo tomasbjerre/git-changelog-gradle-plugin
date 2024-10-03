@@ -56,12 +56,16 @@ public class GitChangelogGradlePlugin implements Plugin<Project> {
   private String getOrElse(final Project project, final String key, final String defaul) {
     final Gradle gradle = project.getRootProject().getGradle();
     Object valueOpt = gradle.getExtensions().getExtraProperties().getProperties().get(key);
+    project.getLogger().info("Got '" + valueOpt + "' from extraProperties key '" + key + "'");
     if (valueOpt == null) {
       valueOpt = project.getProperties().get(key);
+      project.getLogger().info("Got '" + valueOpt + "' from properties key '" + key + "'");
     }
     if (valueOpt == null) {
+      project.getLogger().info("Using default '" + defaul + "' for key '" + key + "'");
       return defaul;
     }
+    project.getLogger().info("Using '" + valueOpt + "' for key '" + key + "'");
     return valueOpt.toString();
   }
 
