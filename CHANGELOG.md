@@ -1,3 +1,9 @@
+## 2.5.0 (2024-10-16)
+
+### Features
+
+-  stepping git-changelog-lib ([064c1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/064c1e6cf66faaa) Tomas Bjerre)  
+
 # git-changelog-gradle-plugin changelog
 
 Changelog of git-changelog-gradle-plugin.
