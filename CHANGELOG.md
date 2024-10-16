@@ -1,3 +1,9 @@
+## 2.5.1 (2024-10-16)
+
+### Bug Fixes
+
+-  scope helpers to support chore(deps) ([1bdfe](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/1bdfe8c8d3c22e7) Tomas Bjerre)  
+
 ## 2.5.0 (2024-10-16)
 
 ### Features
