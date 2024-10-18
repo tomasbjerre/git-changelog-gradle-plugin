@@ -1,3 +1,9 @@
+## 2.5.2 (2024-10-18)
+
+### Bug Fixes
+
+-  triggering new version ([4b9f6](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/4b9f603d91b65be) Tomas Bjerre)  
+
 ## 2.5.1 (2024-10-16)
 
 ### Bug Fixes
