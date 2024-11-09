@@ -52,13 +52,13 @@ public class GitChangelogTask extends DefaultTask {
   public Property<String> dateFormat = this.getProject().getObjects().property(String.class);
   public Property<String> timeZone = this.getProject().getObjects().property(String.class);
   public Property<Boolean> removeIssueFromMessage =
-      this.getProject().getObjects().property(Boolean.class);
+      this.getProject().getObjects().property(Boolean.class).convention(false);
   public Property<String> ignoreCommitsIfMessageMatches =
       this.getProject().getObjects().property(String.class);
   public Property<String> untaggedName = this.getProject().getObjects().property(String.class);
   public Property<String> noIssueName = this.getProject().getObjects().property(String.class);
   public Property<Boolean> ignoreCommitsWithoutIssue =
-      this.getProject().getObjects().property(Boolean.class);
+      this.getProject().getObjects().property(Boolean.class).convention(false);
   public Property<String> ignoreTagsIfNameMatches =
       this.getProject().getObjects().property(String.class);
 
