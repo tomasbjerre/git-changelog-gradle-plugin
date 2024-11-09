@@ -5,8 +5,9 @@ import static se.bjurr.gitchangelog.api.GitChangelogApi.gitChangelogApiBuilder;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import org.gradle.api.DefaultTask;
+import org.gradle.api.provider.ListProperty;
+import org.gradle.api.provider.Property;
 import org.gradle.api.tasks.TaskAction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,73 +18,94 @@ public class GitChangelogTask extends DefaultTask {
 
   private static final Logger log = LoggerFactory.getLogger(GitChangelogTask.class.getName());
 
-  public String fromRepo = this.getProject().getRootProject().getRootDir().getAbsolutePath();
+  public Property<String> fromRepo =
+      this.getProject()
+          .getObjects()
+          .property(String.class)
+          .convention(this.getProject().getRootProject().getRootDir().getAbsolutePath());
 
-  /**
-   * @deprecated Use toRevision
-   */
-  @Deprecated public String toRef;
+  public Property<String> toRevision = this.getProject().getObjects().property(String.class);
+  public Property<InclusivenessStrategy> toRevisionStrategy =
+      this.getProject()
+          .getObjects()
+          .property(InclusivenessStrategy.class)
+          .convention(InclusivenessStrategy.DEFAULT);
 
-  /**
-   * @deprecated Use toRevision
-   */
-  @Deprecated public String toCommit;
+  public Property<String> fromRevision = this.getProject().getObjects().property(String.class);
+  public Property<InclusivenessStrategy> fromRevisionStrategy =
+      this.getProject()
+          .getObjects()
+          .property(InclusivenessStrategy.class)
+          .convention(InclusivenessStrategy.DEFAULT);
 
-  public String toRevision;
-  public InclusivenessStrategy toRevisionStrategy = InclusivenessStrategy.DEFAULT;
+  public Property<String> settingsFile = this.getProject().getObjects().property(String.class);
+  public Property<String> templateBaseDir = this.getProject().getObjects().property(String.class);
+  public Property<String> templateContent = this.getProject().getObjects().property(String.class);
+  public Property<String> templateSuffix = this.getProject().getObjects().property(String.class);
+  public Property<File> file =
+      this.getProject()
+          .getObjects()
+          .property(File.class)
+          .convention(this.getProject().file("CHANGELOG.md"));
 
-  /**
-   * @deprecated Use fromRevision
-   */
-  @Deprecated public String fromRef;
+  public Property<String> readableTagName = this.getProject().getObjects().property(String.class);
+  public Property<String> dateFormat = this.getProject().getObjects().property(String.class);
+  public Property<String> timeZone = this.getProject().getObjects().property(String.class);
+  public Property<Boolean> removeIssueFromMessage =
+      this.getProject().getObjects().property(Boolean.class);
+  public Property<String> ignoreCommitsIfMessageMatches =
+      this.getProject().getObjects().property(String.class);
+  public Property<String> untaggedName = this.getProject().getObjects().property(String.class);
+  public Property<String> noIssueName = this.getProject().getObjects().property(String.class);
+  public Property<Boolean> ignoreCommitsWithoutIssue =
+      this.getProject().getObjects().property(Boolean.class);
+  public Property<String> ignoreTagsIfNameMatches =
+      this.getProject().getObjects().property(String.class);
 
-  /**
-   * @deprecated Use fromRevision
-   */
-  @Deprecated public String fromCommit;
+  public ListProperty<CustomIssue> customIssues =
+      this.getProject()
+          .getObjects()
+          .listProperty(CustomIssue.class)
+          .convention(new ArrayList<CustomIssue>());
 
-  public String fromRevision;
-  public InclusivenessStrategy fromRevisionStrategy = InclusivenessStrategy.DEFAULT;
+  public Property<Boolean> gitHubEnabled =
+      this.getProject().getObjects().property(Boolean.class).convention(false);
+  public Property<String> gitHubApi = this.getProject().getObjects().property(String.class);
+  public Property<String> gitHubToken = this.getProject().getObjects().property(String.class);
+  public Property<String> gitHubIssuePattern =
+      this.getProject().getObjects().property(String.class);
 
-  public String settingsFile;
-  public String templateBaseDir;
-  public String templateContent;
-  public String templateSuffix;
-  public File file = this.getProject().file("CHANGELOG.md");
+  public Property<Boolean> jiraEnabled =
+      this.getProject().getObjects().property(Boolean.class).convention(false);
+  public Property<String> jiraUsername = this.getProject().getObjects().property(String.class);
+  public Property<String> jiraPassword = this.getProject().getObjects().property(String.class);
+  public Property<String> jiraIssuePattern = this.getProject().getObjects().property(String.class);
+  public Property<String> jiraServer = this.getProject().getObjects().property(String.class);
 
-  public String readableTagName;
-  public String dateFormat;
-  public String timeZone;
-  public boolean removeIssueFromMessage;
-  public String ignoreCommitsIfMessageMatches;
-  public String untaggedName;
-  public String noIssueName;
-  public boolean ignoreCommitsWithoutIssue;
-  public String ignoreTagsIfNameMatches;
+  public Property<Boolean> gitLabEnabled =
+      this.getProject().getObjects().property(Boolean.class).convention(false);
+  public Property<String> gitLabServer = this.getProject().getObjects().property(String.class);
+  public Property<String> gitLabProjectName = this.getProject().getObjects().property(String.class);
+  public Property<String> gitLabToken = this.getProject().getObjects().property(String.class);
 
-  public List<List<String>> customIssues = new ArrayList<>();
+  public Property<Date> ignoreCommitsOlderThan =
+      this.getProject().getObjects().property(Date.class);
+  public ListProperty<HelperParam> handlebarsHelpers =
+      this.getProject()
+          .getObjects()
+          .listProperty(HelperParam.class)
+          .convention(new ArrayList<HelperParam>());
 
-  public boolean gitHubEnabled;
-  public String gitHubApi;
-  public String gitHubToken;
-  public String gitHubIssuePattern;
+  public Property<Boolean> useIntegrations =
+      this.getProject().getObjects().property(Boolean.class).convention(false);
+  public Property<Boolean> prependToFile =
+      this.getProject().getObjects().property(Boolean.class).convention(false);
 
-  public boolean jiraEnabled;
-  public String jiraUsername;
-  public String jiraPassword;
-  public String jiraIssuePattern;
-  public String jiraServer;
-
-  public boolean gitLabEnabled;
-  public String gitLabServer;
-  public String gitLabProjectName;
-  public String gitLabToken;
-
-  public Date ignoreCommitsOlderThan;
-  public List<HelperParam> handlebarsHelpers = new ArrayList<>();
-
-  public boolean useIntegrations;
-  public boolean prependToFile;
+  public CustomIssue customIssue() {
+    final CustomIssue customIssue = new CustomIssue();
+    this.customIssues.add(customIssue);
+    return customIssue;
+  }
 
   @TaskAction
   public void gitChangelogPluginTasks() {
@@ -92,144 +114,120 @@ public class GitChangelogTask extends DefaultTask {
 
       final GitChangelogApi builder =
           gitChangelogApiBuilder()
-              .withUseIntegrations(this.useIntegrations)
-              .withJiraEnabled(this.jiraEnabled)
-              .withGitLabEnabled(this.gitLabEnabled)
-              .withGitHubEnabled(this.gitHubEnabled);
+              .withUseIntegrations(this.useIntegrations.get())
+              .withJiraEnabled(this.jiraEnabled.get())
+              .withGitLabEnabled(this.gitLabEnabled.get())
+              .withGitHubEnabled(this.gitHubEnabled.get());
 
-      for (final HelperParam helper : this.handlebarsHelpers) {
+      for (final HelperParam helper : this.handlebarsHelpers.get()) {
         builder //
             .withHandlebarsHelper(helper.getName(), helper.getHelper());
       }
 
-      if (this.isSupplied(this.settingsFile)) {
+      if (this.settingsFile.isPresent()) {
         builder.withSettings(this.getProject().file(this.settingsFile).toURI().toURL());
       }
 
-      if (this.isSupplied(this.fromRepo)) {
-        builder.withFromRepo(this.fromRepo);
+      builder.withFromRepo(this.fromRepo.get());
+
+      if (this.fromRevision.isPresent()) {
+        builder.withFromRevision(this.fromRevision.get(), this.fromRevisionStrategy.get());
       }
 
-      if (this.isSupplied(this.toRef)) {
-        builder.withToRef(this.toRef);
-      }
-      if (this.isSupplied(this.fromCommit)) {
-        builder.withFromCommit(this.fromCommit);
-      }
-      if (this.isSupplied(this.fromRevision)) {
-        builder.withFromRevision(this.fromRevision, this.fromRevisionStrategy);
+      if (this.toRevision.isPresent()) {
+        builder.withToRevision(this.toRevision.get(), this.toRevisionStrategy.get());
       }
 
-      if (this.isSupplied(this.fromRef)) {
-        builder.withFromRef(this.fromRef);
+      if (this.templateBaseDir.isPresent()) {
+        builder.withTemplateBaseDir(this.templateBaseDir.get());
       }
-      if (this.isSupplied(this.toCommit)) {
-        builder.withToCommit(this.toCommit);
+      if (this.templateContent.isPresent()) {
+        builder.withTemplateContent(this.templateContent.get());
       }
-      if (this.isSupplied(this.toRevision)) {
-        builder.withToRevision(this.toRevision, this.toRevisionStrategy);
-      }
-
-      if (this.isSupplied(this.templateBaseDir)) {
-        builder.withTemplateBaseDir(this.templateBaseDir);
-      }
-      if (this.isSupplied(this.templateContent)) {
-        builder.withTemplateContent(this.templateContent);
-      }
-      if (this.isSupplied(this.templateSuffix)) {
-        builder.withTemplateSuffix(this.templateSuffix);
+      if (this.templateSuffix.isPresent()) {
+        builder.withTemplateSuffix(this.templateSuffix.get());
       }
 
-      if (this.isSupplied(this.ignoreTagsIfNameMatches)) {
-        builder.withIgnoreTagsIfNameMatches(this.ignoreTagsIfNameMatches);
+      if (this.ignoreTagsIfNameMatches.isPresent()) {
+        builder.withIgnoreTagsIfNameMatches(this.ignoreTagsIfNameMatches.get());
       }
-      if (this.isSupplied(this.readableTagName)) {
-        builder.withReadableTagName(this.readableTagName);
+      if (this.readableTagName.isPresent()) {
+        builder.withReadableTagName(this.readableTagName.get());
       }
-      if (this.isSupplied(this.dateFormat)) {
-        builder.withDateFormat(this.dateFormat);
+      if (this.dateFormat.isPresent()) {
+        builder.withDateFormat(this.dateFormat.get());
       }
-      if (this.isSupplied(this.timeZone)) {
-        builder.withTimeZone(this.timeZone);
+      if (this.timeZone.isPresent()) {
+        builder.withTimeZone(this.timeZone.get());
       }
-      builder.withRemoveIssueFromMessageArgument(this.removeIssueFromMessage);
-      if (this.isSupplied(this.ignoreCommitsIfMessageMatches)) {
-        builder.withIgnoreCommitsWithMessage(this.ignoreCommitsIfMessageMatches);
+      builder.withRemoveIssueFromMessageArgument(this.removeIssueFromMessage.get());
+      if (this.ignoreCommitsIfMessageMatches.isPresent()) {
+        builder.withIgnoreCommitsWithMessage(this.ignoreCommitsIfMessageMatches.get());
       }
-      if (this.ignoreCommitsOlderThan != null) {
-        builder.withIgnoreCommitsOlderThan(this.ignoreCommitsOlderThan);
+      if (this.ignoreCommitsOlderThan.isPresent()) {
+        builder.withIgnoreCommitsOlderThan(this.ignoreCommitsOlderThan.get());
       }
-      if (this.isSupplied(this.untaggedName)) {
-        builder.withUntaggedName(this.untaggedName);
+      if (this.untaggedName.isPresent()) {
+        builder.withUntaggedName(this.untaggedName.get());
       }
-      if (this.isSupplied(this.noIssueName)) {
-        builder.withNoIssueName(this.noIssueName);
+      if (this.noIssueName.isPresent()) {
+        builder.withNoIssueName(this.noIssueName.get());
       }
 
-      builder.withIgnoreCommitsWithoutIssue(this.ignoreCommitsWithoutIssue);
-      for (final List<String> customIssue : this.customIssues) {
-        final String name = customIssue.get(0);
-        final String pattern = customIssue.get(1);
-        String link = null;
-        String title = null;
-        if (customIssue.size() > 2) {
-          link = customIssue.get(2);
-        }
-        if (customIssue.size() > 3) {
-          title = customIssue.get(3);
-        }
+      builder.withIgnoreCommitsWithoutIssue(this.ignoreCommitsWithoutIssue.get());
+      for (final CustomIssue customIssue : this.customIssues.get()) {
+        final String name = customIssue.getName();
+        final String pattern = customIssue.getPattern();
+        final String link = customIssue.getLink();
+        final String title = customIssue.getTitle();
         builder.withCustomIssue(name, pattern, link, title);
       }
-      if (this.isSupplied(this.gitHubApi)) {
-        builder.withGitHubApi(this.gitHubApi);
+      if (this.gitHubApi.isPresent()) {
+        builder.withGitHubApi(this.gitHubApi.get());
       }
-      if (this.isSupplied(this.gitHubToken)) {
-        builder.withGitHubToken(this.gitHubToken);
+      if (this.gitHubToken.isPresent()) {
+        builder.withGitHubToken(this.gitHubToken.get());
       }
-      if (this.isSupplied(this.gitHubIssuePattern)) {
-        builder.withGitHubIssuePattern(this.gitHubIssuePattern);
-      }
-
-      if (this.isSupplied(this.gitLabProjectName)) {
-        builder.withGitLabProjectName(this.gitLabProjectName);
-      }
-      if (this.isSupplied(this.gitLabServer)) {
-        builder.withGitLabServer(this.gitLabServer);
-      }
-      if (this.isSupplied(this.gitLabToken)) {
-        builder.withGitLabToken(this.gitLabToken);
+      if (this.gitHubIssuePattern.isPresent()) {
+        builder.withGitHubIssuePattern(this.gitHubIssuePattern.get());
       }
 
-      if (this.isSupplied(this.jiraUsername)) {
-        builder.withJiraUsername(this.jiraUsername);
+      if (this.gitLabProjectName.isPresent()) {
+        builder.withGitLabProjectName(this.gitLabProjectName.get());
       }
-      if (this.isSupplied(this.jiraPassword)) {
-        builder.withJiraPassword(this.jiraPassword);
+      if (this.gitLabServer.isPresent()) {
+        builder.withGitLabServer(this.gitLabServer.get());
       }
-      if (this.isSupplied(this.jiraIssuePattern)) {
-        builder.withJiraIssuePattern(this.jiraIssuePattern);
-      }
-      if (this.isSupplied(this.jiraServer)) {
-        builder.withJiraServer(this.jiraServer);
+      if (this.gitLabToken.isPresent()) {
+        builder.withGitLabToken(this.gitLabToken.get());
       }
 
-      if (this.file != null) {
-        if (this.prependToFile) {
-          builder.prependToFile(this.file);
+      if (this.jiraUsername.isPresent()) {
+        builder.withJiraUsername(this.jiraUsername.get());
+      }
+      if (this.jiraPassword.isPresent()) {
+        builder.withJiraPassword(this.jiraPassword.get());
+      }
+      if (this.jiraIssuePattern.isPresent()) {
+        builder.withJiraIssuePattern(this.jiraIssuePattern.get());
+      }
+      if (this.jiraServer.isPresent()) {
+        builder.withJiraServer(this.jiraServer.get());
+      }
+
+      if (this.file.isPresent()) {
+        if (this.prependToFile.get()) {
+          builder.prependToFile(this.file.get());
         } else {
-          builder.toFile(this.file);
+          builder.toFile(this.file.get());
         }
         log.info("#");
-        log.info("# Wrote: " + this.file + " to: " + this.file.getCanonicalFile().toPath());
+        log.info("# Wrote: " + this.file + " to: " + this.file.get().getCanonicalFile().toPath());
         log.info("#");
       }
 
     } catch (final Exception e) {
       log.error("GitChangelog", e);
     }
-  }
-
-  private boolean isSupplied(final String param) {
-    return param != null && !param.isEmpty();
   }
 }

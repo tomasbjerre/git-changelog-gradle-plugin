@@ -34,8 +34,8 @@ public class GitChangelogGradlePlugin implements Plugin<Project> {
             task -> {
               task.setDescription("Update CHANGELOG.md using conventional commits.");
               task.setGroup("Git Changelog");
-              task.ignoreCommitsIfMessageMatches =
-                  "^\\[maven-release-plugin\\].*|^\\[Gradle Release Plugin\\].*|^Merge.*|.*\\[GRADLE SCRIPT\\].*";
+              task.ignoreCommitsIfMessageMatches.set(
+                  "^\\[maven-release-plugin\\].*|^\\[Gradle Release Plugin\\].*|^Merge.*|.*\\[GRADLE SCRIPT\\].*");
             });
   }
 

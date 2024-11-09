@@ -7,13 +7,13 @@ buildscript {
  }
 
  dependencies {
-  classpath("se.bjurr.gitchangelog:git-changelog-gradle-plugin:+")
+  classpath("se.bjurr.gitchangelog:git-changelog-gradle-plugin:latest-SNAPSHOT")
  }
 }
 
 apply(plugin = "se.bjurr.gitchangelog.git-changelog-gradle-plugin")
 
 tasks.register<se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask>("generateGitChangelog") {
- fromRepo = file(".").toString();
- file = file("CHANGELOG_generateGitChangelog.md");
+ fromRepo.set(file(".").toString());
+ file.set(file("CHANGELOG_generateGitChangelog.md"));
 }

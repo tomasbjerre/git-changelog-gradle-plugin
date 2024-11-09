@@ -51,17 +51,17 @@ plugin {
 
 // Optional config if you want to configure the changelog
 task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
- templateContent = """
+ templateContent.set("""
   // Template here!
- """;
+ """);
 }
 
 // Optional config if you want to configure versioning
 task gitChangelogVersionTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogSemanticVersionTask) {
- suffixSnapshot = true;
- majorVersionPattern = "^[Bb]reaking"
- minorVersionPattern = "[Ff]eature"
- patchVersionPattern = "[Ff]ix"
+ suffixSnapshot.set(true);
+ majorVersionPattern.set("^[Bb]reaking")
+ minorVersionPattern.set("[Ff]eature")
+ patchVersionPattern.set("[Ff]ix")
 }
 ```
 
@@ -157,8 +157,8 @@ import com.github.jknack.handlebars.Helper;
 import com.github.jknack.handlebars.Options;
 
 task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-  file = new File("CHANGELOG.md");
-  handlebarsHelpers = [
+  file.set(new File("CHANGELOG.md"));
+  handlebarsHelpers.set([
     new HelperParam("startsWith", new Helper<String>() {
       public Object apply(String from, Options options) throws IOException {
         def s = options.hash['s']
@@ -175,15 +175,15 @@ task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask
         return from.substring(0,number);
       }
     })
-  ]
-  templateContent = """
+  ])
+  templateContent.set("""
   {{#commits}}
     {{#startsWith messageTitle s='feat'}}
       Starts with feat: "{{messageTitle}}"
       first 10 letters of hash is: {{firstLetters hash number='10'}}
     {{/startsWith}}
   {{/commits}}
-  """;
+  """);
 }
 ```
 
@@ -192,21 +192,15 @@ task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask
 It can also be used to get the next semantic version based on commits.
 
 ```groovy
-classpath 'se.bjurr.gitchangelog:git-changelog-lib:1.+'
-
-...
-
 buildscript {
  repositories {
   mavenCentral()
   mavenLocal()
  }
  dependencies {
-  ...
   classpath 'se.bjurr.gitchangelog:git-changelog-lib:1.+'
  }
 }
-
 
 def nextVersion = se.bjurr.gitchangelog.api.GitChangelogApi.gitChangelogApiBuilder()
   .withSemanticMajorVersionPattern("^[Bb]reaking")

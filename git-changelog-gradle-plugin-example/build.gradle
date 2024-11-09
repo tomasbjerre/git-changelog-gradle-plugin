@@ -9,7 +9,7 @@ buildscript {
 	}
 
 	dependencies {
-		classpath "se.bjurr.gitchangelog:git-changelog-gradle-plugin:+"
+		classpath "se.bjurr.gitchangelog:git-changelog-gradle-plugin:latest-SNAPSHOT"
 	}
 }
 
@@ -17,31 +17,30 @@ apply plugin: 'se.bjurr.gitchangelog.git-changelog-gradle-plugin'
 
 // Optional config if you want to configure the changelog
 task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-	templateContent = """
+	templateContent.set("""
   // Template here!
- """;
+ """);
 }
 
 // Optional config if you want to configure versioning
 task gitChangelogVersionTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogSemanticVersionTask) {
-	suffixSnapshot = true;
-	majorVersionPattern = "^[Bb]reaking"
-	minorVersionPattern = "[Ff]eature"
-	patchVersionPattern = "[Ff]ix"
+	suffixSnapshot.set(true);
+	majorVersionPattern.set("^[Bb]reaking")
+	minorVersionPattern.set("[Ff]eature")
+	patchVersionPattern.set("[Ff]ix")
 }
 
 //
 // Set references to create releasenotes for version 1.1
 //
 task generateGitReleasenotes11RepoPath(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-	file = new File("whatever/CHANGELOG_1_0_1_1_repo_path.md");
-	prependToFile = false; // false will replace the file, true will prepend content
-	fromRepo = new File(".");
-	fromRevision = "1.0";
-	fromRevisionStrategy = InclusivenessStrategy.DEFAULT
-	toRevision = "1.1";
-	toRevisionStrategy = InclusivenessStrategy.DEFAULT
-	templateContent = """
+	file.set(new File("whatever/CHANGELOG_1_0_1_1_repo_path.md"));
+	prependToFile.set(false); // false will replace the file, true will prepend content
+	fromRevision.set("1.0");
+	fromRevisionStrategy.set(InclusivenessStrategy.DEFAULT)
+	toRevision.set("1.1");
+	toRevisionStrategy.set(InclusivenessStrategy.DEFAULT)
+	templateContent.set("""
 # Releasenotes in 1.1
 
 Releasenotes.
@@ -60,34 +59,33 @@ Releasenotes.
  {{/commits}}
 
 {{/issues}}
-""";
+""");
 }
 
 //
 // Settings file
 //
 //task generateGitChangelogSettings(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-// settingsFile = new File("changelog.json").getAbsolutePath();
-// file = new File("CHANGELOG_settings.md");
+// settingsFile.set(new File("changelog.json").getAbsolutePath());
+// file.set(new File("CHANGELOG_settings.md"));
 //}
 
 //
 // MediaWiki page
 //
 //task generateGitChangelogMediaWiki(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-// mediaWikiUrl = "http://localhost/mediawiki/";
-// mediaWikiTitle = "Tomas Title";
-// mediaWikiUsername = "tomas";
-// mediaWikiPassword = "tomaskod";
+// mediaWikiUrl.set("http://localhost/mediawiki/");
+// mediaWikiTitle.set("Tomas Title");
+// mediaWikiUsername.set("tomas");
+// mediaWikiPassword.set("tomaskod");
 //}
 
 //
 // Template configured inline
 //
 task generateGitChangelogInlineTemplate(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-	fromRepo = new File(".");
-	file = new File("CHANGELOG_inline.md");
-	templateContent = """
+	file.set(new File("CHANGELOG_inline.md"));
+	templateContent.set("""
 # Git Changelog Maven plugin changelog
 
 Changelog of Git Changelog Maven plugin.
@@ -111,18 +109,17 @@ Changelog of Git Changelog Maven plugin.
 
  {{/issues}}
 {{/tags}}
- """;
+ """);
 }
 
 //
 // Partials
 //
 task generateGitChangelogWithPartials(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-	fromRepo = new File(".");
-	file = new File("CHANGELOG_partials.md");
-	templateBaseDir = new File(".")
-	templateSuffix = ".partial"
-	templateContent = """
+	file.set(new File("CHANGELOG_partials.md"));
+	templateBaseDir.set(new File(".").absolutePath)
+	templateSuffix.set(".partial")
+	templateContent.set("""
 # Git Changelog Maven plugin changelog
 
 Changelog of Git Changelog Maven plugin.
@@ -146,81 +143,77 @@ Changelog of Git Changelog Maven plugin.
 
  {{/issues}}
 {{/tags}}
- """;
+ """);
 }
 
 //
 // Template from file
 //
 task generateGitChangelogTemplateFromnewFile(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-	fromRepo = new File(".");
-	file = new File("CHANGELOG_file.md");
-	templateContent = new File('changelog.mustache').getText('UTF-8');
+	file.set(new File("CHANGELOG_file.md"));
+	templateContent.set(new File('changelog.mustache').getText('UTF-8'));
 }
 
 //
 // Template from file and GitHub token
 //
 task generateGitChangelogTemplateWithGitHubIssues(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-	fromRepo = new File(".");
-	gitHubApi = "https://api.github.com/repos/tomasbjerre/git-changelog-gradle-plugin";
-	gitHubToken = System.properties['GITHUB_OAUTH2TOKEN'];
-	gitHubIssuePattern = "#([0-9]*)";
-	gitHubEnabled = true;
-	file = new File("CHANGELOG.md");
-	templateContent = new File('changelog.mustache').getText('UTF-8');
+	gitHubApi.set("https://api.github.com/repos/tomasbjerre/git-changelog-gradle-plugin");
+	gitHubToken.set(System.properties['GITHUB_OAUTH2TOKEN']);
+	gitHubIssuePattern.set("#([0-9]*)");
+	gitHubEnabled.set(true);
+	file.set(new File("CHANGELOG.md"));
+	templateContent.set(new File('changelog.mustache').getText('UTF-8'));
 }
 
 //
 // Template from file and GitLab token
 //
 //task generateGitChangelogTemplateWithGitLabIssues(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-// gitLabServer = "https://gitlab.com/";
-// gitLabProjectName = "tomas.bjerre85/violations-test";
-// gitLabToken = System.properties['GITLAB_TOKEN'];
-// gitLabEnabled = true;
-// file = new File("CHANGELOG_GITLAB.md");
-// templateContent = new File('changelog.mustache').getText('UTF-8');
+// gitLabServer.set("https://gitlab.com/");
+// gitLabProjectName.set("tomas.bjerre85/violations-test");
+// gitLabToken.set(System.properties['GITLAB_TOKEN']);
+// gitLabEnabled.set(true);
+// file.set(new File("CHANGELOG_GITLAB.md"));
+// templateContent.set(new File('changelog.mustache').getText('UTF-8'));
 //}
 
 //
 // Template from file and Jira login
 //
 //task generateGitChangelogTemplateFromFileAndJira(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-// jiraEnabled = true;
-// jiraUsername = System.properties['JIRA_USERNAME'];
-// jiraPassword = System.properties['JIRA_PASSWORD'];
-// jiraIssuePattern = "\\b[a-zA-Z]([a-zA-Z]+)-([0-9]+)\\b";
-// jiraServer = "https://yourJiraServer.com/jira";
-// file = new File("CHANGELOG_jira.md");
-// templateContent = new File('changelog.mustache').getText('UTF-8');
+// jiraEnabled.set(true);
+// jiraUsername.set(System.properties['JIRA_USERNAME']);
+// jiraPassword.set(System.properties['JIRA_PASSWORD']);
+// jiraIssuePattern.set("\\b[a-zA-Z]([a-zA-Z]+)-([0-9]+)\\b");
+// jiraServer.set("https://yourJiraServer.com/jira");
+// file.set(new File("CHANGELOG_jira.md"));
+// templateContent.set(new File('changelog.mustache').getText('UTF-8'));
 //}
 
 //
 // Set reference to create changelog for version 1.1
 //
 task generateGitChangelog11(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-	fromRepo = new File(".");
-	file = new File("CHANGELOG_1_1.md");
-	toRevision = "1.1";
-	templateContent = """
+	file.set(new File("CHANGELOG_1_1.md"));
+	toRevision.set("1.1");
+	templateContent.set("""
 {{#issues}}
  {{#commits}}
   {{{hash}}}
  {{/commits}}
 {{/issues}}
-""";
+""");
 }
 
 //
 // Set references to create releasenotes for version 1.1
 //
 task generateGitReleasenotes11(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-	fromRepo = new File(".");
-	file = new File("CHANGELOG_1_0_1_1.md");
-	fromRevision = "1.0";
-	toRevision = "1.1";
-	templateContent = """
+	file.set(new File("CHANGELOG_1_0_1_1.md"));
+	fromRevision.set("1.0");
+	toRevision.set("1.1");
+	templateContent.set("""
 # Releasenotes in 1.1
 
 Releasenotes.
@@ -239,7 +232,7 @@ Releasenotes.
  {{/commits}}
 
 {{/issues}}
-""";
+""");
 }
 
 //
@@ -247,11 +240,10 @@ Releasenotes.
 // for the from and to commit to inject hashes from command line.
 //
 task generateGitChangelogCommits(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-	fromRepo = new File(".");
-	file = new File("CHANGELOG_commits.md");
-	fromRevision = "d5657ba4353bff4c8924981d4da4aacfcbd9bd54";
-	toRevision = "3568f412a65a16d1848d8d5316a7cb30261cf271";
-	templateContent = """
+	file.set(new File("CHANGELOG_commits.md"));
+	fromRevision.set("d5657ba4353bff4c8924981d4da4aacfcbd9bd54");
+	toRevision.set("3568f412a65a16d1848d8d5316a7cb30261cf271");
+	templateContent.set("""
 # Releasenotes in 1.1
 
 Releasenotes.
@@ -270,24 +262,23 @@ Releasenotes.
  {{/commits}}
 
 {{/issues}}
-""";
+""");
 }
 
 //
 // Mixed features
 //
 task generateGitChangelogMixed(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-	fromRepo = new File(".");
-	readableTagName = ".*/([^/]*)";
-	dateFormat = "HH:mm:ss";
-	timeZone = "UTC";
-	removeIssueFromMessage = false;
-	ignoreCommitsIfMessageMatches = ".*Gradle.*";
-	ignoreTagsIfNameMatches = ".*[0-9]{2}\$";
-	untaggedName = "These commits are not included in any tag";
-	noIssueName = "These commits have not issue in their commit comment";
-	file = new File("CHANGELOG_mixed.md");
-	templateContent = """
+	readableTagName.set(".*/([^/]*)");
+	dateFormat.set("HH:mm:ss");
+	timeZone.set("UTC");
+	removeIssueFromMessage.set(false);
+	ignoreCommitsIfMessageMatches.set(".*Gradle.*");
+	ignoreTagsIfNameMatches.set(".*[0-9]{2}\$");
+	untaggedName.set("These commits are not included in any tag");
+	noIssueName.set("These commits have not issue in their commit comment");
+	file.set(new File("CHANGELOG_mixed.md"));
+	templateContent.set("""
 # Git Changelog Maven plugin changelog
 
 Changelog of Git Changelog Maven plugin.
@@ -304,27 +295,23 @@ Changelog of Git Changelog Maven plugin.
  {{/issues}}
 
 {{/tags}}
- """;
+ """);
 }
 
 //
 // Mixed features
 //
 task generateGitChangelogIgnoreCommitsWithoutIssue(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-	fromRepo = new File(".");
 	// If a commit cannot be mapped to a configured issue, it will not
 	// be included if set to true. If set to true, noIssueName has no effect.
-	ignoreCommitsWithoutIssue = true;
-	customIssues = [
-		[
-			"Incident",
-			"INC[0-9]*",
-			"http://inc/\${PATTERN_GROUP}",
-			"\${PATTERN_GROUP}"
-		]
-	]
-	file = new File("CHANGELOG_ignoreCommitsWithoutIssue.md");
-	templateContent = """
+	ignoreCommitsWithoutIssue.set(true);
+	customIssue()
+	  .setName("Incident")
+	  .setPattern("INC[0-9]*")
+	  .setLink("http://inc/\${PATTERN_GROUP}")
+	  .setTitle("\${PATTERN_GROUP}")
+	file.set(new File("CHANGELOG_ignoreCommitsWithoutIssue.md"));
+	templateContent.set("""
 # Git Changelog
 
 Changelog of Git Changelog.
@@ -341,17 +328,16 @@ Changelog of Git Changelog.
  {{/issues}}
 
 {{/tags}}
- """;
+ """);
 }
 
 //
 // Ignore old commits
 //
 task generateGitChangelogIgnoreCommitsOlderThan(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-	fromRepo = new File(".");
-	ignoreCommitsOlderThan = Date.parse("yyyy-MM-dd hh:mm:ss", "2017-05-20 00:00:00");
-	file = new File("CHANGELOG_ignoreCommitsOlderThan.md");
-	templateContent = """
+	ignoreCommitsOlderThan.set(Date.parse("yyyy-MM-dd hh:mm:ss", "2017-05-20 00:00:00"));
+	file.set(new File("CHANGELOG_ignoreCommitsOlderThan.md"));
+	templateContent.set("""
 # Git Changelog
 
 Changelog of Git Changelog.
@@ -368,31 +354,24 @@ Changelog of Git Changelog.
  {{/issues}}
 
 {{/tags}}
- """;
+ """);
 }
 
 //
 // Custom issues
 //
 task generateGitChangelogCustomIssues(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
-	fromRepo = new File(".");
-	file = new File("CHANGELOG_custom.md");
-	customIssues = [
-		[
-			"Incident",
-			"INC[0-9]*",
-			"http://inc/\${PATTERN_GROUP}",
-			"\${PATTERN_GROUP}"
-		],
-		[
-			"QC",
-			"QC([0-9]+)",
-			"",
-			"\${PATTERN_GROUP}"
-		],
-		["Issue", "I([0-9]+)"]
-	]
-	templateContent = """
+	file.set(new File("CHANGELOG_custom.md"));
+	customIssue()
+	  .setName("Incident")
+	  .setPattern("INC[0-9]*")
+	  .setLink("http://inc/\${PATTERN_GROUP}")
+	  .setTitle("\${PATTERN_GROUP}")
+	customIssue()
+	  .setName("QC")
+	  .setPattern("QC([0-9]+)")
+	  .setTitle("\${PATTERN_GROUP}")
+	templateContent.set("""
 # Git Changelog Maven plugin changelog
 
 Changelog of Git Changelog Maven plugin.
@@ -414,7 +393,7 @@ Changelog of Git Changelog Maven plugin.
  {{/issues}}
 
 {{/tags}}
- """;
+ """);
 }
 
 
