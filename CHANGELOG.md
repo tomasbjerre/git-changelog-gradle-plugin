@@ -1,3 +1,9 @@
+## 3.0.2 (2024-11-09)
+
+### Bug Fixes
+
+-  triggering new version ([69b18](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/69b185cbf96503b) Tomas Bjerre)  
+
 ## 3.0.0 (2024-11-09)
 
 ### Breaking changes
