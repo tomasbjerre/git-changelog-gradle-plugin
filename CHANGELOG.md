@@ -1,3 +1,9 @@
+## 3.0.0 (2024-11-09)
+
+### Breaking changes
+
+-  enabling lazy loading of all configuration ([3d1a2](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/3d1a20d9c17a433) Tomas Bjerre)  
+
 ## 2.5.2 (2024-10-18)
 
 ### Bug Fixes
