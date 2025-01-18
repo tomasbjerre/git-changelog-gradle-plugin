@@ -1,3 +1,8 @@
+## 3.0.3 (2025-01-18)
+
+### Dependency updates
+
+- upgrading dependencies ([fcb64](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/fcb64e4aee16613) Tomas Bjerre)  
 ## 3.0.2 (2024-11-09)
 
 ### Bug Fixes
