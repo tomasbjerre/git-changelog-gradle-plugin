@@ -1,3 +1,9 @@
+## 3.0.4 (2025-01-26)
+
+### Bug Fixes
+
+-  reverse order in eachUrlPart ([64a1b](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/64a1bb9df9bc08c) Tomas Bjerre)  
+
 ## 3.0.3 (2025-01-18)
 
 ### Dependency updates
