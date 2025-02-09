@@ -1,3 +1,9 @@
+## 3.0.5 (2025-02-09)
+
+### Bug Fixes
+
+-  configuration cache fix by avoiding project during execution ([87e78](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/87e78411c68c0b8) Tomas Bjerre)  [#55](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/55)  
+
 ## 3.0.4 (2025-01-26)
 
 ### Bug Fixes
