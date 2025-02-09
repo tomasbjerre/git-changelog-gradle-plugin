@@ -396,7 +396,6 @@ Changelog of Git Changelog Maven plugin.
  """);
 }
 
-
 tasks.register("generateChangelogs") {
 	doLast { }
 }

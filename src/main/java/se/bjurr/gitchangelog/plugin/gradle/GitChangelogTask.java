@@ -110,8 +110,6 @@ public class GitChangelogTask extends DefaultTask {
   @TaskAction
   public void gitChangelogPluginTasks() {
     try {
-      this.getProject().getExtensions().findByType(GitChangelogPluginExtension.class);
-
       final GitChangelogApi builder =
           gitChangelogApiBuilder()
               .withUseIntegrations(this.useIntegrations.get())
