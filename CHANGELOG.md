@@ -1,3 +1,8 @@
+## 3.0.6 (2025-03-16)
+
+### Dependency updates
+
+- git-changelog-lib ([f7c6e](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/f7c6efe9b0d67c0) Tomas Bjerre)  
 ## 3.0.5 (2025-02-09)
 
 ### Bug Fixes
