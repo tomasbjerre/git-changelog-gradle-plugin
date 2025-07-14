@@ -18,7 +18,7 @@ There are some more examples in the [build.gradle](https://github.com/tomasbjerr
 
 More documentation can be found in the [Git Changelog Lib](https://github.com/tomasbjerre/git-changelog-lib).
 
-It will use `master` branch by default, you can change that with something like `toRef = "main"`.
+It will use `HEAD` branch by default, you can change that with something like `toRevision = "main"`.
 
 ### Default tasks
 
