@@ -1,3 +1,8 @@
+## 3.0.7 (2025-07-29)
+
+### Dependency updates
+
+- dependency updates ([b1530](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/b1530259d9c27f9) Tomas Bjerre)  
 ## 3.0.6 (2025-03-16)
 
 ### Dependency updates
