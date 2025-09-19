@@ -1,3 +1,9 @@
+## 3.1.0 (2025-09-19)
+
+### Features
+
+-  expose git-changelog-lib as api ([40d46](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/40d46845d3122d9) Tomas Bjerre)  
+
 ## 3.0.7 (2025-07-29)
 
 ### Dependency updates
