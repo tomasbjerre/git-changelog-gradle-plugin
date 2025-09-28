@@ -1,3 +1,8 @@
+## 3.1.1 (2025-09-28)
+
+### Dependency updates
+
+- dependencies ([ff04d](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/ff04dfc699e1f0d) Tomas Bjerre)  
 ## 3.1.0 (2025-09-19)
 
 ### Features
