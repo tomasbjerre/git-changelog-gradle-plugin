@@ -15,11 +15,26 @@ buildscript {
 
 apply plugin: 'se.bjurr.gitchangelog.git-changelog-gradle-plugin'
 
+import com.github.jknack.handlebars.Options
+import se.bjurr.gitchangelog.plugin.gradle.HelperParam
+
 // Optional config if you want to configure the changelog
-task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+task gitChangelogTaskWithHandlebarsHelpers(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
 	templateContent.set("""
-  // Template here!
- """);
+{{#commits}}
+{{#ifCommitFeature message}}
+feature!: {{message}}
+{{/ifCommitFeature}}
+{{/commits}}
+""");
+
+   handlebarsHelpers.set([
+      new HelperParam("ifCommitFeature", (String message, Options options) -> {
+        return message.startsWith('feat: ')
+            ? options.fn(this)
+            : options.inverse(this)
+      }),
+  ])
 }
 
 // Optional config if you want to configure versioning
