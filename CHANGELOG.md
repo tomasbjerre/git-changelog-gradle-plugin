@@ -1,3 +1,12 @@
+## 3.1.2 (2026-02-02)
+
+### Bug Fixes
+
+-  Make isolated projects compatible ([d34e1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/d34e17d4373e824) Eduard Bosch Bertran)  [#59](https://github.com/tomasbjerre/git-changelog-gradle-plugin/issues/59)  
+
+### Dependency updates
+
+- gradle 9 ([a34be](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/a34be70bb8e2ac7) Tomas Bjerre)  
 ## 3.1.1 (2025-09-28)
 
 ### Dependency updates
