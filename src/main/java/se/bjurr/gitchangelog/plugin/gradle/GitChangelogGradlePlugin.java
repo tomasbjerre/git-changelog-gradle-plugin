@@ -2,7 +2,7 @@ package se.bjurr.gitchangelog.plugin.gradle;
 
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;
-import org.gradle.api.invocation.Gradle;
+import org.gradle.api.plugins.ExtraPropertiesExtension;
 
 public class GitChangelogGradlePlugin implements Plugin<Project> {
 
@@ -54,11 +54,11 @@ public class GitChangelogGradlePlugin implements Plugin<Project> {
   }
 
   private String getOrElse(final Project project, final String key, final String defaul) {
-    final Gradle gradle = project.getRootProject().getGradle();
-    Object valueOpt = gradle.getExtensions().getExtraProperties().getProperties().get(key);
+    ExtraPropertiesExtension extraProperties = project.getExtensions().getExtraProperties();
+    Object valueOpt = extraProperties.has(key) ? extraProperties.get(key) : null;
     project.getLogger().info("Got '" + valueOpt + "' from extraProperties key '" + key + "'");
     if (valueOpt == null) {
-      valueOpt = project.getProperties().get(key);
+      valueOpt = project.getProviders().gradleProperty(key).getOrNull();
       project.getLogger().info("Got '" + valueOpt + "' from properties key '" + key + "'");
     }
     if (valueOpt == null) {
