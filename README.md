@@ -198,7 +198,7 @@ buildscript {
   mavenLocal()
  }
  dependencies {
-  classpath 'se.bjurr.gitchangelog:git-changelog-lib:1.+'
+  classpath 'se.bjurr.gitchangelog:git-changelog-lib:3.+'
  }
 }
 
