@@ -1,3 +1,9 @@
+## 3.2.0 (2026-09-13)
+
+### Features
+
+-  git changelog lib 3 ([8c549](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/8c5499065907289) Tomas Bjerre)  
+
 ## 3.1.2 (2026-02-02)
 
 ### Bug Fixes
