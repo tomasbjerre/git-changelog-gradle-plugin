@@ -1,3 +1,25 @@
+## 3.3.0 (2026-09-14)
+
+### Features
+
+-  **ci**  add draft/publish release workflow ([eedb3](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/eedb38f0988dd77) Tomas Bjerre)  
+
+### Dependency updates
+
+- update gradle-conventions to 2.2.1 and gradle wrapper to 9.7.1 ([c7121](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/c7121d3f9e8ff35) Tomas Bjerre)  
+### Other changes
+
+**Fix stale git-changelog-lib version in README example**
+
+* The &quot;Get next release&quot; buildscript example pinned git-changelog-lib 
+* to 1.+, but the plugin itself now depends on 3.0.0. Update the 
+* example to 3.+ so it doesn&#x27;t resolve to a long-outdated release. 
+* Co-Authored-By: Claude Sonnet 5 &lt;noreply@anthropic.com&gt; 
+* Claude-Session: https://claude.ai/code/session_01JoSBbeMcQy1vjRJ5qMVno8 
+
+[dcef9](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/dcef92b41487228) Tomas Bjerre *2026-09-13 16:12:46*
+
+
 ## 3.2.0 (2026-09-13)
 
 ### Features
