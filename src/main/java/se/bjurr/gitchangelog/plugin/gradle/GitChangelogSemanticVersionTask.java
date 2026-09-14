@@ -3,7 +3,9 @@ package se.bjurr.gitchangelog.plugin.gradle;
 import org.gradle.api.DefaultTask;
 import org.gradle.api.provider.Property;
 import org.gradle.api.tasks.TaskAction;
+import org.gradle.work.DisableCachingByDefault;
 
+@DisableCachingByDefault(because = "Reads the git repository state as a side effect")
 public class GitChangelogSemanticVersionTask extends DefaultTask {
 
   public Property<Boolean> suffixSnapshot =

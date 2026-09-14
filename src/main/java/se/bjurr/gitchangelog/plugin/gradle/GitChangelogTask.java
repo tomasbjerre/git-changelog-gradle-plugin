@@ -9,11 +9,13 @@ import org.gradle.api.DefaultTask;
 import org.gradle.api.provider.ListProperty;
 import org.gradle.api.provider.Property;
 import org.gradle.api.tasks.TaskAction;
+import org.gradle.work.DisableCachingByDefault;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import se.bjurr.gitchangelog.api.GitChangelogApi;
 import se.bjurr.gitchangelog.api.InclusivenessStrategy;
 
+@DisableCachingByDefault(because = "Reads the git repository state as a side effect")
 public class GitChangelogTask extends DefaultTask {
 
   private static final Logger log = LoggerFactory.getLogger(GitChangelogTask.class.getName());
