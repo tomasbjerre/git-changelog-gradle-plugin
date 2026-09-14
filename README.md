@@ -1,8 +1,8 @@
 # Git Changelog Gradle Plugin
 
-This is a Gradle plugin for [Git Changelog Lib](https://github.com/tomasbjerre/git-changelog-lib).
+[![Gradle Plugin Portal](https://img.shields.io/gradle-plugin-portal/v/se.bjurr.gitchangelog.git-changelog-gradle-plugin)](https://plugins.gradle.org/plugin/se.bjurr.gitchangelog.git-changelog-gradle-plugin)
 
-Published to [plugins.gradle.org](https://plugins.gradle.org/plugin/se.bjurr.gitchangelog.git-changelog-gradle-plugin).
+This is a Gradle plugin for [Git Changelog Lib](https://github.com/tomasbjerre/git-changelog-lib).
 
 | Version                  | Java Version |
 | ------------------------ | ------------ |
