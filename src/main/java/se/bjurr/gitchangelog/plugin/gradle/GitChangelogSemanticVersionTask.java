@@ -1,6 +1,8 @@
 package se.bjurr.gitchangelog.plugin.gradle;
 
+import java.util.ArrayList;
 import org.gradle.api.DefaultTask;
+import org.gradle.api.provider.ListProperty;
 import org.gradle.api.provider.Property;
 import org.gradle.api.tasks.TaskAction;
 import org.gradle.work.DisableCachingByDefault;
@@ -20,6 +22,8 @@ public class GitChangelogSemanticVersionTask extends DefaultTask {
       this.getProject().getObjects().property(String.class).convention("");
   public Property<String> ignoreTagsIfNameMatches =
       this.getProject().getObjects().property(String.class).convention("");
+  public ListProperty<String> pathFilters =
+      this.getProject().getObjects().listProperty(String.class).convention(new ArrayList<String>());
 
   @TaskAction
   public void gitChangelogPluginTasks() {
@@ -30,6 +34,7 @@ public class GitChangelogSemanticVersionTask extends DefaultTask {
     params.minorVersionPattern = this.minorVersionPattern.get();
     params.patchVersionPattern = this.patchVersionPattern.get();
     params.ignoreTagsIfNameMatches = this.ignoreTagsIfNameMatches.get();
+    params.pathFilters = this.pathFilters.get();
     params.project = this.getProject();
     SetSemanticVersion.setVersion(params);
   }

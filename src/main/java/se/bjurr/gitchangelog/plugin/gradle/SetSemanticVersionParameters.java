@@ -1,5 +1,6 @@
 package se.bjurr.gitchangelog.plugin.gradle;
 
+import java.util.List;
 import org.gradle.api.Project;
 
 /** */
@@ -10,6 +11,7 @@ public class SetSemanticVersionParameters {
   public String minorVersionPattern;
   public String patchVersionPattern;
   public String ignoreTagsIfNameMatches;
+  public List<String> pathFilters;
   public Project project;
 
   @Override
@@ -26,6 +28,8 @@ public class SetSemanticVersionParameters {
         + this.patchVersionPattern
         + ", ignoreTagsIfNameMatches="
         + this.ignoreTagsIfNameMatches
+        + ", pathFilters="
+        + this.pathFilters
         + ", project="
         + this.project
         + "]";

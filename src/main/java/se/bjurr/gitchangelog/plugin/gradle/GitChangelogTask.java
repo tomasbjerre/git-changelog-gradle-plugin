@@ -100,6 +100,9 @@ public class GitChangelogTask extends DefaultTask {
           .listProperty(HelperParam.class)
           .convention(new ArrayList<HelperParam>());
 
+  public ListProperty<String> pathFilters =
+      this.getProject().getObjects().listProperty(String.class).convention(new ArrayList<String>());
+
   public Property<Boolean> useIntegrations =
       this.getProject().getObjects().property(Boolean.class).convention(false);
   public Property<Boolean> prependToFile =
@@ -218,6 +221,9 @@ public class GitChangelogTask extends DefaultTask {
       }
       for (final String jiraIssueAdditionalField : this.jiraIssueAdditionalFields.get()) {
         builder.withJiraIssueAdditionalField(jiraIssueAdditionalField);
+      }
+      if (!this.pathFilters.get().isEmpty()) {
+        builder.withPathFilters(this.pathFilters.get().toArray(new String[0]));
       }
 
       if (this.file.isPresent()) {
