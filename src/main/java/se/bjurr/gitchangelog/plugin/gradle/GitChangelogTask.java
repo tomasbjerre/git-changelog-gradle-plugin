@@ -83,6 +83,8 @@ public class GitChangelogTask extends DefaultTask {
   public Property<String> jiraPassword = this.getProject().getObjects().property(String.class);
   public Property<String> jiraIssuePattern = this.getProject().getObjects().property(String.class);
   public Property<String> jiraServer = this.getProject().getObjects().property(String.class);
+  public ListProperty<String> jiraIssueAdditionalFields =
+      this.getProject().getObjects().listProperty(String.class).convention(new ArrayList<String>());
 
   public Property<Boolean> gitLabEnabled =
       this.getProject().getObjects().property(Boolean.class).convention(false);
@@ -213,6 +215,9 @@ public class GitChangelogTask extends DefaultTask {
       }
       if (this.jiraServer.isPresent()) {
         builder.withJiraServer(this.jiraServer.get());
+      }
+      for (final String jiraIssueAdditionalField : this.jiraIssueAdditionalFields.get()) {
+        builder.withJiraIssueAdditionalField(jiraIssueAdditionalField);
       }
 
       if (this.file.isPresent()) {
