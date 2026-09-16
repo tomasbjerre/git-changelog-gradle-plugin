@@ -3,6 +3,8 @@ package se.bjurr.gitchangelog.plugin.gradle;
 import static se.bjurr.gitchangelog.api.GitChangelogApi.gitChangelogApiBuilder;
 
 import java.io.File;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.Date;
 import org.gradle.api.DefaultTask;
@@ -41,6 +43,8 @@ public class GitChangelogTask extends DefaultTask {
           .convention(InclusivenessStrategy.DEFAULT);
 
   public Property<String> settingsFile = this.getProject().getObjects().property(String.class);
+  public Property<String> handlebarsHelperFile =
+      this.getProject().getObjects().property(String.class);
   public Property<String> templateBaseDir = this.getProject().getObjects().property(String.class);
   public Property<String> templateContent = this.getProject().getObjects().property(String.class);
   public Property<String> templateSuffix = this.getProject().getObjects().property(String.class);
@@ -127,6 +131,12 @@ public class GitChangelogTask extends DefaultTask {
       for (final HelperParam helper : this.handlebarsHelpers.get()) {
         builder //
             .withHandlebarsHelper(helper.getName(), helper.getHelper());
+      }
+
+      if (this.handlebarsHelperFile.isPresent()) {
+        final byte[] content =
+            Files.readAllBytes(this.getProject().file(this.handlebarsHelperFile).toPath());
+        builder.withHandlebarsHelper(new String(content, StandardCharsets.UTF_8));
       }
 
       if (this.settingsFile.isPresent()) {

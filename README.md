@@ -188,6 +188,31 @@ task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask
 }
 ```
 
+### Example - custom helpers from a file
+
+Instead of registering Java helpers inline, JavaScript helpers can be kept in their own file with `handlebarsHelperFile`, the same way a `templateFile` is kept separate from the build script. This requires a JS engine like [Nashorn](https://central.sonatype.com/artifact/org.openjdk.nashorn/nashorn-core/overview) on the classpath.
+
+```groovy
+task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask) {
+  file.set(new File("CHANGELOG.md"));
+  handlebarsHelperFile.set("helpers.js");
+  templateFile.set("changelog.mustache");
+}
+```
+
+`helpers.js`:
+
+```javascript
+Handlebars.registerHelper("startsWith", function(options) {
+  var s = options.hash.s;
+  if (this.messageTitle && this.messageTitle.match("^" + s + ".*")) {
+    return options.fn(this);
+  } else {
+    return options.inverse(this);
+  }
+});
+```
+
 ### Get next release
 
 It can also be used to get the next semantic version based on commits.
