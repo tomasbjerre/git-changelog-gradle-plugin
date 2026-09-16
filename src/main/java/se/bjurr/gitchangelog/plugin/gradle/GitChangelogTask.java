@@ -83,6 +83,7 @@ public class GitChangelogTask extends DefaultTask {
   public Property<String> jiraPassword = this.getProject().getObjects().property(String.class);
   public Property<String> jiraIssuePattern = this.getProject().getObjects().property(String.class);
   public Property<String> jiraServer = this.getProject().getObjects().property(String.class);
+  public Property<String> jiraRestBasePath = this.getProject().getObjects().property(String.class);
   public ListProperty<String> jiraIssueAdditionalFields =
       this.getProject().getObjects().listProperty(String.class).convention(new ArrayList<String>());
 
@@ -106,6 +107,8 @@ public class GitChangelogTask extends DefaultTask {
   public Property<Boolean> useIntegrations =
       this.getProject().getObjects().property(Boolean.class).convention(false);
   public Property<Boolean> prependToFile =
+      this.getProject().getObjects().property(Boolean.class).convention(false);
+  public Property<Boolean> commitCount =
       this.getProject().getObjects().property(Boolean.class).convention(false);
 
   public CustomIssue customIssue() {
@@ -219,12 +222,16 @@ public class GitChangelogTask extends DefaultTask {
       if (this.jiraServer.isPresent()) {
         builder.withJiraServer(this.jiraServer.get());
       }
+      if (this.jiraRestBasePath.isPresent()) {
+        builder.withJiraRestBasePath(this.jiraRestBasePath.get());
+      }
       for (final String jiraIssueAdditionalField : this.jiraIssueAdditionalFields.get()) {
         builder.withJiraIssueAdditionalField(jiraIssueAdditionalField);
       }
       if (!this.pathFilters.get().isEmpty()) {
         builder.withPathFilters(this.pathFilters.get().toArray(new String[0]));
       }
+      builder.withCommitCount(this.commitCount.get());
 
       if (this.file.isPresent()) {
         if (this.prependToFile.get()) {

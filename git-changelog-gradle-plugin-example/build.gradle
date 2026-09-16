@@ -22,6 +22,9 @@ task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask
  """);
 	// For monorepos, restrict which commits are considered:
 	// pathFilters.set(["some/subdirectory"])
+	// Exposes {{commitCount}} per commit (git rev-list --count <hash>). Off by
+	// default: it's O(depth) per commit, so can be slow on large histories.
+	// commitCount.set(true)
 }
 
 // Optional config if you want to configure versioning
@@ -191,6 +194,7 @@ task generateGitChangelogTemplateWithGitHubIssues(type: se.bjurr.gitchangelog.pl
 // jiraPassword.set(System.properties['JIRA_PASSWORD']);
 // jiraIssuePattern.set("\\b[a-zA-Z]([a-zA-Z]+)-([0-9]+)\\b");
 // jiraServer.set("https://yourJiraServer.com/jira");
+// jiraRestBasePath.set("/rest/api/latest");
 // jiraIssueAdditionalFields.set(["customfield_10001", "customfield_10002"]);
 // file.set(new File("CHANGELOG_jira.md"));
 // templateContent.set(new File('changelog.mustache').getText('UTF-8'));
