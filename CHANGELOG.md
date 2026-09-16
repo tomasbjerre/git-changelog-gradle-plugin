@@ -1,3 +1,29 @@
+## 3.4.0 (2026-09-16)
+
+### Features
+
+-  add commitCount and jiraRestBasePath task properties (#66) ([d66ed](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/d66ed16148773cb) Tomas Bjerre)  
+-  add handlebarsHelperFile task property (#65) ([8456f](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/8456fe124aca81f) Tomas Bjerre)  
+-  expose pathFilters on both changelog tasks for monorepos (#64) ([f6566](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/f656695b44ba426) Tomas Bjerre)  
+-  expose jiraIssueAdditionalFields task property (#63) ([899d1](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/899d163678a086f) Tomas Bjerre)  
+
+### Dependency updates
+
+- update plugin se.bjurr.gradle.bundle-gradle-binaryplugin to v2.3.0 (#62) ([3cbdb](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/3cbdbee07d1cf3d) renovate[bot])  
+- update dependency se.bjurr.gitchangelog:git-changelog-lib to v3.2.0 (#61) ([ab13f](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/ab13f6c9fa3d6a6) renovate[bot])  
+### Other changes
+
+**Superseded by centralized publish-draft-releases.yaml in .github**
+
+
+[5ce30](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/5ce30fe569d87e0) Tomas Bjerre *2026-09-14 19:58:34*
+
+**Auto-publish pending draft releases weekly**
+
+
+[410a9](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/410a9c612e14c36) Tomas Bjerre *2026-09-14 19:47:35*
+
+
 ## 3.3.0 (2026-09-14)
 
 ### Features
