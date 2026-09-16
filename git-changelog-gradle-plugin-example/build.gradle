@@ -187,6 +187,7 @@ task generateGitChangelogTemplateWithGitHubIssues(type: se.bjurr.gitchangelog.pl
 // jiraPassword.set(System.properties['JIRA_PASSWORD']);
 // jiraIssuePattern.set("\\b[a-zA-Z]([a-zA-Z]+)-([0-9]+)\\b");
 // jiraServer.set("https://yourJiraServer.com/jira");
+// jiraIssueAdditionalFields.set(["customfield_10001", "customfield_10002"]);
 // file.set(new File("CHANGELOG_jira.md"));
 // templateContent.set(new File('changelog.mustache').getText('UTF-8'));
 //}
