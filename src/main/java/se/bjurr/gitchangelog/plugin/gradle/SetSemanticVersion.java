@@ -27,6 +27,9 @@ public class SetSemanticVersion {
       if (isSupplied(params.ignoreTagsIfNameMatches)) {
         gitChangelogApiBuilder.withIgnoreTagsIfNameMatches(params.ignoreTagsIfNameMatches);
       }
+      if (params.pathFilters != null && !params.pathFilters.isEmpty()) {
+        gitChangelogApiBuilder.withPathFilters(params.pathFilters.toArray(new String[0]));
+      }
 
       final SemanticVersion nextSemanticVersion =
           gitChangelogApiBuilder.getCurrentSemanticVersion();

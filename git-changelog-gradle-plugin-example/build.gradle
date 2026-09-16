@@ -20,6 +20,8 @@ task gitChangelogTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChangelogTask
 	templateContent.set("""
   // Template here!
  """);
+	// For monorepos, restrict which commits are considered:
+	// pathFilters.set(["some/subdirectory"])
 }
 
 // Optional config if you want to configure versioning
@@ -28,6 +30,8 @@ task gitChangelogVersionTask(type: se.bjurr.gitchangelog.plugin.gradle.GitChange
 	majorVersionPattern.set("^[Bb]reaking")
 	minorVersionPattern.set("[Ff]eature")
 	patchVersionPattern.set("[Ff]ix")
+	// For monorepos, restrict which commits are considered:
+	// pathFilters.set(["some/subdirectory"])
 }
 
 //
