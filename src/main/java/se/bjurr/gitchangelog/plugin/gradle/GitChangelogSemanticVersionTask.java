@@ -23,7 +23,7 @@ public class GitChangelogSemanticVersionTask extends DefaultTask {
   public Property<String> ignoreTagsIfNameMatches =
       this.getProject().getObjects().property(String.class).convention("");
   public ListProperty<String> pathFilters =
-      this.getProject().getObjects().listProperty(String.class).convention(new ArrayList<String>());
+      this.getProject().getObjects().listProperty(String.class).convention(new ArrayList<>());
 
   @TaskAction
   public void gitChangelogPluginTasks() {

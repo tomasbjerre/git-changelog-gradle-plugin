@@ -30,7 +30,7 @@ public class SortedProperties extends Properties {
              */
             final Set<Map.Entry<Object, Object>> sortedSet =
                 new TreeSet<>(
-                    new Comparator<Map.Entry<Object, Object>>() {
+                    new Comparator<>() {
                       @Override
                       public int compare(
                           final Map.Entry<Object, Object> o1, final Map.Entry<Object, Object> o2) {
@@ -43,12 +43,12 @@ public class SortedProperties extends Properties {
 
           @Override
           public Set<Object> keySet() {
-            return new TreeSet<Object>(super.keySet());
+            return new TreeSet<>(super.keySet());
           }
 
           @Override
           public synchronized Enumeration<Object> keys() {
-            return Collections.enumeration(new TreeSet<Object>(super.keySet()));
+            return Collections.enumeration(new TreeSet<>(super.keySet()));
           }
         };
     sortedProps.putAll(this);
