@@ -11,6 +11,8 @@ import se.bjurr.gitchangelog.internal.semantic.SemanticVersion;
 
 public class SetSemanticVersion {
 
+  private SetSemanticVersion() {}
+
   public static void setVersion(final SetSemanticVersionParameters params) {
     try {
       final GitChangelogApi gitChangelogApiBuilder = gitChangelogApiBuilder();
@@ -78,7 +80,9 @@ public class SetSemanticVersion {
                   p.setVersion(nextVersion);
                 });
       }
-    } catch (final Exception e) {
+    } catch (
+        final Exception
+            e) { // NOPMD - GitChangelogApi#getCurrentSemanticVersion declares throws Exception
       params.project.getLogger().error("GitChangelogVersion", e);
     }
   }

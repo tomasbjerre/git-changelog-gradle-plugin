@@ -3,6 +3,7 @@ package se.bjurr.gitchangelog.plugin.gradle;
 import static se.bjurr.gitchangelog.api.GitChangelogApi.gitChangelogApiBuilder;
 
 import java.io.File;
+import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import se.bjurr.gitchangelog.api.GitChangelogApi;
 import se.bjurr.gitchangelog.api.InclusivenessStrategy;
+import se.bjurr.gitchangelog.api.exceptions.GitChangelogRepositoryException;
 
 @DisableCachingByDefault(because = "Reads the git repository state as a side effect")
 public class GitChangelogTask extends DefaultTask {
@@ -69,10 +71,7 @@ public class GitChangelogTask extends DefaultTask {
       this.getProject().getObjects().property(String.class);
 
   public ListProperty<CustomIssue> customIssues =
-      this.getProject()
-          .getObjects()
-          .listProperty(CustomIssue.class)
-          .convention(new ArrayList<CustomIssue>());
+      this.getProject().getObjects().listProperty(CustomIssue.class).convention(new ArrayList<>());
 
   public Property<Boolean> gitHubEnabled =
       this.getProject().getObjects().property(Boolean.class).convention(false);
@@ -89,7 +88,7 @@ public class GitChangelogTask extends DefaultTask {
   public Property<String> jiraServer = this.getProject().getObjects().property(String.class);
   public Property<String> jiraRestBasePath = this.getProject().getObjects().property(String.class);
   public ListProperty<String> jiraIssueAdditionalFields =
-      this.getProject().getObjects().listProperty(String.class).convention(new ArrayList<String>());
+      this.getProject().getObjects().listProperty(String.class).convention(new ArrayList<>());
 
   public Property<Boolean> gitLabEnabled =
       this.getProject().getObjects().property(Boolean.class).convention(false);
@@ -100,13 +99,10 @@ public class GitChangelogTask extends DefaultTask {
   public Property<Date> ignoreCommitsOlderThan =
       this.getProject().getObjects().property(Date.class);
   public ListProperty<HelperParam> handlebarsHelpers =
-      this.getProject()
-          .getObjects()
-          .listProperty(HelperParam.class)
-          .convention(new ArrayList<HelperParam>());
+      this.getProject().getObjects().listProperty(HelperParam.class).convention(new ArrayList<>());
 
   public ListProperty<String> pathFilters =
-      this.getProject().getObjects().listProperty(String.class).convention(new ArrayList<String>());
+      this.getProject().getObjects().listProperty(String.class).convention(new ArrayList<>());
 
   public Property<Boolean> useIntegrations =
       this.getProject().getObjects().property(Boolean.class).convention(false);
@@ -254,7 +250,7 @@ public class GitChangelogTask extends DefaultTask {
         log.info("#");
       }
 
-    } catch (final Exception e) {
+    } catch (final GitChangelogRepositoryException | IOException e) {
       log.error("GitChangelog", e);
     }
   }
