@@ -1,3 +1,12 @@
+## 3.4.2 (2026-10-03)
+
+### Bug Fixes
+
+-  update to git-changelog-lib 5.0.0 (#70) ([8112d](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/8112dd9b125591f) Tomas Bjerre)  
+
+### Dependency updates
+
+- update plugin se.bjurr.gradle.bundle-gradle-binaryplugin to v2.4.1 (#69) ([0e753](https://github.com/tomasbjerre/git-changelog-gradle-plugin/commit/0e7530ac9fed727) renovate[bot])  
 ## 3.4.0 (2026-09-16)
 
 ### Features
