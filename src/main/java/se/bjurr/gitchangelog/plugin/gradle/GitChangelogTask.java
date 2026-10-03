@@ -183,7 +183,7 @@ public class GitChangelogTask extends DefaultTask {
         builder.withIgnoreCommitsWithMessage(this.ignoreCommitsIfMessageMatches.get());
       }
       if (this.ignoreCommitsOlderThan.isPresent()) {
-        builder.withIgnoreCommitsOlderThan(this.ignoreCommitsOlderThan.get());
+        builder.withIgnoreCommitsOlderThan(this.ignoreCommitsOlderThan.get().toInstant());
       }
       if (this.untaggedName.isPresent()) {
         builder.withUntaggedName(this.untaggedName.get());
